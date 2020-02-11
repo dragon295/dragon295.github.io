@@ -4,5 +4,14 @@ h1 {
 p {
 	font-size: 18px;
 	text-align: center;
-
+	border: solid;
+	margin-left: auto;
+	margin-right: auto;
+	padding: auto;
+}
+img {
+	border: solid blue;
+	margin-left: auto;
+	margin-right: auto;
+	padding: auto blue;
 }
