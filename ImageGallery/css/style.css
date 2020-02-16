@@ -1,0 +1,87 @@
+/*CSS-Tổng*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img:hover {
+	padding-top: 5px;
+	box-shadow:  0 10px 40px yellow;
+}
+a:hover {
+	color: #fff200;
+	font-size: 20px;
+	text-decoration: none;
+	box-shadow:  0 10px 40px orange;
+}
+p {
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+/*CSS-Mở dầu*/
+#gioithieu {
+	text-align: center;
+	font-family: sans-serif;
+}
+/*CSS-Điều hướng*/
+#dieuhuong {
+	width: 100%;
+	border: 10px solid #f00000;
+	color: white;
+	background-color: grey;
+	text-align: center;
+	padding: 10px;
+	
+}
+.menu{
+	padding: 25px;
+	text-decoration: none;
+	font-size: 20px;
+
+}
+/*CSS-Nội dung*/
+#noidung {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	border: 5px solid #fa82e8;
+	background-color:  #fa82e8 ;
+}
+.hinhanh {
+	width: 33.333%;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	border-right: 5px solid white;
+}	
+.hinhanh2 {
+	width: 33.333%;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	border: 0 5px 0 5px;
+	border-style: solid white;
+}
+.hinhanh3 {
+	width: 33.333%;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	border-left: 5px solid white;
+}
+.muiten {
+	width: 15%;
+	height: 200px;
+	float: right;
+	}
+/*CSS-Footer*/
+.footer {
+	box-sizing: border-box;
+	border: 15px solid green;
+	background-color: green;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

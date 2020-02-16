@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+p {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+div {
+	font-size: 20px;
+}
+a {
+	font-size: 25px;
+	color: red;
+	text-decoration: none;
+}
+h1 {
+	text-align: center;
+}
+img:hover {
+	box-shadow: 0 10px 40px yellow;
+}
+/*CSS-body*/
+.h1 {
+	width: 33.333%;
+	height: 300px;
+	border-right: 5px solid white;
+	float: left;
+}
+.h2{
+	width: 33.333%;
+	height: 300px;
+	float: left;
+	border: 0 5px 0 5px;
+	border-style: solid white;
+}
+.h3 {
+	width: 33.333%;
+	height: 300px;
+	float: left;
+	box-sizing: border-box;
+	border-left: 5px solid white;
+}
