@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+}
+div {	
+	font-size: 40px;
+	color: white;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	float: left;
+	}
+
+.h1 {
+	height: 400px;
+	width: 60%;
+	background-color: red;
+} 
+.h2  {
+	width: 40%;
+	height: 200px;
+	background-color: blue;
+}
+.h3  {
+	width: 40%;
+	height: 200px;
+	background-color: green;
+	}
+
+
+
+
+

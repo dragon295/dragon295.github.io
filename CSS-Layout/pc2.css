@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+}
+div {	
+	font-size: 40px;
+	color: white;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	float: left;
+}
+.h1 {
+	height: 400px;
+	background-color: red;
+	width: 60%;
+} 
+.h23   {
+	border-left :15px solid white;
+	
+}
+.h2  {
+	width: 40%;
+	height: 200px;
+	background-color: blue;
+}
+.h3  {
+	width: 40%;
+	height: 200px;
+	background-color: green;
+	}
+
+
+
+
+
