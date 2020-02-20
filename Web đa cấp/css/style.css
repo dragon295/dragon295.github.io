@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	margin: auto;
+	display: flex;
+	padding-left: 20px;
+	background-color: #e6e5e1;
+}
+a {
+	padding: 10px;
+	display: inline-block;
+	font-size: 20px;
+}
+a:hover{
+	color: red;
+}
+span {
+	font-weight: bold;
+}
+ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+div {
+	border: 5px solid red;
+}
+.lv1 > li, .lv2 > li, .lv3 > li, .lv4 > li, .lv5 > li, .lv6 > li {
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+.lv2, .lv3, .lv4, .lv5, .lv6 {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	background: #68636736;;
+	width: 450px;
+	display: none;
+	border: 2px solid pink;
+}
+.lv3 {
+	width: 480px;
+}
+.lv4 {
+	width: 450px;
+}
+.lv5 {
+	width: 150px;
+}
+.lv6 {
+	width: 350px;
+}
+.lv1 > li:hover .lv2, .lv1 > li:hover .lv3, .lv1 > li:hover .lv4, .lv1 > li:hover .lv5, .lv1 > li:hover .lv6{
+	display: inline-block;
+}
+.title {
+	padding: 10px;
+}

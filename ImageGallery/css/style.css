@@ -27,11 +27,11 @@ p {
 /*CSS-Điều hướng*/
 #dieuhuong {
 	width: 100%;
-	border: 10px solid #f00000;
+	border: 15px solid #f00000;
 	color: white;
 	background-color: grey;
 	text-align: center;
-	padding: 10px;
+	padding: 15px;
 	
 }
 .menu{
@@ -50,14 +50,12 @@ p {
 }
 .hinhanh {
 	width: 33.333%;
-	height: 300px;
 	float: left;
 	box-sizing: border-box;
 	border-right: 5px solid white;
 }	
 .hinhanh2 {
 	width: 33.333%;
-	height: 300px;
 	float: left;
 	box-sizing: border-box;
 	border: 0 5px 0 5px;
@@ -65,14 +63,12 @@ p {
 }
 .hinhanh3 {
 	width: 33.333%;
-	height: 300px;
 	float: left;
 	box-sizing: border-box;
 	border-left: 5px solid white;
 }
 .muiten {
 	width: 15%;
-	height: 200px;
 	float: right;
 	}
 /*CSS-Footer*/
