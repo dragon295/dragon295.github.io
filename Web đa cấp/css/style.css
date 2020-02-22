@@ -27,9 +27,8 @@ div {
 	border: 5px solid red;
 }
 .lv1 > li, .lv2 > li, .lv3 > li, .lv4 > li, .lv5 > li, .lv6 > li {
-	display: inline-block;
+	display: block;
 	position: relative;
-	float: left;
 }
 .lv2, .lv3, .lv4, .lv5, .lv6 {
 	position: absolute;

@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	margin: auto;
+	display: flex;
+	padding-left: 20px;
+}
+div:hover {
+	display: inline-block;
+} 
+a {
+	padding: 10px;
+	display: block;
+	color: #757575;
+	font-size: 18px;
+}
+a:hover{
+	color: orange;
+}
+span {
+	font-weight: bold;
+}
+ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+li:hover {
+	display: inline-block;
+}
+.lv1{
+	display: inline-block;
+	position: relative;
+	box-shadow: 2px solid grey;
+}
+.lv2, .lv3, .lv4, .lv5, .lv6{
+	position: absolute;
+	top: 0;
+	left: 210px;
+	width: 210px;
+	display: none;
+	border: 2px solid white;
+}
+li:hover .lv2, li:hover .lv3, li:hover .lv4, li:hover .lv5, li:hover .lv6{
+	display: inline-block;
+}
+.con{
+	position: absolute;
+	top: 0;
+	left: 160px;
+	width: 245px;
+	display: none;
+}
+.lv2 li ul li:hover .con{
+	display: inline-block;
+}
+.lv3 li ul li:hover .con{
+	display: inline-block;
+}
