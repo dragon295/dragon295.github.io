@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrap {
+	width: 200px;
+	padding: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2.0;
+	background-color: grey;
+}
+.son {
+	position: relative;
+	overflow: hidden;
+	height: 50px;
+}
+.learning, .coding, .teaching {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+}
+.learning {
+	background-color: green;
+	animation: stay 3s linear infinite;
+}
+.coding {
+	background-color: orange;
+	animation: slidedown 3s linear infinite;
+}
+.teaching {
+	background-color: purple;
+	animation: slideup 3s linear infinite;
+}
+@keyframes stay {
+	0% {opacity: 1;}
+	35% {opacity: 1;}
+	40% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes slidedown {
+	0% {top: -50px;}
+	35% { top: -50px;}
+	40% {top: 0px;}
+	100% {top:0px;}
+}
+@keyframes slideup{
+	0% 	{top: 50px ;}
+	50% {top: 50px;}
+	100% {top: 0;}
+}
