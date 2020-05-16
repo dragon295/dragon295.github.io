@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM-3</title>
+</head>
+<body>
+	<p id="t1">Đây là dòng 1</p>
+
+	<p id="t2">Đây là dòng 2</p>
+
+	<p id="t3">Đây là dòng 3</p>
+	<script type="text/javascript">
+		function copyContent(id1, id2) {
+			let line1 = document.getElementById(id1).innerText;
+			let line2 = document.getElementById(id2).innerText;
+			line1 = line2
+			document.getElementById(id1).innerText = line1;
+		}
+	</script>
+</body>
+</html>
