@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Chelsea Market', cursive;
+	height: 750px;
+	background-image: url(https://i.ytimg.com/vi/ToFWIinTpFU/maxresdefault.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* CSS đăng nhập */
+h1 {
+	text-align: center;
+	padding-top: 50px;
+	color: red;
+}
+.t0 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.t1 {
+	width: 330px;
+	height: 200px;
+	background-color: #808080a1;
+}
+input {
+	width: 93%;
+	height: 28px;
+	margin-bottom: 10px; 
+	margin: 0 10px;
+}
+span {
+	font-size: 25px;
+	color: orange;
+	margin: 10px 15px;
+}
+button {
+	width: 85px;
+	height: 30px;
+	margin: 15px 30px;
+}
+/* CSS đăng kí */
+.t2 {
+	width: 330px;
+	height: 550px;
+	margin-top: 30px;
+	background-color: #808080a1;
+	position: relative;
+}
+.btn {
+	width: 100px;
+	margin-top: 30px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.error {
+	position: absolute;
+	top: 353px;
+	left: 780px;
+	font-size: 21px;
+	color: red;
+	background-color: #00800082
+}
+#erroradress {
+	margin-top: 230px;
+	left: 780px;
+}
+#errorphone {
+	margin-top: 290px;
+	left: 780px;
+}
+#erroremail {
+	margin-top: 355px;
+	left: 780px;
+}
+#errorpassword {
+	margin-top: 415px;
+	left: 780px;
+}
+#errorrepassword {
+	margin-top: 475px;
+	left: 780px;
+}
