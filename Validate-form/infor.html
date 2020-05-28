@@ -39,8 +39,6 @@
 $(document).ready(function(){
 				let url_string = (window.location.href);
                let url = new URL(url_string);
-               	let change = decodeURIComponent(url)
-       				console.log(url)
        		let name = url.searchParams.get("name");
             let day = url.searchParams.get("day") ;
             let month = url.searchParams.get("month");
