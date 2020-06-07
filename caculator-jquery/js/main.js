@@ -29,7 +29,7 @@ function factorial () {
 	while (gt > 0) r *= gt--;
     $('.input').val(eval(r)) 
 }
-function changeTheme(theme) {
+function changeTheme() {
 	let ct = $('body')
 	if ($('body').hasClass('theme')) {
 		$('body').removeClass('theme')
