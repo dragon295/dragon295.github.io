@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+}
+.carousel-item {
+	height: 530px;
+	position: relative;
+}
+.background-1 {
+	width: 8.5%;
+	height: 100%;
+	background: rgb(116,116,116);
+    background: linear-gradient(90deg, rgba(116,116,116,1) 8%, rgba(62,56,56,1) 65%, rgba(40,35,35,1) 93%);
+	position: absolute;
+	top: 0 ;
+	left: 0;
+}
+.background-2 {
+	width: 8.5%;
+	height: 100%;
+	background: rgb(40,35,35);
+    background: linear-gradient(90deg, rgba(40,35,35,1) 7%, rgba(62,56,56,1) 42%, rgba(116,116,116,1) 92%);
+	position: absolute;
+	top: 0;
+	right: 0
+}
+.fa-chevron-right, .fa-chevron-left {
+	font-size: 35px;
+}
+.fa-chevron-right:hover, .fa-chevron-left:hover {
+	color: #00E205;
+}
+.carousel-indicators li {
+	height: 6px;
+}
+.carousel-indicators .active {
+	background-color: #00E205
+}
+.carousel-control-prev {
+	left: -110px;
+}
+.carousel-control-next {
+	right: -105px;
+}
+.infor-sp-2 {
+	background-color: black;
+	position: absolute;
+	top: 100px;
+	z-index: 100;
+
+}
