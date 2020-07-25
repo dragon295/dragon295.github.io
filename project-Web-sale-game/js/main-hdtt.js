@@ -62,3 +62,22 @@ $('#btn-send-email').click(function(event) {
 	alert("Chúng tôi đã nhận được địa chỉ Email của bạn - Tin tức sẽ sớm gửi đến bạn")
 });
 
+
+mybutton = document.querySelector(".btn-top");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+s

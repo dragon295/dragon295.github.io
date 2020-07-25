@@ -1008,6 +1008,36 @@ input.input-check-tk {
 .fa-caret-down-search {
 	font-size: 30px !important;
 }
+@media (min-width: 576px) and (max-width: 767px) {
+	.img-group-tim-kiem {
+		padding-left: 0;
+		padding-top: 30px;
+	}
+	.sp-line-2, .sp-line-1 {
+		padding-left: 0px !important;
+	}
+	.sp-line-2 {
+		margin-top: 0 !important;
+	}
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.img-group-tim-kiem {
+		padding-left: 0;
+		padding-top: 30px;
+	}
+	.sp-line-2 {
+		margin-top: 0 !important;
+	}
+	.kqtk{
+		padding-left: 2rem !important;
+	}
+	.column-green {
+		margin-left: 1rem;
+	}
+	.thanh-search {
+		padding-left: 1rem !important;
+	}
+}
 
 
 
@@ -1263,6 +1293,8 @@ button.navbar-toggler-footer:focus {
 .btn-top:focus {
 	outline: none;
 }
+
+
 
 
 

@@ -638,6 +638,7 @@ button.close:hover {
 }
 .result-search-1 {
 	padding-right: 0;
+	padding-left: 0;
 }
 .text-tim-kiem-2 {
 	font-size: 14px;
@@ -692,6 +693,10 @@ input.input-search-bv:focus {
 	letter-spacing: 0.08em;
 	color: #FFFFFF;
 }
+.bai-bao {
+	padding-right: 0;
+	padding-left: 0;
+}
 .row-green {
 	height: 5px;
 	width: 100%;
@@ -723,11 +728,111 @@ input.input-search-bv:focus {
 		margin-bottom: 0;
 	}
 	.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitch, .text-ketnoi-twitter {
-		font-size: 14px;
+		font-size: 12px;
 		padding-right: 2px;
 		padding-left: 2px;
+		bottom: 8%;
 	}
 }
+@media (min-width: 576px) and (max-width: 767px) {
+	.img-bai-viet-1 {
+		width: 100%;
+		height: 100%;
+	}
+	.link-bv {
+		display: inherit !important;
+	}
+	p.some-text {
+		margin-bottom: 0;
+	}
+	.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitch, .text-ketnoi-twitter {
+		font-size: 16px;
+		bottom: 20%;
+	}
+	.text-ketnoi-fb {
+		left: 10%;
+	}
+	.text-ketnoi-yt {
+		left: 5%;
+	}
+	.text-ketnoi-twitter {
+		left: 5%;
+	}
+	.text-ketnoi-twitch {
+		bottom: 13%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.group-img-ketnoi {
+		height: auto;
+		padding-right: 0;
+		margin-top: 5%;
+		padding-left: 0;
+	}
+	
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.img-bai-viet-1 {
+		width: 100%;
+		height: 100%;
+	}
+	.text-tim-kiem {
+		font-size: 15px;
+	}
+	.result-search-1 {
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.column-green {
+		margin-left: 1rem;
+	}
+	.input-group-tim-kiem {
+	 display: flex;
+	 justify-content: center;
+	}
+	.link-bv {
+		display: inherit !important;
+	}
+	p.some-text {
+		margin-bottom: 0;
+	}
+	.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitch, .text-ketnoi-twitter {
+		font-size: 12px;
+		bottom: 15%;
+	}
+	.text-ketnoi-fb {
+		left: 0%;
+	}
+	.text-ketnoi-yt {
+		left: 0%;
+	}
+	.text-ketnoi-twitter {
+		left: 0%;
+	}
+	.text-ketnoi-twitch {
+		bottom: 8%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.group-img-ketnoi {
+		height: auto;
+		margin-top: 5%;
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.bai-bao {
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.input-group-tim-kiem {
+		width: 100%;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 10%;
+	}
+	
+}
+
 
 
 
@@ -948,6 +1053,34 @@ button.navbar-toggler-footer:focus {
 		margin-bottom: 3%;
 	}
 }  
+
+
+
+
+.btn-top {
+  display: none; 
+  position: fixed; 
+  bottom: 30px;
+  right: 30px; 	
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: #00a6a1; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 6px; 
+  font-size: 18px; 
+  float: right;
+  transition: 3s linear;
+}
+.btn-top:hover {
+	background-color: #037c78;
+}
+.btn-top:focus {
+	outline: none;
+}
+
 
 
 
