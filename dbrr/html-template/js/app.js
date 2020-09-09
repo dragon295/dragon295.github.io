@@ -1,7 +1,6 @@
 
   ReactDOM.render(
- <div>
-  <main>
+    <main>
     <header className="container">
       <h1>Shopping Cart</h1>
       <ul className="breadcrumb">
@@ -16,7 +15,7 @@
           <div className="col left">
             <div className="thumbnail">
               <a href="#">
-                <img src="sp-1.jpg" />
+              <img src="sp-1.jpg"  />
               </a>
             </div>
             <div className="detail">
@@ -29,7 +28,7 @@
           </div>
           <div className="col right">
             <div className="quantity">
-              <input type="number" className="quantity" step="{1}" defaultValue="{2}" />
+              <input type="number" className="quantity" step={1} defaultValue={2} />
             </div>
             <div className="remove">
               <svg version="1.1" className="close" xmlns="//www.w3.org/2000/svg" xmlnsXlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60" xmlSpace="preserve">
@@ -42,7 +41,7 @@
           <div className="col left">
             <div className="thumbnail">
               <a href="#">
-                <img src="sp-2.jpg"  />
+              <img src="sp-2.jpg"  />
               </a>
             </div>
             <div className="detail">
@@ -55,7 +54,7 @@
           </div>
           <div className="col right">
             <div className="quantity">
-              <input type="number" className="quantity" step="{1}" defaultValue="{1}" />
+              <input type="number" className="quantity" step={1} defaultValue={1} />
             </div>
             <div className="remove">
               <svg version="1.1" className="close" xmlns="//www.w3.org/2000/svg" xmlnsXlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60" xmlSpace="preserve">
@@ -69,8 +68,8 @@
     <section className="container">
       <div className="promotion">
         <label htmlFor="promo-code">Have A Promo Code?</label>
-        <input type="text" id="promo-code" /> <button type="button">
-        </button></div>
+        <input type="text" id="promo-code" /> <button type="button" />
+      </div>
       <div className="summary">
         <ul>
           <li>Subtotal <span>$21.97</span></li>
@@ -82,8 +81,7 @@
         <button type="button">Check Out</button>
       </div>
     </section>
-  </main>
-</div>,
+  </main>,
 document.getElementById('text-ml')
   );
 
