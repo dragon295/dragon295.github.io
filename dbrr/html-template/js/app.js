@@ -1,8 +1,12 @@
+function CartHeader() {
+  return <h1>Dau cat moi</h1>
+}
 
   ReactDOM.render(
     <main>
     <header className="container">
       <h1>Shopping Cart</h1>
+      <CartHeader />
       <ul className="breadcrumb">
         <li>Home</li>
         <li>Shopping Cart</li>
