@@ -1,38 +1,25 @@
-function CartHeader() {
-  return <h1>Dau cat moi</h1>
-}
-
-  ReactDOM.render(
-    <main>
-    <header className="container">
-      <h1>Shopping Cart</h1>
-      <CartHeader />
-      <ul className="breadcrumb">
-        <li>Home</li>
-        <li>Shopping Cart</li>
-      </ul>
-      <span className="count">3 items in the bag</span>
-    </header>
+function CartBody(props) {
+  return (
     <section className="container">
       <ul className="products">
         <li className="row">
           <div className="col left">
             <div className="thumbnail">
               <a href="#">
-              <img src="sp-1.jpg"  />
+                <img src={props.products[0].image}/>
               </a>
             </div>
             <div className="detail">
-              <div className="name"><a href="#">PRODUCT ITEM NUMBER 1</a></div>
+              <div className="name"><a href="#">{props.products[0].name}</a></div>
               <div className="description">
-                Description for product item number 1
-              </div>
-              <div className="price">$5.99</div>
+              {props.products[0].description}
+                </div>
+              <div className="price">${props.products[0].price}</div>
             </div>
           </div>
           <div className="col right">
             <div className="quantity">
-              <input type="number" className="quantity" step={1} defaultValue={2} />
+              <input type="number" className="quantity" step={1} defaultValue={props.products[0].quantity} />
             </div>
             <div className="remove">
               <svg version="1.1" className="close" xmlns="//www.w3.org/2000/svg" xmlnsXlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60" xmlSpace="preserve">
@@ -45,20 +32,20 @@ function CartHeader() {
           <div className="col left">
             <div className="thumbnail">
               <a href="#">
-              <img src="sp-2.jpg"  />
+                <img src={props.products[1].image} />
               </a>
             </div>
             <div className="detail">
-              <div className="name"><a href="#">PRODUCT ITEM NUMBER 2</a></div>
+              <div className="name"><a href="#">{props.products[1].name}</a></div>
               <div className="description">
-                Description for product item number 2
-              </div>
-              <div className="price">$9.99</div>
+              {props.products[1].description}
+                </div>
+              <div className="price">${props.products[1].price}</div>
             </div>
           </div>
           <div className="col right">
             <div className="quantity">
-              <input type="number" className="quantity" step={1} defaultValue={1} />
+              <input type="number" className="quantity" step={1} defaultValue={props.products[1].quantity} />
             </div>
             <div className="remove">
               <svg version="1.1" className="close" xmlns="//www.w3.org/2000/svg" xmlnsXlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60" xmlSpace="preserve">
@@ -69,23 +56,5 @@ function CartHeader() {
         </li>
       </ul>
     </section>
-    <section className="container">
-      <div className="promotion">
-        <label htmlFor="promo-code">Have A Promo Code?</label>
-        <input type="text" id="promo-code" /> <button type="button" />
-      </div>
-      <div className="summary">
-        <ul>
-          <li>Subtotal <span>$21.97</span></li>
-          <li>Tax <span>$5.00</span></li>
-          <li className="total">Total <span>$26.97</span></li>
-        </ul>
-      </div>
-      <div className="checkout">
-        <button type="button">Check Out</button>
-      </div>
-    </section>
-  </main>,
-document.getElementById('text-ml')
-  );
-
+  )
+}
