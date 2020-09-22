@@ -740,13 +740,13 @@ a:hover {
 }
 .banner-sp-1, .banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
 	width: 100%;
-	height: 170px;
+	height: 180px;
 }
 .sp-noi-bat {
 	font-size: 18px;
 	color: #ffffff;
 }
-.row-1 {
+.fix-row {
 	margin-bottom: 2%;
 }
 /*///////////////////////////////////////////////// SẢN PHẨM /////////////////////////////////// */
@@ -995,6 +995,15 @@ a:hover {
 	}
 	.tym {
 		width: 26.5%;
+	}
+	.gia-1, .gia-2 {
+		margin-left: 5%;
+	}
+	.giam-gia {
+		top: 2%;
+	}
+	.only {
+		margin-left: 0;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
