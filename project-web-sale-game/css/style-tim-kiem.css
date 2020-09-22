@@ -737,11 +737,9 @@ a:hover {
 	width: 180px;
 	float: left;
 	height: 40px;
+	color: white;
 }
-.banner-sp-1, .banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
-	width: 100%;
-	height: 180px;
-}
+C
 .sp-noi-bat {
 	font-size: 18px;
 	color: #ffffff;
@@ -750,6 +748,14 @@ a:hover {
 	margin-bottom: 2%;
 }
 /*///////////////////////////////////////////////// SẢN PHẨM /////////////////////////////////// */
+.banner-sp-1-1, .banner-sp-1-2, .banner-sp-1-3 {
+	height: 170px;
+	width: 100%;
+}
+.banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
+	width: 100%;
+	height: 150px;
+}
 .gia {
 	height: 44px;
 	width: 100%;
@@ -1005,6 +1011,13 @@ a:hover {
 	.only {
 		margin-left: 0;
 	}
+	.banner-sp-1-1, .banner-sp-1-2, .banner-sp-1-3{
+		width: 100%;
+		height: auto;
+	}
+	.banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
+		height: auto;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.giam-gia {
@@ -1061,10 +1074,17 @@ a:hover {
 	}
 	/*.onclick {
 		margin-left: 25% !important;
-		paddin*/g-top: 0;
-	}
+		padding-top: 0;
+	}*/
 	.tym .icon-c .fa-heart {
 		font-size: 20px;
+	}
+	.banner-sp-1-1, .banner-sp-1-2, .banner-sp-1-3 {
+		width: 100%;
+		height: auto;
+	}
+	.banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
+		height: auto;
 	}
 }
 @media (min-width: 320px) and (max-width: 991px) {
@@ -1099,6 +1119,9 @@ a:hover {
 	.img-nsx-search-ct {
 		display: block;
 	}
+	.banner-sp-1-1, .banner-sp-1-2, .banner-sp-1-3, .banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
+		height: auto;
+	}
 }
 @media (min-width: 320px) and (max-width: 575px) {
 	.tym .icon-c .fa-heart {
@@ -1112,6 +1135,13 @@ a:hover {
 	}
 	.img-nsx-search-ct {
 		display: block;
+	}
+	.banner-sp-1-1, .banner-sp-1-2, .banner-sp-1-3, .banner-sp-2, .banner-sp-3, .banner-sp-4, .banner-sp-5, .banner-sp-6 {
+		height: auto;
+	}
+	.fix-row {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 @media (min-width: 320px) and (max-width: 340px) {

@@ -1033,6 +1033,9 @@ button.link-to:hover {
 	.cart-total {
 		width: 90% !important;
 	}
+	.fix-320 {
+		display: flex;
+	}
 
 }
 
