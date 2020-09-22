@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chi tiết Final Fantasy 7 REMAKE</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="fontawsome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/style-chi-tiet-dt.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <!------------------------------------------------LOGO--------------------------------------------------->
+        <div class="col-4 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
+          <a href="index.html">
+            <img class="img-fluid logo" src="img/dragon-fix.png">
+          </a>
+
+        </div>
+        <!-------------------------------------------NAVBAR-INPUT------------------------------------------------>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 input-navbar pl-4">
+          <nav class="navbar navbar-expand-lg navbar-dark dh">
+            <button class="navbar-toggler button-dropdown" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse collapse-navbar fix" id="navbarTogglerDemo02">
+              <ul class="navbar-nav nav-navbar ">
+                <li class="nav-item item-nav ">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="index.html">Sản phẩm <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item item-nav">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="bai-viet.html">Bài viết</a>
+                </li>
+                <li class="nav-item item-nav">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="huong-dan-thanh-toan.html">Hướng dẫn thanh toán</a>
+                </li>
+                <li class="nav-item item-nav">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="quyen-so-huu.html">Quyền sở hữu-Điều khoản </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="input-group input-header  mb-3 mx-5 my-4 ">
+            <input type="text" class="form-control input-search" placeholder="Tìm kiếm sản phẩm" aria-label="Tìm kiếm sản phẩm" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <form action="tim-kiem.html"><button class="btn btn-success btn-search d-flex justify-content-center align-items-center" type="submit">
+                  <img src="img/search-icon.svg" class="search-icon">
+                </button></form>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------CÁC-BUTTON-------------------------------------------------->
+        <div class="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 some-button d-flex justify-content-center flex-wrap">
+          <button type="button" class="btn btn-success btn-dnhap d-flex justify-content-center align-items-center mr-4 " data-toggle="modal" data-target="#exampleModalCenter" onclick="openModalSignin()">
+            Đăng nhập
+          </button>
+          <div class="modal fade modal-sign" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header-icon">
+                  <button type="button" class="close close-hd" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item w-50 ">
+                      <a class="nav-link link-sign active d-flex justify-content-center" id="pills-sign-in-tab" data-toggle="pill" href="#pills-sign-in" role="tab" aria-controls="pills-sign-in" aria-selected="true">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item w-50">
+                      <a class="nav-link link-sign d-flex justify-content-center " id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Đăng kí</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-sign-in" role="tabpanel" aria-labelledby="pills-sign-in-tab">
+                      <div class="container ">
+                        <div class="text-1">
+                          <span>Đăng nhập với ...</span>
+                        </div>
+                        <div class="icon-group d-flex justify-content-around my-2">
+                          <a href="https://store.steampowered.com/"><img class="icon-sign" src="img/steam-img.jpg"></a>
+                          <a href="https://www.facebook.com/"><img class="icon-sign" src="img/fb.png"></a>
+                          <a href="https://twitter.com/explore"><img class="icon-sign" src="img/twitter-icon.png"></a>
+                          <a href="https://www.twitch.tv/"><img class="icon-sign" src="img/twitch.png"></a>
+                        </div>
+                        <div class="or d-flex justify-content-center">
+                          <div class="line-1 "></div>
+                          <span class="or-1 px-2">Hoặc</span>
+                          <div class="line-2 "></div>
+                        </div>
+                        <div class="text-2">
+                          <span>Đăng nhập với Tài khoản</span>
+                        </div>
+                        <form action="#" id="infor-dn">
+                          <div class="sign-name d-flex flex-column mt-2">
+                            <span class="text-name">Tài khoản</span>
+                            <input type="text" name="Tài-khoản" placeholder="Tên tài khoản" class="sign-input" id="name-tk">
+                            <span id="error-tk" class="error"></span>
+                          </div>
+                          <div class="sign-pass d-flex flex-column mt-2">
+                            <span class="text-pass">Mật khẩu</span>
+                            <input type="password" name="password" placeholder="Mật khẩu" class="sign-input" id="pass-tk">
+                            <span id="errorpass" class="error"></span>
+
+                          </div>
+                          <div class="quen-pass mt-1">
+                            <a href="#"><span class="forgot">Quên mật khẩu ?</span></a>
+                          </div>
+                          <div class="modal-footer px-0 pb-2">
+                            <button type="submit" value="submit" class="btn btn-success btn-sign-in" id="infor-dn">Đăng nhập</button>
+                          </div>
+                        </form>
+                        <div class="remember d-flex">
+                          <input type="checkbox" name="ghi nhớ" class="check">
+                          <span class="text-remember ml-2">Ghi nhớ tôi</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                      <div class="container ">
+                        <div class="text-1">
+                          <span>Đăng kí với ...</span>
+                        </div>
+                        <div class="icon-group d-flex justify-content-around my-2">
+                          <a href="https://store.steampowered.com/"><img class="icon-sign" src="img/steam-img.jpg"></a>
+                          <a href="https://www.facebook.com/"><img class="icon-sign" src="img/fb.png"></a>
+                          <a href="https://twitter.com/explore"><img class="icon-sign" src="img/twitter-icon.png"></a>
+                          <a href="https://www.twitch.tv/"><img class="icon-sign" src="img/twitch.png"></a>
+                        </div>
+                        <div class="or d-flex justify-content-center">
+                          <div class="line-1 "></div>
+                          <span class="or-1 px-2">Hoặc</span>
+                          <div class="line-2 "></div>
+                        </div>
+                        <form action="#" id="infor-dk">
+                          <div class="text-2">
+                            <span>Đăng kí với Tài khoản</span>
+                          </div>
+                          <div class="sign-name d-flex flex-column mt-2">
+                            <span class="text-name">Tài khoản</span>
+                            <input type="text" name="Tài-khoản" placeholder="Tên tài khoản" class="sign-input" id="name">
+                            <span id="error-tk" class="error"></span>
+                          </div>
+                          <div class="sign-pass d-flex flex-column mt-2">
+                            <span class="text-pass">Mật khẩu</span>
+                            <input type="password" name="password" placeholder="Mật khẩu" class="sign-input" id="pass">
+                            <span id="errorpass" class="error"></span>
+                          </div>
+                          <div class="sign-repass d-flex flex-column mt-2">
+                            <span class="text-pass">Nhập lại mật khẩu</span>
+                            <input type="password" name="repassword" placeholder="Mật khẩu" class="sign-input" id="repass">
+                            <span id="errorrepass" class="error"></span>
+                          </div>
+                          <div class="accept mt-2">
+                            <input type="radio" name="Chấp nhận" class="radio-check my-2 py-2">
+                            <div class="pl-4">
+                              <span class="text-accept-1 mt-0">Tôi chấp nhận các</span>
+                              <a href="quyen-so-huu.html" class="text-accept-2 mt-3">Quyền - Điều khoản , chính sách Cookie </a>
+                              <span class="text-accept-3">và</span>
+                              <a href="quyen-so-huu.html" class="text-accept-4">chính sách bảo mật</a>
+                            </div>
+                          </div>
+                          <div class="modal-footer px-0 pb-2">
+                            <button type="submit" value="submit" class="btn btn-success btn-sign-in">Đăng kí</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-success btn-dki d-flex justify-content-center align-items-center w-35 h-30" id="set-up" onclick="openModalRegister()">Đăng kí</button>
+          <div class="w-100 box-gh-yt">
+            <a href="gio-hang.html" class=" box-hv hvr-underline-from-center"><i class="fas fa-shopping-cart" alt="Giỏ hàng"></i>
+              <div class="circle-count-1">
+                <span>2</span>
+              </div>
+            </a>
+            <a href="yeu-thich.html" class="heart-header hvr-underline-from-center">
+              <i class="fas fa-heart" alt="Yêu thích"></i>
+              <div class="circle-count-2">
+                <span>2</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="column-green"></div>
+        <div class="column-black mb-4 d-flex justify-content-center align-items-center">
+          <label class="bv my-0">Chi tiết sản phẩm</label>
+        </div>
+      </div>
+
+      <div class="row mt-3 result-search">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 result-search-1 pr-0 pl-0">
+          <div class="text-tim-kiem-box mb-2 ml-4">
+            <span class="text-tim-kiem mr-1">Final Fantasy 7 REMAKE</span>
+          </div>
+          <div class="line-green mb-3"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 img-banner-sp d-flex justify-content-center pl-0 ">
+          <div class="owl-carousel owl-theme ">
+            <div class="video-wrapper item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ERgrFVhL-n4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="item"><img src="img/game-play-ff-1.jpg" class="img-fluid"></div>
+            <div class="item"><img src="img/game-play-ff-2.jpg" class="img-fluid"></div>
+            <div class="item"><img src="img/game-play-ff-3.jpg" class="img-fluid"></div>
+            <div class="item"><img src="img/game-play-ff-4.jpg" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 all-infor mr-0  ml-0 px-0 ">
+          <div class="the-loai d-flex align-items-center justify-content-center">
+            <h6 class=" mt-2 px-2">Thể loại: Hành động, Nhập vai</h6>
+          </div>
+          <div class="infor-1 d-flex justify-content-between ">
+            <div class="d-flex flex-column part-1 w-50">
+              <div class="d-flex justify-content-center mt-2">
+                <span class="text-white">Nền tảng</span>
+              </div>
+              <div class="d-flex justify-content-center mt-2">
+                <img src="img/ps.png" class="img-fluid img-ps mr-4  pb-2 ">
+                <img src="img/win.png" class="img-fluid img-win pb-2 ">
+              </div>
+            </div>
+            <div class="d-flex flex-column part-2 w-50">
+              <div class="d-flex justify-content-center mt-2">
+                <span class="text-white">Ngày ra mắt</span>
+              </div>
+              <div class="d-flex justify-content-center mt-2">
+                <span class="date d-flex justify-content-center text-green ">24/03/2020</span>
+              </div>
+            </div>
+          </div>
+          <div class="infor-1 d-flex justify-content-between ">
+            <div class="d-flex flex-column part-3 w-50">
+              <div class="d-flex justify-content-center mt-2">
+                <span class="text-white">Nhà sản xuất</span>
+              </div>
+              <div class="d-flex justify-content-center mt-2">
+                <img src="img/square-enix.png" class="img-fluid img-nsx-sp d-flex justify-content-center pb-2 ">
+              </div>
+            </div>
+            <div class="d-flex flex-column part-4 w-50">
+              <div class="d-flex justify-content-center mt-2">
+                <span class="text-white">Nhà phát hành</span>
+              </div>
+              <div class="d-flex justify-content-center mt-2">
+                <img src="img/steam.jpg" class="img-fluid img-nsx-sp d-flex justify-content-center pb-2 ">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="infor-sp h-25">
+              <div class="w-100 d d-flex justify-content-between mt-2">
+                <div class="gia-sp">
+                  <label class="giam-gia-sp float-left px-1 py-2 my-1">-50%</label>
+                  <span class="gia-1-sp d-flex flex-column  ">900.000đ</span>
+                  <span class="gia-2-sp d-flex flex-column">450.000đ</span>
+                </div>
+              </div></a>
+              <div class="group-2-sp d-flex flex-column">
+                <button class="gio-hang-sp px-4 btn btn-success mx-2 mt-4">
+                  <span class="add">THÊM VÀO GIỎ HÀNG</span>
+                  <i class="fa fa-cart-plus icon-pay" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container mt-5 result-search">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 result-search-1 pl-0 pr-0">
+              <div class="text-tim-kiem-box mb-2 ml-4">
+                <span class="text-tim-kiem mr-1">Nội dung sơ lược </span>
+              </div>
+              <div class="line-green mb-3"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 noi-dung-so-luoc">
+              <p class="py-2 text-noi-dung"> - Trò chơi bắt đầu khi Cloud gặp Jessie, Biggs, Wedge và Barret ở lối vào của lò phản ứng Mako số 1 của Midgar sau khi cướp 1 con tàu để đi tới đây. Barret tỏ ra nghi ngờ Cloud cũng như việc hắn không tin bất cứ ai đã từng làm việc cho Shinra. Jessie và những người khác thì lại rất vui khi có Cloud với chuyên môn chiến đấu bên cạnh họ. Barret giải thích rằng lò phản ứng Mako đang hút lấy năng cuộc sống trên Planet và đó là lý do chúng phải bị phá huỷ. Cloud nói rằng anh ta không quan tâm, những việc anh ta làm chỉ là vì tiền.</p>
+
+              <p class="text-noi-dung"> - Cloud đi theo Jessie tiến sâu vào trong lò phản ứng. Cùng với Barret họ đã đánh rất nhiều lính bảo vệ bên trong. Họ bắt đầu phá huỷ từng khu vực một . Cuối cùng họ đến cái máy và bắt đầu tấn công vào máy chỉ huyu, Cloud cảm thấy đau đầu khi nghe 1 tiếng lạ từ đâu đến trong đầu anh ta.<br />
+
+                <p class="text-noi-dung">
+                  - Sau đó chuông báo động kêu lên và tất cả những cái phòng thủ của Mako được chuẩn bị, Cloud và Barret bắt buộc phải đánh nhau với con Robot bảo vệ chỗ đấy. Họ phải chú ý tới thời gian để chạy ra khỏi chỗ đấy vì thời gian không cho phép họ lâu dài , chỉ khoảng 10 phút là chỗ này sẽ nổ tung. Trên con đường chạy về, Cloud thấy Jessie đang bị đau chân, Cloud liền giúp Jessie để mau chóng chạy ra ngoài. SAu khi bom nổ, mọi thứ ở đây được đặt trong tình trạng báo động cao. AVALANCHE đã làm được cái điều đầu tiên khi chống lại Shinra, và bây giờ thì ai cũng an toàn cả. </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="container mt-5 result-search">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 result-search-1 pl-0 pr-0">
+                  <div class="text-tim-kiem-box mb-2 ml-4">
+                    <span class="text-tim-kiem mr-1">Cấu hình trên PC</span>
+                  </div>
+                  <div class="line-green mb-3"></div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cau-hinh py-2">
+                  <span class="title-cau-hinh">TỐI THIỂU</span>
+                  <p class="text-noi-dung mt-2">
+                    - Yêu cầu vi xử lý và hệ điều hành đều chạy 64-bit<br />
+                    - HĐH: WINDOWS® 7, 8.1, 10 (64-BIT Required)<br />
+                    - Bộ xử lý: Intel® Core™ i5-4460 or AMD FX™-6300 or better<br />
+                    - Bộ nhớ: 8 GB RAM<br />
+                    - Đồ họa: NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x with 2GB Video RAM<br />
+                    - DirectX: Phiên bản 11<br />
+                    - Lưu trữ: 26 GB chỗ trống khả dụng.
+                  </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cau-hinh py-2">
+                  <span class="title-cau-hinh">KHUYẾN NGHỊ</span>
+                  <p class="text-noi-dung mb-1 mt-2">
+                    - Yêu cầu vi xử lý và hệ điều hành đều chạy 64-bit <br />
+                    - HĐH: WINDOWS® 7, 8, 8.1, 10 (64-BIT Required) <br />
+                    - Bộ xử lý: Intel® Core™ i7 3770 3.4GHz or AMD equivalent or better <br />
+                    - Bộ nhớ: 8 GB RAM <br />
+                    - Đồ họa: NVIDIA® GeForce® GTX 1060 with 3GB VRAM <br />
+                    - DirectX: Phiên bản 11 <br />
+                    - Lưu trữ: 26 GB chỗ trống khả dụng.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="container mt-5 result-search">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 result-search-1 pl-0 pr-0">
+                      <div class="text-tim-kiem-box mb-2 ml-4">
+                        <span class="text-tim-kiem mr-1">Cấu hình trên Console</span>
+                      </div>
+                      <div class="line-green mb-3"></div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 px-0">
+                      <div class="cau-hinh">
+                        <p class="text-white py-2 pl-3"> - Từ PS4 trở lên</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="column-green"></div>
+                    <div class="column-black mb-4 d-flex justify-content-center align-items-center">
+                      <label class="bv my-0">Sản phẩm khác</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container sp-khac mt-3">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <div class="sp-1">
+                        <a href="chi-tiet-ark.html"><img class="img-fluid banner-sp-1 " src="img/ark-big.jpg"></a>
+                        <div class="infor-sp-1">
+                          <div class="group-1-nb w-100 d d-flex justify-content-between">
+                            <div class="gia">
+                              <label class="giam-gia float-left px-1 py-2 my-1">-45%</label>
+                              <span class="gia-1 d-flex flex-column  ">850.000đ</span>
+                              <span class="gia-2 d-flex flex-column">467.500đ</span>
+                            </div>
+                            <div class="img-nsx">
+                              <img class="label-nsx img-fluid" src="img/steam.png">
+                            </div>
+                          </div>
+                          <div class="group-2 d-flex justify-content-between">
+                            <button class="gio-hang px-4 btn btn-success">
+                              <span class="name-gh-1">THÊM VÀO GIỎ HÀNG</span>
+                              <i class="fa fa-cart-plus icon-pay-1" aria-hidden="true"></i>
+                            </button>
+                            <button class=" tym btn btn-success ">
+                              <div class="icon-c">
+                                <i class="fa af fa-heart button-heart" aria-hidden="true"></i>
+                                <i class="fa af fa-check" aria-hidden="true"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!------------------------------------------------ SP-2 ------------------------------------------------->
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <div class="sp-2">
+                        <a href="chi-tiet-mt.html"><img class="img-fluid banner-sp-2 " src="img/mt-big.jpg"></a>
+                        <div class="infor-sp-2">
+                          <div class="group-1-nb w-100 d d-flex justify-content-between">
+                            <div class="gia">
+                              <label class="giam-gia float-left px-1 py-2 my-1">-15%</label>
+                              <span class="gia-1 d-flex flex-column  ">600.000đ</span>
+                              <span class="gia-2 d-flex flex-column">510.500đ</span>
+                            </div>
+                            <div class="img-nsx">
+                              <img class="label-nsx img-fluid" src="img/steam.png">
+                            </div>
+                          </div>
+                          <div class="group-2 d-flex justify-content-between">
+                            <button class="gio-hang px-4 btn btn-success">
+                              <span class="name-gh-2">THÊM VÀO GIỎ HÀNG</span>
+                              <i class="fa fa-cart-plus icon-pay-2" aria-hidden="true"></i>
+                            </button>
+                            <button class=" tym btn btn-success ">
+                              <div class="icon-c">
+                                <i class="fa af fa-heart button-heart" aria-hidden="true"></i>
+                                <i class="fa af fa-check" aria-hidden="true"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!------------------------------------------------- SP-3 ------------------------------------------------>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                      <div class="sp-3">
+                        <a href="chi-tiet-assasin.html"><img class="img-fluid banner-sp-3 " src="img/assasin.png"></a>
+                        <div class="infor-sp-3">
+                          <div class="group-1-nb w-100 d d-flex justify-content-between">
+                            <div class="gia">
+                              <span class="gia-2 w-100 d-flex flex-column my-2 pt-1 only">396.000đ</span>
+                            </div>
+                            <div class="img-nsx">
+                              <img class="label-nsx img-fluid" src="img/steam.png">
+                            </div>
+                          </div>
+                          <div class="group-2 d-flex justify-content-between">
+                            <button class="gio-hang px-4 btn btn-success">
+                              <span class="name-gh-3">THÊM VÀO GIỎ HÀNG</span>
+                              <i class="fa fa-cart-plus icon-pay-3" aria-hidden="true"></i>
+                            </button>
+                            <button class=" tym btn btn-success ">
+                              <div class="icon-c">
+                                <i class="fa af fa-heart button-heart" aria-hidden="true"></i>
+                                <i class="fa af fa-check" aria-hidden="true"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+  </section>
+
+  <div class="modal modal-confirm" tabindex="-1" role="dialog">
+    <div class="modal-dialog d-flex justify-content-center" role="document">
+      <div class="modal-content-alert">
+        <div class="modal-body">
+          <div class="d-flex justify-content-center mb-3">
+            <img src="img/check.png" class="img-tick">
+          </div>
+          <p class="text-center">Sản phẩm đã được thêm vào giỏ hàng</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid mt-5">
+      <div class="row ">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 infor-1">
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap navbar-footer ">
+            <span class="navbar-brand navbar-brand-footer">Thông tin cửa hàng</span>
+            <button class="navbar-toggler navbar-toggler-footer " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-collapse-footer" id="navbarSupportedContent">
+              <ul class="navbar-nav fix-2">
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer " href="quyen-so-huu.html">Quyền sở hữu</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer" href="quyen-so-huu.html">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer" href="quyen-so-huu.html">Chính sách cookie</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer" href="quyen-so-huu.html">Chính sách hoàn tiền</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <span class="nav-text py-2">Giờ mở cửa: từ 8h-22h từ thứ 2 đến thứ 6</span>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <span class="nav-text  py-2">Địa chỉ: 121/90 Kim Ngưu, Hai Bà Trưng, Hà Nội</span>
+                </li>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 infor-2">
+          <nav class="navbar navbar-expand-lg  d-flex flex-wrap column-1 navbar-footer">
+            <span class="navbar-brand navbar-brand-footer">Liên hệ - Hỗ trợ</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-1 " id="navbarNav">
+              <ul class="navbar-nav fix-2">
+                <li class="nav-item nav-item-footer ">
+                  <span class="nav-text py-2">Số điện thoại CSKH: 19000091</span>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <span class="nav-text py-2">Email: luongduongduc4@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap column-2 navbar-footer ">
+            <span class="navbar-brand navbar-brand-footer ketnoi">Kết nối với chúng tôi</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-2" id="navbarNavDropdown">
+              <ul class="navbar-nav navbar-nav-ketnoi ">
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://www.facebook.com/"><img class="icon mx-3" src="img/fb.png"></a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://www.youtube.com/"><img class="icon mx-3" src="img/youtube-icon.png"></a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://twitter.com/explore/"><img class="icon mx-3" src="img/twitter-icon.png"></a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://www.twitch.tv/"><img class="icon mx-3" src="img/twitch.png"></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 ">
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap column-3 navbar-footer ">
+            <span class="navbar-brand navbar-brand-footer nhan-tin ">Đăng kí nhận tin</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-3" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-nav-nhantin">
+                <div class="input-group input-footer mb-3">
+                  <input type="text" class="form-control input-send" placeholder="Email của bạn" aria-label="Email của bạn" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-success btn-send d-flex justify-content-center align-items-center" id="btn-send-email" type="button">Gửi</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap column-4 navbar-footer">
+            <span class="navbar-brand navbar-brand-footer danh-gia">G.O.S shop được đánh giá</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-4" id="navbarText">
+              <ul class="navbar-nav navbar-nav-danhgia ">
+                <li class="nav-item nav-item-footer ">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 so-huu d-flex justify-content-center align-items-center">
+          <span>Trang Web thuộc quyền sở hữu của công ty TheSad</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="gio-hang.html">
+    <button class="btn-shopping" title="Go to shopping cart">
+      <i class="fa fa-shopping-cart cart-to" aria-hidden="true"></i>
+      <div class="circle-count-fixed">
+        <span>2</span>
+      </div>
+    </button>
+  </a>
+
+  <button class="btn-top" title="Go to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="owlcarousel/owl.carousel.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main-chi-tiet.js"></script>
+</body>
+
+</html>

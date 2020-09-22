@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chi tiết bài viết</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fontawsome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/style-bai-viet-chi-tiet.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <!------------------------------------------------LOGO--------------------------------------------------->
+        <div class="col-4 col-sm-6 col-md-6 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
+          <a href="index.html">
+            <img class="img-fluid logo" src="img/dragon-fix.png">
+          </a>
+
+        </div>
+        <!-------------------------------------------NAVBAR-INPUT------------------------------------------------>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 input-navbar pl-4">
+          <nav class="navbar navbar-expand-lg navbar-dark dh">
+            <button class="navbar-toggler button-dropdown" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse collapse-navbar fix" id="navbarTogglerDemo02">
+              <ul class="navbar-nav nav-navbar ">
+                <li class="nav-item item-nav ">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="index.html">Sản phẩm <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item item-nav">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="bai-viet.html">Bài viết</a>
+                </li>
+                <li class="nav-item item-nav">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="huong-dan-thanh-toan.html">Hướng dẫn thanh toán</a>
+                </li>
+                <li class="nav-item item-nav">
+                  <a class="nav-link  px-0 link-nav hvr-underline-from-center" href="quyen-so-huu.html">Quyền sở hữu-Điều khoản </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="input-group input-header  mb-3 mx-5 my-4 ">
+            <input type="text" class="form-control input-search" placeholder="Tìm kiếm sản phẩm" aria-label="Tìm kiếm sản phẩm" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <form action="tim-kiem.html"><button class="btn btn-success btn-search d-flex justify-content-center align-items-center" type="submit">
+                  <img src="img/search-icon.svg" class="search-icon">
+                </button></form>
+            </div>
+          </div>
+        </div>
+        <!-------------------------------------------CÁC-BUTTON-------------------------------------------------->
+        <div class="col-8 col-sm-6 col-md-6 col-lg-3 col-xl-3 some-button d-flex justify-content-center flex-wrap">
+          <button type="button" class="btn btn-success btn-dnhap d-flex justify-content-center align-items-center mr-4 " data-toggle="modal" data-target="#exampleModalCenter" onclick="openModalSignin()">
+            Đăng nhập
+          </button>
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header-icon">
+                  <button type="button" class="close close-hd" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item w-50 ">
+                      <a class="nav-link link-sign active d-flex justify-content-center" id="pills-sign-in-tab" data-toggle="pill" href="#pills-sign-in" role="tab" aria-controls="pills-sign-in" aria-selected="true">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item w-50">
+                      <a class="nav-link link-sign d-flex justify-content-center " id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Đăng kí</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-sign-in" role="tabpanel" aria-labelledby="pills-sign-in-tab">
+                      <div class="container ">
+                        <div class="text-1">
+                          <span>Đăng nhập với ...</span>
+                        </div>
+                        <div class="icon-group d-flex justify-content-around my-2">
+                          <a href="https://store.steampowered.com/"><img class="icon-sign" src="img/steam-img.jpg"></a>
+                          <a href="https://www.facebook.com/"><img class="icon-sign" src="img/fb.png"></a>
+                          <a href="https://twitter.com/explore"><img class="icon-sign" src="img/twitter-icon.png"></a>
+                          <a href="https://www.twitch.tv/"><img class="icon-sign" src="img/twitch.png"></a>
+                        </div>
+                        <div class="or d-flex justify-content-center">
+                          <div class="line-1 "></div>
+                          <span class="or-1 px-2">Hoặc</span>
+                          <div class="line-2 "></div>
+                        </div>
+                        <div class="text-2">
+                          <span>Đăng nhập với Tài khoản</span>
+                        </div>
+                        <form action="#" id="infor-dn">
+                          <div class="sign-name d-flex flex-column mt-2">
+                            <span class="text-name">Tài khoản</span>
+                            <input type="text" name="Tài-khoản" placeholder="Tên tài khoản" class="sign-input" id="name-tk">
+                            <span id="error-tk" class="error"></span>
+                          </div>
+                          <div class="sign-pass d-flex flex-column mt-2">
+                            <span class="text-pass">Mật khẩu</span>
+                            <input type="password" name="password" placeholder="Mật khẩu" class="sign-input" id="pass-tk">
+                            <span id="errorpass" class="error"></span>
+
+                          </div>
+                          <div class="quen-pass mt-1">
+                            <a href="#"><span class="forgot">Quên mật khẩu ?</span></a>
+                          </div>
+                          <div class="modal-footer px-0 pb-2">
+                            <button type="submit" value="submit" class="btn btn-success btn-sign-in" id="infor-dn">Đăng nhập</button>
+                          </div>
+                        </form>
+                        <div class="remember d-flex">
+                          <input type="checkbox" name="ghi nhớ" class="check">
+                          <span class="text-remember ml-2">Ghi nhớ tôi</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                      <div class="container ">
+                        <div class="text-1">
+                          <span>Đăng kí với ...</span>
+                        </div>
+                        <div class="icon-group d-flex justify-content-around my-2">
+                          <a href="https://store.steampowered.com/"><img class="icon-sign" src="img/steam-img.jpg"></a>
+                          <a href="https://www.facebook.com/"><img class="icon-sign" src="img/fb.png"></a>
+                          <a href="https://twitter.com/explore"><img class="icon-sign" src="img/twitter-icon.png"></a>
+                          <a href="https://www.twitch.tv/"><img class="icon-sign" src="img/twitch.png"></a>
+                        </div>
+                        <div class="or d-flex justify-content-center">
+                          <div class="line-1 "></div>
+                          <span class="or-1 px-2">Hoặc</span>
+                          <div class="line-2 "></div>
+                        </div>
+                        <form action="#" id="infor-dk">
+                          <div class="text-2">
+                            <span>Đăng kí với Tài khoản</span>
+                          </div>
+                          <div class="sign-name d-flex flex-column mt-2">
+                            <span class="text-name">Tài khoản</span>
+                            <input type="text" name="Tài-khoản" placeholder="Tên tài khoản" class="sign-input" id="name">
+                            <span id="error-tk" class="error"></span>
+                          </div>
+                          <div class="sign-pass d-flex flex-column mt-2">
+                            <span class="text-pass">Mật khẩu</span>
+                            <input type="password" name="password" placeholder="Mật khẩu" class="sign-input" id="pass">
+                            <span id="errorpass" class="error"></span>
+                          </div>
+                          <div class="sign-repass d-flex flex-column mt-2">
+                            <span class="text-pass">Nhập lại mật khẩu</span>
+                            <input type="password" name="repassword" placeholder="Mật khẩu" class="sign-input" id="repass">
+                            <span id="errorrepass" class="error"></span>
+                          </div>
+                          <div class="accept mt-2">
+                            <input type="radio" name="Chấp nhận" class="radio-check my-2 py-2">
+                            <div class="pl-4">
+                              <span class="text-accept-1 mt-0">Tôi chấp nhận các</span>
+                              <a href="quyen-so-huu.html" class="text-accept-2 mt-3">Quyền - Điều khoản , chính sách Cookie </a>
+                              <span class="text-accept-3">và</span>
+                              <a href="quyen-so-huu.html" class="text-accept-4">chính sách bảo mật</a>
+                            </div>
+                          </div>
+                          <div class="modal-footer px-0 pb-2">
+                            <button type="submit" value="submit" class="btn btn-success btn-sign-in">Đăng kí</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-success btn-dki d-flex justify-content-center align-items-center w-35 h-30" id="set-up" onclick="openModalRegister()">Đăng kí</button>
+          <div class="w-100 box-gh-yt">
+            <a href="gio-hang.html" class=" box-hv hvr-underline-from-center"><i class="fas fa-shopping-cart" alt="Giỏ hàng"></i>
+              <div class="circle-count-1">
+                <span>2</span>
+              </div>
+            </a>
+            <a href="yeu-thich.html" class="heart-header hvr-underline-from-center">
+              <i class="fas fa-heart" alt="Yêu thích"></i>
+              <div class="circle-count-2">
+                <span>2</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-between">
+      <div class="title-web d-flex">
+        <div class="column-green"></div>
+        <div class="column-black float-left mb-4 d-flex justify-content-center align-items-center">
+          <label class="bv my-0">Chi tiết bài viết</label>
+        </div>
+      </div>
+      <div class="input-group input-group-tim-kiem mb-3">
+        <input type="text" class="form-control input-search-bv" placeholder="Tìm kiếm bài viết" aria-label="Tìm kiếm bài viết" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <form action="tim-kiem-bai-viet.html">
+            <button class="btn btn-success btn-tim-kiem" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 content px-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 result-search-1 px-0">
+          <div class="text-tim-kiem mb-2 mt-3">
+            <span class="text-search ml-3">Bài viết /</span>
+            <span class="text-search-2 mr-1">Final Fantasy 7 REMAKE</span>
+          </div>
+          <div class="line-green mb-4"></div>
+        </div>
+        <div class="title-content">
+          <h4>Final Fantasy 7 REMAKE liệu cốt truyện có bị thay đổi ?</h4>
+        </div>
+        <div class="mt-3 ">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          <span class="date ">26/6/2020</span>
+          <i class="fa fa-id-card" aria-hidden="true"></i>
+          <span class="name pb-2">Choke</span>
+        </div>
+        <div class="content-1 mt-3">
+          <img src="img/ff7-4.jpg" class="img-fluid mb-3">
+          <p class="text-content">Có thể khẳng định rằng, Square Enix đã đầu tư rất kỹ lưỡng cho cốt truyện của FF7 Remake để vừa giữ được cái hồn của tựa game gốc, vừa mang tới những trải nghiệm mới cho game thủ.<br /></p>
+
+          <p class="text-content">Lưu ý, trong bài chứa rất nhiều spoiler, nên nếu bạn vẫn chưa hoàn thành Final Fantasy 7 Remake thì không nên đọc tiếp để tránh bị ảnh hưởng tới trải nghiệm khi chơi.<br /></p>
+
+          <p class="text-content">Có thể nói rằng, kể từ Avenger Endgame, khái niệm đa vũ trụ và dòng thời gian song song đã trở nên quen thuộc hơn rất nhiều đối với khán giả đại chúng. Lần này, Final Fantasy 7 Remake cũng sử dụng khái niệm này để tạo ra những khía cạnh mới mẻ hơn so với tác phẩm gốc. Tạm không nói đến sự thay đổi này liệu có làm hài lòng các fan gạo cội, hay chỉ khiến họ thất vọng hơn. Trong bài phân tích này, tất cả đều tập trung vào mặt cốt truyện của game mới.<br /></p>
+        </div>
+        <div class="content-1 mt-3">
+          <div class="mb-3"><span class="text-header">Dòng thời gian song song</span></div>
+          <img src="img/bai-viet-ff7-1.jpg" class="img-fluid mb-3">
+          <p class="text-content">Đầu tiên, cần nhắc lại về khái niệm của dòng thời gian song song. Một dòng thời gian song song sẽ xuất hiện khi có một người trở lại và thay đổi các sự kiện trong quá khứ, từ đó dòng thời sẽ tách thành một dòng thời gian mới, tồn tại song song với dòng thời gian cũ. Có tổng cộng 3 dòng thời gian song song được đề cập đến trong Final Fantasy 7 Remake, đó là dòng thời gian của tác phẩm gốc (trong bài gọi là Dòng thời gian gốc), dòng thời gian của FF7 Remake (Dòng thời gian Remake) và Dòng thời gian của Zack. Game cũng tạo ra một khái niệm mới, đó là các Whisper, những “sinh vật” tồn tại với nhiệm vụ khiến mọi dòng thời gian đều phát triển dựa theo dòng thời gian gốc, nguyên nhân sẽ được đề cập tới ở phần sau.<br /></p>
+
+          <img src="img/bai-viet-ff7-5.jpg" class="img-fluid mb-3">
+          <p class="text-content">Như vậy, Dòng thời gian Remake xuất hiện như thế nào? Hết thảy bắt đầu thay đổi khi Sephiroth sử dụng ảo giác để tiếp xúc với Cloud trong Chương 2 của FF7 Remake và tạo ra dòng thời gian này. Vì tiếp xúc với Sephiroth, hành trình của Cloud đã chậm hơn và chút nữa bỏ lỡ cuộc gặp mặt “tình cờ” với Aerith. Lúc này, các Whisper xuất hiện để cầm chân cô nàng và đảm bảo cả 2 sẽ gặp nhau. Trong dòng thời gian này, Sephiroth cũng thành công trong việc cướp “mẹ” của mình là Jenova khỏi tay Shinra, đồng thời cũng giết chết chủ tịch của Shinra và đâm Barret gần chết. Cuối game, nhóm của Cloud đánh bại thủ lĩnh của các Whisper, rời khỏi Midgard và dẫn câu chuyện theo một hướng đi hoàn toàn mới (tách hoàn toàn khỏi Dòng thời gian gốc).</p>
+        </div>
+        <div class="content-1 mt-3">
+          <div class="mb-3"><span class="text-header">Nhân vật quan trọng</span></div>
+          <div class="mb-3"><span class="text-header">1 – Whisper:</span></div>
+          <img src="img/bai-viet-ff7-4.jpg" class="img-fluid mb-3">
+          <p class="text-content">Như đã nói ở trên, Whisper là những sinh vật tồn tại để đảm bảo mọi dòng thời gian đều phát triển giống như Dòng thời gian gốc. Tại sao? Và ai tạo ra chúng? Câu trả lời chính là Ý thức của hành tinh Gaia (Gaia). Gaia có thể xem là một dạng tồn tại vô cùng hùng mạnh, có thể thông qua lifestream (dòng sinh mệnh) để cảm giác được toàn bộ ký ức của mọi sinh vật từng tồn tại trên hành tinh này, dù là ở bất kỳ dòng thời gian nào. Hãy nhớ, mọi sinh vật sinh sống trên Gaia, khi chết đi linh hồn đều sẽ hòa vào lifestream. Gaia có ý thức tự bảo vệ mình rất mạnh mẽ, ví dụ như trong FF7 gốc, chính Gaia đã tạo ra các Weapon để chống lại Jenova. Còn ở trong FF7 Remake, ý thức tự bảo vệ ấy đã tạo ra các Whisper để đảm bảo mọi chuyện sẽ diễn ra theo Dòng thời gian gốc? Vì sao? Vì trong Dòng thời gian gốc, dù các nhân vật chính đã phải trải qua đủ loại bi kịch (bao gồm cái chết của Aerith), nhưng cuối cùng, Gaia vẫn tồn tại. Với Gaia, đây là kết thúc tốt nhất, nên Gaia muốn đảm bảo cái kết này sẽ diễn ra. Ngoài ra, nên chú ý rằng Gaia là trung lập, mục đích của Gaia chỉ là tồn tại mà thôi. Vì thế, Whisper cũng là trung lập (nên trong game có lúc Whisper giúp đỡ nhân vật chính, có lúc ngăn cản nhân vật chính, tất cả đều là để sửa chữa các dòng thời gian mới về với Dòng thời gian gốc).<br /></p>
+        </div>
+        <div class="content-1 mt-3">
+          <div class="mb-3"><span class="text-header">2 – Sephiroth</span></div>
+          <img src="img/bai-viet-ff7-2.jpg" class="img-fluid mb-3">
+          <p class="text-content">Sephiroth thực sự là người đứng sau mọi chuyện trong FF7 Remake. Chúng ta vẫn chưa biết bằng cách nào, nhưng hiện hắn đang sở hữu khả năng xuyên qua thời không, để từ đó tạo ra các dòng thời gian mới. Rất có thể khả năng này xuất hiện sau khi hắn bị đánh bại vào cuối game gốc. Không cam tâm chết đi, lại thu được khả năng xuyên qua thời không, hắn muốn thay đổi vận mệnh.<br /></p>
+
+          <p class="text-content">Để thay đổi vận mệnh, đối thủ trực tiếp nhất của Sephiroth chính là các Whisper. Tuy nhiên, xuyên suốt cả game, hắn và Whisper gần như không hề tương tác với nhau. Nguyên nhân, có thể là do sau khi có được năng lực xuyên qua thời không, hắn đã tách mình khỏi Gaia nên các sinh vật do Gaia tạo ra không thể tương tác được với hắn và ngược lại. Bằng chứng là lời của Aerith vào trước cuộc chiến cuối game: “Chúng nó (Whisper)... lời của chúng... chúng không chạm được vào hắn (Sephiroth)”. Vì thế, cả 2 chỉ có thể gián tiếp “phá đám” lẫn nhau. Ví dụ như lúc Whisper cứu sống Barret. Chúng không thể trực tiếp ngăn cản Sephiroth ám sát Barret, nhưng trong Dòng thời gian gốc, Barret không chết, nên chúng phải cứu sống anh ta để đảm bảo mọi chuyện vẫn diễn ra theo nguyên gốc. Ngược lại, Sephiroth cũng không thể trực tiếp tiêu diệt Whisper, vì thế, hắn nghĩ ra âm mưu “mượn đao giết người”. Đao ở đây, còn ai khác ngoài Cloud và nhóm bạn.<br /></p>
+        </div>
+        <div class="content-1 mt-3">
+          <div class="mb-3"><span class="text-header">3 – Aerith</span></div>
+          <img src="img/bai-viet-ff7-3.jpg" class="img-fluid mb-3">
+          <p class="text-content">Từ biểu hiện của Aerith trong FF7 Remake, có thể thấy rằng cô cũng thấy được phần nào kết cục của mình trong Dòng thời gian gốc. Đây có thể là do khả năng có thể cảm giác được với lifestream nằm trong dòng máu Cetra của cô. Cũng nhờ thế, Aerith hiểu được vai trò của các Whisper và mối quan hệ giữa chúng cùng Sephiroth (cuối game cô đã giải thích điều này với Cloud và nhóm bạn).<br /></p>
+
+          <p class="text-content">Động cơ của Aerith có sự thay đổi theo tiến trình của game, với cột mốc là thời điểm cô nhận ra Sephiroth có thể tạo ra dòng thời gian mới. Trước thời điểm ấy, Aerith chỉ muốn tuân theo “định mệnh” đã được định sẵn: bán hoa, gặp Cloud, tử vong. Bởi vì Aerith biết rõ định mệnh ấy của mình sẽ đi kèm với kết cục Gaia được cứu vớt, thế giới yên bình, vô số sinh mạng được bảo vệ, chính nghĩa chiến thắng gian tà. Thân là người mang dòng máu Ancient, hy sinh bản thân để cứu vớt Gaia có vẻ là một định mệnh không tồi, nên nàng vẫn luôn muốn dòng thời gian chảy đúng theo tiến trình của tựa game gốc. Cũng vì thế, cô đã kéo Cloud lại trước khi anh bước vào Ngã Tư Vận Mệnh ở cuối game. Tuy nhiên, lúc này, cô cũng dần nhận ra “định mệnh” của Dòng thời gian gốc đã không đủ sức để đánh bại một Sephiroth có khả năng “xuyên không”. Sau một khoảng thời gian do dự, Aerith cuối cùng cũng quyết định đứng lên để chống lại “định mệnh” để viết lên một kết cục mới. Lúc này, Whisper chính thức trở thành kẻ cản đường cả Sephiroth và nhóm của Cloud (đều muốn thay đổi vận mệnh). Và tất nhiên, chống lại cả nhân vật chính lẫn phản diện chính thì “ăn hành” là điều không thể tránh.<br /></p>
+        </div>
+        <div class="content-1 mt-3">
+          <p class="text-content">Trên đây là 1 số chia sẻ của bọn mình về Final Fantasy 7 REMAKE, các bạn có thể xem thêm những bài viết khác ở phía dưới. Các bạn cũng có thể đặt mua game <a class="link-page" href="chi-tiet-ff7.html">ở đây.</a><br /></p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 result-search-1 px-0">
+          <div class="text-tim-kiem mb-2 mt-5">
+            <span class="text-search ml-3">BÀI VIẾT LIÊN QUAN</span>
+          </div>
+          <div class="line-green mb-4"></div>
+        </div>
+        <div class="d-flex flex-wrap">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column">
+            <a href="chi-tiet-baiviet-desperados-3.html" class="link-bv">
+              <img src="img/desperados.png" class="img-fluid img-bai-viet-1 ">
+              <div class="column-green-2"></div>
+              <div class="review-noi-dung px-3 py-3">
+                <span class="title-review">Đánh giá Desperados 3: Thứ “mai thúy” của thể loại chiến thuật</span>
+                <div class="article mt-2 ">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <span class="date mr-3">26/6/2020</span>
+                  <i class="fa fa-id-card" aria-hidden="true"></i>
+                  <span class="date pb-2">Canna</span>
+                </div>
+                <div class="mt-2">
+                  <p class="some-text">Lối chơi cơ bản của Desperados 3 vẫn tuân theo quy luật của dòng game RTT cổ điển, bạn sẽ được giao một hoặc nhiều nhiệm vụ khác nhau trong một màn chơi, chủ yếu là đi từ điểm A tới điểm B...</p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column">
+            <a href="chi-tiet-baiviet-ori.html" class=" link-bv">
+              <img src="img/ori.jpg" class="img-fluid img-bai-viet-1">
+              <div class="column-green-2"></div>
+              <div class="review-noi-dung py-3 px-3">
+                <span class="title-review">Ori and the Will of the Wisps được đánh giá như thế nào ?</span>
+                <div class="article mt-2  ">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <span class="date mr-3">26/6/2020</span>
+                  <i class="fa fa-id-card" aria-hidden="true"></i>
+                  <span class="date pb-2">BLYAT</span>
+                </div>
+                <div class="some-text mt-2">
+                  <p class="some-text">Là phần tiếp theo của một tựa game tuyệt vời cũng như cực kỳ được mong chờ, Ori and the Will of the Wisps là định nghĩa của nghệ thuật trong cách làm game hiện đại là như thế nào. Không hề có những màn cháy nổ rầm trời hay các cốt truyện vĩ đại phía sau...</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 float-right group-img-ketnoi h-100">
+        <div class="mb-3">
+          <ul class="list-group">
+            <li class="list-group-item d-flex tag-head">
+              <div class="tag-column mr-2"></div>Bài viết mới nhất
+            </li>
+            <li class="list-group-item news d-flex">
+              <div class="tag-circle mr-2"></div><a href="chi-tiet-baiviet-death-stranding-2.html" class="link-news">Những điểm thú vị trong cốt truyện Death Stranding</a>
+            </li>
+            <li class="list-group-item news d-flex">
+              <div class="tag-circle mr-2"></div><a href="chi-tiet-baiviet-desperados-3.html" class="link-news">Đánh giá Desperados 3: Thứ “mai thúy” của thể loại chiến thuật</a>
+            </li>
+            <li class="list-group-item news d-flex">
+              <div class="tag-circle mr-2"></div><a href="chi-tiet-baiviet-gathering-storm.html" class="link-news">Gathering Storm VI lối chơi có gì đặc biệt so với bản trước ?</a>
+            </li>
+            <li class="list-group-item news d-flex">
+              <div class="tag-circle mr-2"></div><a href="chi-tiet-baiviet-ori.html" class="link-news">Ori and the Will of the Wisps được đánh giá như thế nào ?</a>
+            </li>
+            <li class="list-group-item news d-flex">
+              <div class="tag-circle mr-2"></div><a href="chi-tiet-baiviet-ff7.html" class="link-news">Final Fantasy 7 REMAKE liệu cốt truyện có bị thay đổi ?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-3">
+          <ul class="list-group">
+            <li class="list-group-item d-flex tag-head">
+              <div class="tag-column mr-2"></div>Tag nổi bật
+            </li>
+            <li class="list-group-item">
+              <a href="tag-death-stranding.html"><button class="px-2 py-1 btn-tag-0">Death-Stranding</button></a>
+              <a href="tag-ff7.html"><button class="px-2 py-1 btn-tag-1 ml-2">FF7</button></a>
+              <a href="tag-desperados.html"><button class="px-2 py-1 btn-tag-2 ml-2">Desperados</button></a>
+            </li>
+            <li class="list-group-item pt-2">
+              <a href="tag-farcry.html"><button class="px-2 py-1 btn-tag-3">FarCry</button></a>
+              <a href="tag-gathering.html"><button class="px-2 py-1 btn-tag-4 ml-2">Gathering</button></a>
+              <a href="tag-detroit.html"><button class="px-2 py-1 btn-tag-5 ml-2">Detroit</button></a>
+              <a href="tag-ori.html"><button class="px-2 py-1 btn-tag-6 ml-2">Ori</button></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="img-fb">
+          <a href="https://www.facebook.com/" class="link-bv">
+            <img src="img/walpaper-fb.jpg" class="img-fluid ">
+            <div class="row-green"></div>
+            <span class="text-ketnoi-fb">Kết nối với chúng tôi trên FaceBook để nhận ưu đãi từ shop</span>
+          </a>
+        </div>
+
+        <div class="img-yt">
+          <a href="https://www.youtube.com/" class="link-bv">
+            <img src="img/youtube-img.png" class="img-fluid">
+            <div class="row-green"></div>
+            <span class="text-ketnoi-yt">Theo dõi chúng tôi trên Youtube để xem những giải đấu độc quyền </span>
+          </a>
+        </div>
+
+        <div class="img-twitter">
+          <a href="https://twitter.com/explore" class="link-bv">
+            <img src="img/twitter.jpg" class="img-fluid">
+            <div class="row-green"></div>
+            <span class="text-ketnoi-twitter">Theo dõi chúng tôi trên Twitter nhận thông tin về game sắp ra mắt </span>
+          </a>
+        </div>
+
+        <div class="img-twitch">
+          <a href="https://www.twitch.tv/" class="link-bv">
+            <img src="img/twitch-2.jpg" class="img-fluid">
+            <div class="row-green"></div>
+            <span class="text-ketnoi-twitch">Kết nối với chúng tôi trên Twitch để theo dõi những buổi livestream game mới nhất </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+  <footer>
+    <div class="container-fluid mt-5">
+      <div class="row ">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 infor-1">
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap navbar-footer ">
+            <span class="navbar-brand navbar-brand-footer">Thông tin cửa hàng</span>
+            <button class="navbar-toggler navbar-toggler-footer " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse navbar-collapse-footer" id="navbarSupportedContent">
+              <ul class="navbar-nav fix-2">
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer " href="quyen-so-huu.html">Quyền sở hữu</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer" href="quyen-so-huu.html">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer" href="quyen-so-huu.html">Chính sách cookie</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-link nav-link-footer" href="quyen-so-huu.html">Chính sách hoàn tiền</a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <span class="nav-text py-2">Giờ mở cửa: từ 8h-22h từ thứ 2 đến thứ 6</span>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <span class="nav-text  py-2">Địa chỉ: 121/90 Kim Ngưu, Hai Bà Trưng, Hà Nội</span>
+                </li>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 infor-2">
+          <nav class="navbar navbar-expand-lg  d-flex flex-wrap column-1 navbar-footer">
+            <span class="navbar-brand navbar-brand-footer">Liên hệ - Hỗ trợ</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-1 " id="navbarNav">
+              <ul class="navbar-nav fix-2">
+                <li class="nav-item nav-item-footer ">
+                  <span class="nav-text py-2">Số điện thoại CSKH: 19000091</span>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <span class="nav-text py-2">Email: luongduongduc4@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap column-2 navbar-footer ">
+            <span class="navbar-brand navbar-brand-footer ketnoi">Kết nối với chúng tôi</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-2" id="navbarNavDropdown">
+              <ul class="navbar-nav navbar-nav-ketnoi ">
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://www.facebook.com/"><img class="icon mx-3" src="img/fb.png"></a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://www.youtube.com/"><img class="icon mx-3" src="img/youtube-icon.png"></a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://twitter.com/explore/"><img class="icon mx-3" src="img/twitter-icon.png"></a>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <a class="nav-icon" href="https://www.twitch.tv/"><img class="icon mx-3" src="img/twitch.png"></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 px-0 ">
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap column-3 navbar-footer ">
+            <span class="navbar-brand navbar-brand-footer nhan-tin ">Đăng kí nhận tin</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-3" id="navbarNavAltMarkup">
+              <div class="navbar-nav navbar-nav-nhantin">
+                <div class="input-group input-footer mb-3">
+                  <input type="text" class="form-control input-send" placeholder="Email của bạn" aria-label="Email của bạn" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-success btn-send d-flex justify-content-center align-items-center" id="btn-send-email" type="button">Gửi</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap column-4 navbar-footer">
+            <span class="navbar-brand navbar-brand-footer danh-gia">G.O.S shop được đánh giá</span>
+            <button class="navbar-toggler navbar-toggler-footer" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-collapse-footer collapse-column-4" id="navbarText">
+              <ul class="navbar-nav navbar-nav-danhgia ">
+                <li class="nav-item nav-item-footer ">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+                <li class="nav-item nav-item-footer">
+                  <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 so-huu d-flex justify-content-center align-items-center">
+          <span>Trang Web thuộc quyền sở hữu của công ty TheSad</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="gio-hang.html">
+    <button class="btn-shopping" title="Go to shopping cart">
+      <i class="fa fa-shopping-cart cart-to" aria-hidden="true"></i>
+      <div class="circle-count-fixed">
+        <span>2</span>
+      </div>
+    </button>
+  </a>
+
+  <button class="btn-top" title="Go to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </button>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main-hdtt.js"></script>
+</body>
+
+</html>
