@@ -100,15 +100,16 @@ a:hover {
 }
 /* ///////////////////////////////////////////////////////////// MODAL/////////////////////////////// */
 .modal-content-alert {
-	background-color: #605555;
+	background-color: #dadada;
 	opacity: 0.9;
-	color: white;
+	color: black;
 	width: 350px;
 	height: 200px;
 	display: flex;
 	justify-content: center;
 	border-radius: 0.25rem;
 	margin-top: 20%;
+	font-weight: bold;
 }
 .img-tick {
 	opacity: 1 !important;

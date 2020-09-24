@@ -4274,7 +4274,7 @@ a:hover {
 @media (min-width: 350px) and (max-width: 375px) {
 	.top-sp, .top-sp-1, .top-sp-2, .top-sp-3 {
 		display: flex;
-		width: 100%:;
+		width: 100%
 	}
 	.gio-hang-giasoc {
 		top: 84%;
