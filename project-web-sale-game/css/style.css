@@ -699,7 +699,7 @@ button.close:hover {
 	position: relative;
 }
 .carousel-item {
-	transition: tranform .6s ease-in-out,-webkit-transform .6s ease-in-out 
+	transition: tranform .6s ease-in-out,-webkit-transform .6s ease-in-out ;
 }
 .background-1 {
 	width: 7.5%;
