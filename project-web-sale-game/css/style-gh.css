@@ -871,9 +871,6 @@ button.link-to:focus {
 	box-shadow: 2px 5px 18px rgba(52,128,0,1);
 	color: white;
 }
-button.link-to:hover {
-	background: ;
-}
 .amount {
 	color: #00E205;
 	font-size: 22px;
