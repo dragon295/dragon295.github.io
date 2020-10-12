@@ -929,6 +929,10 @@ button.link-to:focus {
 	.btn-remove {
 		margin-right: 0;
 	}
+	.fix-320 {
+		display: flex;
+		margin-top: 12%;
+	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
 	.tag-name {
@@ -945,6 +949,10 @@ button.link-to:focus {
 	}
 	.btn-remove {
 		margin-right: 0;
+	}
+	.fix-320 {
+		display: flex;
+		margin-top: 13.5%;
 	}
 }
 @media (min-width: 320px) and (max-width: 575px) {
