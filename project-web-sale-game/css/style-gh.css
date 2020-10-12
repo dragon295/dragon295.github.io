@@ -952,7 +952,7 @@ button.link-to:focus {
 	}
 	.fix-320 {
 		display: flex;
-		margin-top: 13.5%;
+		margin-top: 12.5%;
 	}
 }
 @media (min-width: 320px) and (max-width: 575px) {
