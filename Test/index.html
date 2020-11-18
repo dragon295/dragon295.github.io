@@ -1,47 +1,334 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Danh sách</title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-		<h1>Danh sách các loài khủng long  ăn thịt</h1><br />
 
-		<h2>Dưới đây là 6 loài khủng long ăn thịt tại kỉ Jura</h2><br />
-	<div class="t1">
-		<div>
-			<div><a href="nhomso1.html">TREX-Collosus</a></div>
-			<div><a href="nhomso1.html"><img class="in1" src="img/kl1.jpg" alt="Khủng long ăn thịt 1"></a></div>
-		</div>
-			
-		<div>
-			<div><a href="nhomso2.html">TREX-Lythronax</a></div>
-			<div><a href="nhomso2.html"><img class="in2" src="img/kl2.jpg" alt="Khủng long ăn thịt 2"></a></div>
-		</div>
-			
-		<div>
-			<div><a href="nhomso3.html">TREX-Albertosaurus</a></div>
-			<div><a href="nhomso3.html"><img class="in3" src="img/kl3.jpg" alt="Khủng long ăn thịt 3"></a></div>
-		 </div>
-	</div> <br />
-		
-	<div class="t2">
-		<div>
-			<div><a href="nhomso4.html">TREX-Tarbosaurus</a></div>
-			<div><a href="nhomso4.html"><img class="in1" src="img/kl3.jpg" alt="Khủng long ăn thịt 1"></a></div>
-		</div>
-			
-		<div>
-			<div><a href="nhomso5.html">TREX-Gorgosaurus</a></div>
-			<div><a href="nhomso5.html"><img class="in2" src="img/kl4.jpg" alt="Khủng long ăn thịt 2"></a></div>
-		</div>
-			
-		<div>
-			<div><a href="nhomso6.html">TREX-Teratophoneus</a></div>
-			<div><a href="nhomso6.html"><img class="in3" src="img/kl5.jpg" alt="Khủng long ăn thịt 3"></a></div>
-		 </div>
-	</div>
-		
+<head>
+  <title></title>
+  <meta charset="utf-8">
+   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="fontawsome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid px-0 big-page w-100">
+    <div class="img-banner">
+      <img src="img/temple.jpg" class="img-fluid img-big">
+      <img src="img/overlay.jpg" class="img-fluid mask-img">
+    </div>
+
+    <div class="container barnav m-auto">
+      <nav class="navbar navbar-expand-lg navbar-light bg-new">
+        <a class="navbar-brand ml-3" href="#"><img src="img/odigo-Logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link px-5  nav-item-header" href="#">Articles</a>
+            <a class="nav-item nav-link px-5  nav-item-header" href="#">Locations</a>
+            <a class="nav-item nav-link px-5  nav-item-header" href="#">Videos</a>
+            <a class="nav-item nav-link px-5  nav-item-header" href="#">Sign in</a>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="span-banner">Discover Amazing places in Japan</h1>
+      <p class="text-banner ">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </p>
+
+      <div class="d-flex box">
+        <div class="border-check radio">
+          <input type="radio" name="radiogroup1" id="rd1">
+          <label for="rd1" class="text-check">What would you like to do?</label>
+        </div>
+        <div class="border-check-2 radio">
+          <input type="radio" name="radiogroup1" id="rd2">
+          <label for="rd2" class="text-check">Where would you like to go?</label>
+        </div>
+
+        <div>
+          <button type="button" class="button-search"><a class="text-white" href="#">SEARCH</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center background-infor">
+        <div class="container infor col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h2>Benefits of Odigo</h2>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="img/icon-1.jpg" class="img-fluid">
+          <h5 class="my-4">Welcome to Odigo!</h5>
+          <span class="mb-4">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</span>
+          <div class="d-flex mt-4">
+            <a href="#" class="mt-1 mb-5">LEARN MORE</a>
+            <a href="#" class="ml-3 icon-right"><img src="https://img.icons8.com/android/32/006DFE/long-arrow-right.png" /></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="img/icon-2.jpg" class="img-fluid">
+          <h5 class="my-4">Your Personal Japan Guide</h5>
+          <span class="mb-4">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</span>
+          <div class="d-flex mt-4">
+            <a href="#" class="mt-1 mb-5">LEARN MORE</a>
+            <a href="#" class="ml-3 icon-right"><img src="https://img.icons8.com/android/32/006DFE/long-arrow-right.png" /></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="img/icon-3.jpg" class="img-fluid">
+          <h5 class="my-4">Promoting Local Businesses</h5>
+          <span class="mb-4">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</span>
+          <div class="d-flex mt-4">
+            <a href="#" class="mt-1 mb-5">LEARN MORE</a>
+            <a href="#" class="ml-3 icon-right"><img src="https://img.icons8.com/android/32/006DFE/long-arrow-right.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part-2">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h3>Get inspired for your next trip</h3>
+          <div class="line"></div>
+        </div>
+        <div class="view-all">
+          <a href="#"><span class="mt-1">VIEW ALL</span></a>
+          <a href="#" class="ml-3 icon-right"><img src="https://img.icons8.com/android/32/006DFE/long-arrow-right.png" /></a>
+        </div>
+      </div>
+
+      <div class="row mt-5 h-100">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-body-1">
+            <a href="#">
+            	<img src="img/mount.jpg" class="img-fluid mount">
+            </a>
+         </div>
+         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0 img-body-2">
+            <a href="#">
+            	<img src="img/kyoto.jpg" class="img-fluid kyoto">
+            </a>
+        </div>
+       </div>
+
+        <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 img-body-3">
+            <a href="#" class="h-100">
+            	<img src="img/tokyo.jpg" class="img-fluid tokyo">
+            </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 img-body-4">
+            <a href="#" class="h-100"><img src="img/niigata.jpg" class="img-fluid niigata"></a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-3 img-body-5">
+            <a href="#" class="h-100"><img src="img/sapporo.jpg" class="img-fluid sapporo"></a>
+        </div>
+      </div>
+
+      <div class="row mt-5 d-flex justify-content-between body-infor">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <img src="img/banner-1.jpg" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="d-flex justify-content-start align-items-start flex-column infor-body-1">
+            <h5 class="title-text">Prefecture in Focus: Tottori</h5>
+            <p class="text-body">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </p>
+            <div class="d-flex mt-4">
+              <a href="#" class="mt-3 mb-3">VIEW PREFECTURE</a>
+              <a href="#" class="ml-3 icon-right-body"><img src="https://img.icons8.com/android/32/006DFE/long-arrow-right.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 d-flex justify-content-between">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="d-flex justify-content-start align-items-start flex-column infor-body-2">
+            <h5>Featured Neighborhood: Kyoto’s Arashiyama</h5>
+            <p class="text-body">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </p>
+            <div class="d-flex mt-4">
+              <a href="#" class="mt-3 mb-3">VIEW PREFECTURE</a>
+              <a href="#" class="ml-3 icon-right-body"><img src="https://img.icons8.com/android/32/006DFE/long-arrow-right.png" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <img src="img/banner-2.jpg" class="img-fluid">
+        </div>
+      </div>
+
+      <div class="today">
+        <h3>Today top places to visit</h3>
+        <div class="line-2"></div>
+      </div>
+
+      <div class="row mt-5 d-flex justify-content-between">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-column infor-place">
+          <img src="img/celebarate-1.jpg" class="img-fluid img-place">
+          <div class="d-flex text-place">
+            <span class="text-white mx-3">NAGOYA</span>
+            <div class="heart ">
+              <label class="text-white mr-1">221</label>
+              <i class="fas fa-heart mr-3 icon-place"></i>
+              <label class="text-white mr-1">50</label>
+              <i class="fas fa-comment-dots icon-place"></i>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-black">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+          </div>
+          <button type="button" class="button-more">
+            <a class="text-white" href="#">SEE MORE</a>
+          </button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-column infor-place">
+          <img src="img/celebarate-2.jpg" class="img-fluid img-place">
+          <div class="d-flex text-place">
+            <span class="text-white mx-3">NIIGATA</span>
+            <div class="heart ">
+              <label class="text-white mr-1">221</label>
+              <i class="fas fa-heart mr-3 icon-place"></i>
+              <label class="text-white mr-1">50</label>
+              <i class="fas fa-comment-dots icon-place"></i>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-black">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+          </div>
+          <button type="button" class="button-more">
+            <a class="text-white" href="#">SEE MORE</a>
+          </button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-column infor-place">
+          <img src="img/celebarate-3.jpg" class="img-fluid img-place">
+          <div class="d-flex text-place text-place-2">
+            <span class="text-white mx-3">OSAKA</span>
+            <div class="heart ">
+              <label class="text-white mr-1">221</label>
+              <i class="fas fa-heart mr-3 icon-place"></i>
+              <label class="text-white mr-1">50</label>
+              <i class="fas fa-comment-dots icon-place"></i>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-black">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+          </div>
+          <button type="button" class="button-more">
+            <a class="text-white" href="#">SEE MORE</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-5 d-flex justify-content-between">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-column infor-place">
+          <img src="img/celebarate-4.jpg" class="img-fluid img-place">
+          <div class="d-flex text-place">
+            <span class="text-white mx-3">SAITAMA</span>
+            <div class="heart ">
+              <label class="text-white mr-1">221</label>
+              <i class="fas fa-heart mr-3 icon-place"></i>
+              <label class="text-white mr-1">50</label>
+              <i class="fas fa-comment-dots icon-place"></i>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-black">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+          </div>
+          <button type="button" class="button-more">
+            <a class="text-white" href="#">SEE MORE</a>
+          </button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-column infor-place">
+          <img src="img/celebarate-5.jpg" class="img-fluid img-place">
+          <div class="d-flex text-place text-place-2">
+            <span class="text-white mx-3">UENO</span>
+            <div class="heart ">
+              <label class="text-white mr-1">221</label>
+              <i class="fas fa-heart mr-3 icon-place"></i>
+              <label class="text-white mr-1">50</label>
+              <i class="fas fa-comment-dots icon-place"></i>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-black">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+          </div>
+          <button type="button" class="button-more">
+            <a class="text-white" href="#">SEE MORE</a>
+          </button>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 flex-column infor-place">
+          <img src="img/celebarate-6.jpg" class="img-fluid img-place">
+          <div class="d-flex text-place">
+            <span class="text-white mx-3">SHIBUYA</span>
+            <div class="heart ">
+              <label class="text-white mr-1">221</label>
+              <i class="fas fa-heart mr-3 icon-place"></i>
+              <label class="text-white mr-1">50</label>
+              <i class="fas fa-comment-dots icon-place"></i>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p class="text-black">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</p>
+          </div>
+          <button type="button" class="button-more">
+            <a class="text-white" href="#">SEE MORE</a>
+          </button>
+        </div>
+      </div>
+
+       <div class="container-fluid part-3 px-0 footer">
+    		<div class="row mx-0">
+	    			<img src="img/banner-footer.jpg" class="img-fluid banner-footer">
+	    		<div class="d-flex justify-content-around col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 infor-footer">
+	    			<div class="d-flex justify-content-center align-items-center odigo">
+	    				<img src="img/odigo-Logo2.png" class="img-fluid logo-banner">
+	    			</div>
+	    			<div class="infor-company">
+	    				<div class="row">
+	    					<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-between align-items-start flex-column list-infor">
+	    						<a href="#"><span class="text-white">Company</span></a>
+	    						<a href="#"><span class="text-white">About</span></a>
+	    						<a href="#"><span class="text-white">Team</span></a>
+	    						<a href="#"><span class="text-white">Careers</span></a>
+	    						<a href="#"><span class="text-white privacy">Privacy Policy</span></a>
+	    					</div>
+	    					<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-between align-items-start flex-column list-infor">
+	    						<a href="#"><span class="text-white">Locations</span></a>
+	    						<a href="#"><span class="text-white">Tokyo</span></a>
+	    						<a href="#"><span class="text-white">Kyoto</span></a>
+	    						<a href="#"><span class="text-white">Osaka</span></a>
+	    						<a href="#"><span class="text-white">Hokkaido</span></a>
+	    					</div>
+	    					<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-between align-items-start  flex-column list-infor">
+	    						<a href="#"><span class="text-white social">Social Media</span></a>
+	    						<a href="#"><span class="text-white">Facebook</span></a>
+	    						<a href="#"><span class="text-white">Twitter</span></a>
+	    						<a href="#"><span class="text-white">Instagram</span></a>
+	    						<a href="#"><span class="text-white">Youtube</span></a>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+    		</div>
+       </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
