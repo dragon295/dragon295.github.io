@@ -30,6 +30,9 @@ a:hover {
 .nav-item-header:hover {
 	color: #979797 !important;
 }
+.navbar-toggler:focus {
+	outline: none;
+}
 .span-banner {
 	color: white;
 	font-size: 50px;
@@ -123,6 +126,9 @@ input[type="radio"] {
 .button-search:focus, .button-more:focus {
 	outline: none;
 }
+.button-search:hover, .button-more:hover {
+	background-color: #175db9;
+}
 .background-infor {
 	background-color: white;
 	margin-top: 15%;
@@ -155,8 +161,11 @@ input[type="radio"] {
 	margin: auto;
 	height: auto;
 }
-.text-white:hover {
+/*.text-white:hover {
 	color: #cecdcd !important;
+}*/
+.title-text {
+	font-weight: normal;
 }
 .part-2 {
 	z-index: 10;
@@ -189,7 +198,7 @@ input[type="radio"] {
 	margin-top: 7%;
 }
 .today {
-	margin-top: 10%;
+	margin-top: 8%;
 }
 .line-2 {
 	width: 18%;
@@ -237,7 +246,7 @@ h3 {
 }
 .logo-banner {
 	width: 100%;
-	height: 33%;
+	height: 20%;
 }
 .infor-footer {
 	height: 300px;
@@ -245,9 +254,26 @@ h3 {
 .list-infor {
 	margin-top: 20%;
 }
+.body-infor-1 {
+	margin-top: 8%;
+}
+.body-infor-2 {
+	margin-top: 6.5%;
+}
+.infor-body-1, .infor-body-2 {
+	margin-left: 8%;
+	margin-top: 5%;
+}
+.infor-body-2 {
+	margin-left: 10%;
+}
+.list-1, .list-2 {
+	margin-top: 5%;
+}
 @media (min-width: 320px) and (max-width: 991px) {
 	.navbar-nav {
-		background-color: #adadad;
+	background-color: #e9bcb7;
+background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
 		position: fixed;
 		top: 0;
 		left: 0%;
@@ -264,6 +290,9 @@ h3 {
 		justify-content: flex-end;
 		margin-bottom: 20%;
 	}
+	.nav-item-header:hover {
+	color: #0d0b0b !important;
+}
 }
 @media (min-width: 1050px) and (max-width: 1240px) {
 	.barnav {
@@ -383,7 +412,7 @@ h3 {
 		bottom: 26%;
 	}
 	.part-3 {
-		bottom: -45%;
+		bottom: -40%;
 	}
 }
 @media (min-width: 1851px) and (max-width: 1920px) {
@@ -398,7 +427,7 @@ h3 {
 		top: 63%;
 	}
 	.part-3 {
-		bottom: -45%;
+		bottom: -40%;
 	}
 	.text-place {
 		bottom: 26%;
@@ -463,6 +492,9 @@ h3 {
 	.heart {
 		margin-left: 3.5rem;
 	}
+	.part-2 {
+		top: 80%;
+	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
 	.span-banner {
@@ -492,7 +524,7 @@ h3 {
 		top: 50%;
 	}
 	.text-place {
-		bottom: 26%;
+		bottom: 34%;
 	}
 	.heart {
 		margin-left: 15rem;
@@ -536,7 +568,7 @@ h3 {
 		width: 50%;
 	}*/
 	.part-3 {
-		bottom: -10.5%;
+		bottom: -8.5%;
 		left: 0%;
 	}
 	.infor-footer {
@@ -551,6 +583,18 @@ h3 {
 	}
 	.infor-place {
 		display: flex !important;
+	}
+	.button-more {
+		margin-bottom: 12%;
+	}
+	.list-2 {
+		margin-top: 0;
+	}
+	.list-1 {
+		margin-top: 10%;
+	}
+	.body-infor-1 {
+		margin-top: 12%;
 	}
 }
 @media (min-width: 320px) and (max-width: 575px) {
@@ -677,6 +721,9 @@ h3 {
 	.img-big, .mask-img, .banner-footer {
 		width: 100% !important;
 	}
+	.banner-footer {
+		margin-bottom: 5%
+	}
 	.barnav {
 		left: 0;
 	}
@@ -684,10 +731,10 @@ h3 {
 		top: 50%;
 	}
 	.text-place {
-		bottom: 32%;
+		bottom: 36%;
 	}
 	.heart {
-		margin-left: 10rem;
+		margin-left: 9rem;
 	}
 	.infor-body-1, .infor-body-2 {
 		margin-left: 0;
@@ -711,7 +758,7 @@ h3 {
 		justify-content: center !important;
 	}
 	.logo-banner {
-		width: 28%;
+		width: 30%;
 		height: 100%;
 		margin-top: 15%;
 	}
@@ -722,13 +769,13 @@ h3 {
 		align-items: center !important;
 	}
 	.part-2 {
-		top: 235%;
+		top: 230%;
 	}
 	/*.text-black {
 		width: 50%;
 	}*/
 	.part-3 {
-		bottom: -8.5%;
+		bottom: -7.5%;
 		left: 0%;
 	}
 	.infor-footer {
@@ -745,17 +792,36 @@ h3 {
 		display: flex !important;
 	}
 	.button-more {
-		margin-bottom: 5%;
+		margin-bottom: 15%;
 	}
 	.line-2 {
 		width: 60%;
 	}
+	.text-banner {
+		margin-bottom: 0.5rem;
+	}
+	.box {
+		margin-top: 2.5%;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+	.list-2 {
+		margin-top: 0;
+	}
+	.list-1 {
+		margin-top: 10%;
+	}
+	.body-infor-1 {
+		margin-top: 12%;
+	}
+
 }
 @media (min-width: 375px) and (max-width: 420px) {
 	.span-banner {
 		width: 100%;
 		font-size: 24px;
-		margin-top: 2%;
+		margin-top: 3%;
 	}
 	.text-banner {
 		width: 100%;
@@ -790,6 +856,9 @@ h3 {
 	.img-big, .mask-img, .banner-footer {
 		width: 100% !important;
 	}
+	.banner-footer {
+		margin-bottom: 5%;
+	}
 	.privacy {
 		margin-left: -3%;
 	}
@@ -800,7 +869,7 @@ h3 {
 		top: 73%;
 	}
 	.text-place {
-		bottom: 34%;
+		bottom: 40%;
 	}
 	.heart {
 		margin-left: 7rem;
@@ -813,7 +882,8 @@ h3 {
 		margin-top: 2%;
 	}
 	.title-text {
-		margin-top: 2%;
+		margin-top: 6%;
+		font-size: 1.5rem;
 	}
 	.view-all {
 		margin-top: 1.5%;
@@ -827,9 +897,9 @@ h3 {
 		justify-content: center !important;
 	}
 	.logo-banner {
-		width: 23%;
+		width: 35%;
 		height: 100%;
-		margin-top: 15%;
+		margin-top: 20%;
 	}
 	.list-infor {
 		margin-top: 0%;
@@ -847,7 +917,7 @@ h3 {
 		border-color: black;
 	}
 	.part-3 {
-		bottom: -8.5%;
+		bottom: -7.5%;
 		left: 0%;
 	}
 	.infor-footer {
@@ -864,14 +934,30 @@ h3 {
 		display: flex !important;
 	}
 	.button-more {
-		margin-bottom: 5%;
+		margin-bottom: 20%;
+	}
+	.body-infor-1 {
+		margin-top: 15%;
+	}
+	.today {
+		margin-top: 15%;
+	}
+	.list-1 {
+		margin-top: 10%;
+	}
+	.list-2 {
+		margin-top: 0;
 	}
 }
 @media (min-width: 320px) and (max-width: 365px) {
+	.nav-item-header {
+		font-size: 16px;
+	}
 	.span-banner {
 		width: 100%;
-		font-size: 18px;
-		margin-top: 4%;
+		font-size: 19px;
+		margin-top: 3%;
+		margin-bottom: 3.5%;
 	}
 	.text-banner {
 		width: 100%;
@@ -906,6 +992,9 @@ h3 {
 	.img-big, .mask-img, .banner-footer {
 		width: 100% !important;
 	}
+	.banner-footer {
+		margin-bottom: 5%;
+	}
 	.privacy {
 		margin-left: -3%;
 	}
@@ -921,16 +1010,16 @@ h3 {
 		padding-left: 0;
 	}
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 	}
 	h3 {
-		font-size: 1.65rem;
+		font-size: 1.45rem;
 	}
 	.text-place {
-		bottom: 40%;
+		bottom: 44.5%;
 	}
 	.heart {
-		margin-left: 5rem;
+		margin-left: 4rem;
 	}
 	.infor-body-1, .infor-body-2 {
 		margin-left: 0;
@@ -940,7 +1029,7 @@ h3 {
 		margin-top: 2%;
 	}
 	.title-text {
-		margin-top: 2%;
+		margin-top: 7%;
 	}
 	.view-all {
 		margin-top: 1.5%;
@@ -954,9 +1043,9 @@ h3 {
 		justify-content: center !important;
 	}
 	.logo-banner {
-		width: 32%;
+		width: 42%;
 		height: 100%;
-		margin-top: 15%;
+		margin-top: 12%;
 	}
 	.list-infor {
 		margin-top: 0%;
@@ -965,7 +1054,7 @@ h3 {
 		align-items: flex-start !important;
 	}
 	.part-2 {
-		top: 300%;
+		top: 305%;
 	}
 	/*.text-black {
 		width: 50%;
@@ -991,6 +1080,12 @@ h3 {
 		display: flex !important;
 	}
 	.button-more {
-		margin-bottom: 5%;
+		margin-bottom: 20%;
+	}
+	.today {
+		margin-top: 12%;
+	}
+	.list-2 {
+		margin-top: 0;
 	}
 }
