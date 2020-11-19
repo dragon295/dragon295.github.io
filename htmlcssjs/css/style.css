@@ -161,9 +161,9 @@ input[type="radio"] {
 	margin: auto;
 	height: auto;
 }
-/*.text-white:hover {
+.text-white:hover {
 	color: #cecdcd !important;
-}*/
+}
 .title-text {
 	font-weight: normal;
 }
