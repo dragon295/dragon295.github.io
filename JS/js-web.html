@@ -1,0 +1,383 @@
+<script type="text/javascript">
+	// B1;
+	const bai1 = (bk) => {
+		let v =  4/3 * (Math.PI * bk)
+		return v; 
+	}
+	const bai2 = (a, b) => {
+		let tong = 0;
+		for (let i = a; i < b; i++) {
+			console.log(i)
+		}
+		// if (a < b) {
+		// 	for(let i = a + 1; i < b; i++) {
+		// 	 tong +=i;
+		// 	} 
+		// 	return tong;
+		// } else if (a > b) {
+		// 	for(let i = b + 1; i < a; i++) {
+		// 	 	tong+=i;
+		// 	}
+		// 	return tong; 
+		// } else if (a === b) {
+		// 	return 0;
+		// }
+	}
+
+	const bai3 = (num) => {
+		
+		//debugger;
+		let bc = true;
+		 	if (!Number.isInteger(num) || num < 2) {
+		 		return !bc;
+		 	} 
+		 	for (let i = 2; i < num; i++) {
+		 	if (num % i === 0) {
+		 		return !bc;
+		 	}
+		}
+		return bc;
+	}
+
+	const bai4 = (num) => {
+		let tong = 0;
+		debugger;
+		for (let i = 2 ; i <= num; i++) {
+				if (checkIfPrime(i) === true) {
+					tong+=i
+				}
+		}
+		return tong;
+	}
+
+	const checkIfPrime = (r) => {
+		for (let i = 2; i < r ; i++) {
+			if (r % i === 0) {
+				return false
+			}
+		}
+		return true;
+	}
+
+	const bai5 = (num)  => {
+		let tong = 0;
+		for (var i = 1; i <= num; i++) {
+			if (num % i === 0) {
+				tong+= i;
+			}
+		}
+		return tong;
+	}
+
+	function fromCharCode() {
+		let mang =[]
+  for(let i = 97; i <= 122; i++) {
+      mang.push(String.fromCharCode(i));
+  }
+  console.log(mang.join(""));
+ }
+
+ function sumMultiplyArray(a, b) {
+ //debugger;
+ let tong = 0;
+ for(let i = 0; i < a.length; i++) {
+ 	for(let j = 0 ; j < b.length; j++) {
+ 		tong+=a[i] * b[j]
+ 	}
+ }
+ console.log(tong);
+}
+ 
+ function calculate(start, end){
+ 	//debugger;
+ 	let mul = 1;
+ 	for(let i = start; i < end; i++) {
+ 		mul*= i;
+ 	}
+ 	console.log(mul);
+}
+
+function checkValue(array, value) {
+	debugger;
+	for(let i = 0; i <array.length; i++) {
+		if(array[i] === value) {
+			return true;
+		}
+	}
+	return false;
+}
+
+function factorials123(num) {
+  debugger;
+  if(num < 0) {
+  	return -1;
+  } else if (num === 0) {
+  	return 1
+  }  else {
+  	return num * factorials123(num - 1)
+  }
+}
+
+function factorials1(num) {
+	debugger;
+	let result = num;
+	if (num === 0 || num === 1) {
+		return 1
+	}
+	while(num > 1) {
+		num--;
+		result*=num;
+	}
+	return result
+}
+
+function factorials12(num) {
+	//debugger;
+	let sol = num -1;
+	if (num < 1) {
+		return 1
+	}
+	for(let i = sol; i>= 1; i--) {
+		num*=i
+	}
+	return num;
+}
+
+function checkQuan(num) {
+	if(num < 2) {
+		return false;
+	}
+	for(let i = 2  ; i < num; i++ ) {
+		if(num % i === 0 ) {
+			return false
+		}
+	}
+	return true
+}
+
+function multiply1(arr) {
+	let lum = 1
+  for(let ar of arr ) {
+       lum*=ar
+  }
+ return lum
+}
+
+let apartment = {
+  bedroom: {
+    area: 20,
+    bed: {
+      type: 'twin-bed',
+      price: 100
+    }
+  }
+};
+
+// console.log(apartment["bedroom"])
+
+
+function getObjectKey(obj, keys=[]) {
+ //debugger;
+ for (let key in obj) {
+      if (typeof obj[key] == 'object') {
+           keys.push(key);
+           getObjectKey(obj[key], keys)
+       } else {
+       	keys.push(key)
+       }
+   }
+   return keys
+}
+
+
+function has(object, key) {
+   for(let obj in object) {
+   	if (obj === key) {
+   		return true
+   	}
+   }
+   return false
+ }
+
+ function sum(numbers) {
+ 	let tong = 0;
+  for(let num of numbers) {
+  	if(num === undefined) {
+  		return 0
+  	} else {
+  		tong+= num 
+  	}
+  }
+ return tong;
+}
+
+function removeEnd(arr, n) {
+	return arr.slice(0, -n)
+}
+
+function first(arr, n) {
+	return arr.splice(0, n)
+}
+
+function double(num) {
+  return num * 2;
+}
+
+function sumAndDo(nums, double) {
+  let tong = 0;
+  if (nums === undefined) {
+  	return 0;
+  }
+  for(let number of nums) {
+  	tong+= number;
+  }
+  let functionOutside = double(1)
+  console.log(tong * functionOutside)
+}
+
+function transform(numbers, callback) {
+	let result = [];
+	for(let num of numbers) {
+		result.push(num * callback(1))
+	}
+	console.log(result)
+}
+
+function double2(num) {
+	return num * 2
+}
+
+function tripple(num) {
+ return num * 3;
+}
+
+function multiply(numbers) {
+ return numbers.map(val => {
+ 	return val * 3
+
+ })
+}
+
+var users = [
+  {
+    name: "Angelina Jolie",
+    age: 80
+    
+  },
+  {
+    name: "Eric Jones",
+    age: 2
+    
+  },
+  {
+    name: "Paris Hilton",
+    age: 5
+  },
+  {
+    name: "Kayne West",
+    age: 16
+    
+  },
+  {
+    name: "Bob Ziroll",
+    age: 100
+  }
+]
+
+function namesOnly(arr) {
+  return arr.map(item => {
+  	return item.name;
+  })
+}
+
+function readyToPutInTheDOM(arr) {
+	return arr.map(item => {
+		return `<h1>${item.name}</h1><h2>${item.age}</h2>`
+	})
+}
+
+function findFirstEvenNumber(array) {
+  return array.find(item => {
+  	return item % 2 === 0;
+  })
+}
+
+let rectangle = [
+	{ width: 10, height: 5 },
+	{ width: 10, height: 20},
+	{ width: 4, height: 16}
+]
+
+function arrMap(arr) {
+	console.log(arr.map(val => {
+		return val.width * val.height;
+	}))
+}
+
+let orders = [
+ { name: 'A', quantity: 2, unitPrice: 200 },
+ { name: 'L', quantity: 10, unitPrice: 600 },
+ { name: 'K', quantity: 5, unitPrice: 350 }
+]
+
+const sumValue = (arr) => {
+	console.log(arr.map(function(index) {
+			return index.unitPrice;
+		}).reduce(function(val,val1){
+			return val + val1;
+		}))
+}
+
+var voters = [
+  {name:'Bob' , age: 30, voted: true},
+  {name:'Jake' , age: 32, voted: true},
+  {name:'Kate' , age: 25, voted: false},
+  {name:'Sam' , age: 20, voted: false},
+  {name:'Phil' , age: 21, voted: true},
+  {name:'Ed' , age:55, voted:true},
+  {name:'Tami' , age: 54, voted:true},
+  {name: 'Mary', age: 31, voted: false},
+  {name: 'Becky', age: 43, voted: false},
+  {name: 'Joey', age: 41, voted: true},
+  {name: 'Jeff', age: 30, voted: true},
+  {name: 'Zack', age: 19, voted: false}
+];
+
+function totalVotes(arr) {
+	//debugger;
+	console.log(arr.map(val => {
+			return val.voted === true;
+	}).reduce(function(acc, cur){
+		return acc + cur;
+	}))
+
+}
+
+
+var wishlist = [
+  { title: "Tesla Model S", price: 90000 },
+  { title: "4 carat diamond ring", price: 45000 },
+  { title: "Fancy hacky Sack", price: 5 },
+  { title: "Gold fidgit spinner", price: 2000 },
+  { title: "A second Tesla Model S", price: 90000 }
+];
+
+
+
+function shoppingSpree(wishlist) {
+    console.log(wishlist.map(item => {
+    	return item.price
+    }).reduce((val1, val2) =>{
+    	return val1 + val2
+    }))
+}
+
+function arrayTitle(arr) {
+	//debugger;
+	let mang = [];
+	arr.reduce((val1, val2) => {
+		mang.push(val2)
+	})
+console.log(mang)
+} 
+</script>

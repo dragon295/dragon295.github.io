@@ -1,0 +1,257 @@
+<script type="text/javascript">
+	const bai1 = (str) => {
+		let bc = str.trim().toLowerCase().split(" ");
+		let haha = bc.map(function(index) {
+			return index.charAt(0).toUpperCase() + index.slice(1);
+		})
+		return haha.join(" ")
+	} 
+
+	const bai2 = (str) => {
+		return str.toLowerCase().split(" ").join("-");
+	}
+
+	function findLongestWordLength(str) {
+   debugger;
+   let longGest = 0;
+   let abc = str.split(" ");
+   for (let i = 0 ; i < abc.length; i++) {
+     if(abc[i].length > longGest) {
+       longGest = abc[i].length;
+     }
+   }
+   console.log(longGest);
+ }
+
+ function titleCase(str) {
+  return str.trim().toLowerCase().replace(/(^|\s)\S/g, L => L.toUpperCase())
+}
+
+function frankenSplice(arr1, arr2, n) {
+  //debugger;
+  let bc = arr2.slice();
+  bc.splice(n, 0, ...arr1);
+  return bc;
+}
+
+function frankenSplice(arr1, arr2, n) {
+ //debugger;
+ let bc = arr2.slice();
+ for (let i = 0; i < arr1.length; i++) {
+   bc.splice(n, 0, arr1[i])
+   n++
+ }
+ console.log(bc)
+}
+
+function chunkArrayInGroups(arr, size) {
+  //debugger
+  let mang = []
+  for(let i = 0 ; i < arr.length; i+=size) {
+    mang.push(arr.slice(i, i + size))
+  }
+  console.log(mang)
+}
+
+function uniteUnique(arr) {
+  debugger;
+  let mang = [];
+  for(let i = 0; i < arguments.length; i++) {
+   for(let j = 0; j < arguments[i].length; j++) {
+     if(mang.indexOf(arguments[i][j]) < 0) {
+       mang.push(arguments[i][j])
+     }
+   }
+ }
+ return mang
+}
+
+function sumFibs(num) {
+ var prevNumber = 0;
+ var currNumber = 1;
+ var result = 0;
+ while(currNumber <= num) {
+  if(currNumber % 2 !== 0) {
+    result+= currNumber
+  }
+
+  currNumber += prevNumber;
+  prevNumber = currNumber - prevNumber;
+}
+
+return result
+}
+
+function sumFibs2(num) {
+  debugger;
+  if(num <= 0) {
+    return 0
+  }
+  let fib = [1,1]
+  let nextFib = 0;
+  while((nextFib = fib[0] + fib[1]) <= num) {
+   fib.unshift(nextFib)
+ }
+ return fib.filter(value => value % 2 !== 0).reduce((a,b) => a + b)
+}
+function smallestCommons1(arr) {
+	debugger
+ let max = Math.max(...arr);
+ let min = Math.min(...arr);
+ let sum  = max;
+ for(let i = max - 1; i >= min; i--) {
+   if(sum % i) {
+     sum+= max;
+     i = max;
+   }
+ }
+ return sum
+}
+
+function smallestCommons(arr) {
+  debugger
+  arr.sort(function(a,b){
+    return b - a;
+  })
+  let newArr = [];
+  for(let i = arr[0]; i >= arr[1]; i--) {
+    newArr.push(i)
+  } 
+  var quot = 0;
+  var loop = 1;
+  var n;
+
+  do {
+    quot = newArr[0] * loop * newArr[1];
+    for (n = 2; n < newArr.length; n++) {
+      if (quot % newArr[n] !== 0) {
+        break;
+      }
+    }
+
+    loop++;
+  } while (n !== newArr.length);
+
+  return quot;
+}
+
+function convertToRoman(num) {
+	debugger; 
+	let decimalValue = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+  let romanNumeral = ["M", "CM", "D", "CD", "C", "XC", "L","XL", "X", "IX", "V", "IV", "I"];
+  let rmcm = "";
+  for(let i = 0; i < decimalValue.length; i++) {
+    while(decimalValue[i] <= num) {
+      rmcm+= romanNumeral[i];
+      num-=  decimalValue[i]
+    }
+  }
+  return rmcm
+}
+
+function steamrollArray(arr) {
+	//debugger;
+  let mang = [].concat(...arr)
+  console.log(mang.some(Array.isArray)
+    ?steamrollArray(mang)
+    :mang)
+}
+
+const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  debugger;
+  for(let i = 1; i <= 1000000; i++) {
+    if ( (2 + 2) != 4) {
+      console.log('Something has gone very wrong :( ');
+    }
+  }
+};
+
+const addTwo = num => num + 2;
+
+const timeFuncRuntime = funcParameter => {
+  let t1 = Date.now();
+  funcParameter();
+  let t2 = Date.now();
+  return t2 - t1;
+};
+
+// Write your code below
+
+function myConcat(separator) {
+ debugger;
+   var result = "", // initialize list
+   i;
+   // iterate through arguments
+   for (i = 1; i < arguments.length; i++) {
+    result += arguments[i] + separator;
+  }
+  return result;
+}
+
+
+var math = {
+  add: function(a, b) {
+    return a + b;
+  }
+};
+
+math.multi = function(a,b) {
+	return a * b
+}
+
+math.sum = function(arr) {
+  let tong = 0;
+  for(let num of arr) {
+    tong+=num
+  }
+  return tong
+};
+
+console.log(math.sum([1,2,3,4,5]))
+
+
+
+
+  // var Circle = require('./circle');
+  var circle1 = new Circle(0, 0, 1);
+  var circle2 = new Circle(0, 2, 1);
+  console.log(circle1.isOverlapped(circle2));
+
+  var circle3 = new Circle(0, 0, 3);
+  console.log(circle1.isOverlapped(circle3));
+
+  var circle4 = new Circle(5, 5, 1);
+  console.log(circle1.isOverlapped(circle4));
+
+  function Circle (x,y,r) {
+    this.x = x;
+    this.y = y;
+    this.r = r;
+  // return this
+}
+
+Circle.prototype.isOverlapped = function(c) {
+	// console.log(c);
+  var d = Math.sqrt(Math.pow(this.x - c.x, 2) + Math.pow(this.y - c.y, 2));
+  if (d === this.r + c.r) {
+    return 0;
+  }
+  if (d < this.r + c.r) {
+    return -1;
+  }
+  return 1; 
+}
+
+
+function mutation(arr) {
+  let count = [... new Set(arr[0].toLowerCase().split('').sort())];
+  let count2 = [... new Set(arr[1].toLowerCase().split('').sort())];
+  for(let i = 0 ; i < count2.length ; i++) {
+    if(!count.includes(count2[i])) {
+      return false
+    }
+  }
+  return true
+}
+
+</script>

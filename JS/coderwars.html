@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	function solution(number){
+    let mang = []
+    if(number <= 0) {
+      return 0
+    }
+    for(let i = 1; i < 10; i++) {
+     if(i % 3 === 0 || i % 5 === 0) {
+       mang.push(i)
+     }
+   }
+   return  mang.map(val => {
+     return val
+   }).reduce(function(val1, val2) {
+     return val1 + val2
+   })
+ }
+
+
+ function descendingOrder(n){
+  let arr = n.toString().split("");
+  let convert = arr.sort(function(a,b){
+    return b - a;
+  }).join("")
+  return parseInt(convert)
+
+   // return parseInt(String(n).split('').sort().reverse().join(''))
+ }
+
+ function addBinary(a,b) {
+   return (a+b).toString(2)
+ }
+
+ function highAndLow(numbers){
+  let mang = numbers.split(" ");
+  let max = Math.max(...mang);
+  let min = Math.min(...mang);
+  return `${max} ${min}`
+}
+
+function disemvowel(str) {
+  let regex = /[aiueo]+/gi
+  return str.replace(regex, "");
+} 
+
+function openOrSenior(data){
+  // let mang = []
+  // for(let i = 0; i < data.length; i++) {
+  //   if(data[i][0] >= 55 && data[i][1] > 7) {
+  //     mang.push("Senior")
+  //   } else {
+  //     mang.push("Open")
+  //   }
+  // }
+  // return mang
+  return data.map(val => {
+    return val[0] >= 55 && val[1] > 7 ? "Senior" : "Open"
+  })
+}
+
+const cc = (m) => {
+  debugger;
+  for(let n = 0 ;; n ++) {
+    if(m > 0) {
+      let cc = Math.pow(n+1, 3);
+      m-=cc
+    } else if(m===0) {
+      return n
+    } else if(m <0) {
+      return -1
+    }
+  }
+} 
+
+
+const longGest = (a,b) => {
+  let arr = [];
+  let mang = a.concat(b).split('').sort();
+  mang.map(val => {
+    if (!arr.includes(val)) {
+      arr.push(val)
+    }
+  })
+  console.log(arr.join(''))
+
+  // return Array.from(new Set(s1 + s2)).sort().join('');
+  //  return (s1+s2).split('').sort().join('').replace(/(.)\1+/g, '$1');
+}
+
+function findUniq(arr) {
+  return arr.find(val => {
+    return arr.indexOf(val) === arr.lastIndexOf(val)
+  })
+}
+
+
+function duplicateCount(text){
+  debugger
+  console.log(text.toLowerCase().split('').filter(function(val, i, arr){
+    return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+  }).length);
+}
+
+function comp(array1, array2){
+ for(let i = 0 ; i < array1.length; i++) {
+  for(let j = 0; j < array2.length; j++) {
+   if(array2[j] % array1[i] === 0) {
+    return true
+  }
+}
+}
+}
+
+function deleteNth(arr,x){
+  var cache = {};
+  return arr.filter(function(n) {
+    cache[n] = (cache[n]||0) + 1;
+    return cache[n] <= x;
+  });
+}
+
+function DNAStrand(dna){
+  let mang = []
+  dna.split('').map(val => {
+    switch(val) {
+      case "A":
+      mang.push("T");
+      break;
+      case "T":
+      mang.push("A");
+      break;
+      case "C":
+      mang.push("G");
+      break;
+      case "G":
+      mang.push("C");
+      break
+    }})
+  return mang.join('')
+}
+
+var summation = function (num) {
+  debugger
+  // let sum = 0;
+  // for(let i = 0 ; i <= num; i++) {
+  //   sum+=i
+  // }
+  // return sum
+
+  return num * (num + 1) / 2
+}
+
+function bump(x){
+  let show =  x.split('');
+  let count = 0
+  for(let i = 0; i < show.length; i++) {
+    if(show[i] === 'n') {
+      count++
+    }
+  }
+  return count <= 15 ? "Woohoo!" : "Car Dead"
+}
+
+var list1 = [
+{ firstName: 'Maria', lastName: 'Y.', country: 'Cyprus', continent: 'Europe', age: 30, language: 'Java' },
+{ firstName: 'Victoria', lastName: 'T.', country: 'Puerto Rico', continent: 'Americas', age: 70, language: 'Python' },
+];
+
+var list2 = [
+{ firstName: 'Noa', lastName: 'A.', country: 'Israel', continent: 'Asia', age: 20, language: 'Ruby' },
+{ firstName: 'Andrei', lastName: 'E.', country: 'Romania', continent: 'Europe', age: 21, language: 'C' },
+];
+
+function getAverageAge(list) {
+  let sum = 0;
+  list.map(val => {
+    sum+=val.age
+  })
+  return Math.round(sum / list.length)
+
+  // return Math.round(list.reduce((sum,obj) => sum + obj.age, 0) / list.length);
+
+  // Math.round(list.reduce((pre, val) => pre + val.age, 0) / list.length);
+}
+
+function toCamelCase(str){
+  if(str === '') {
+    return '';
+  }
+  let regex = /[-_]+/gi;
+  let cc = str.replace(regex, "");
+  console.log(cc)
+}
+
+function arrayDiff(a, b) {
+ let arr = [];
+ for(let i = 0 ; i < a.length; i++) {
+  if(!b.includes(a[i])) {
+    arr.push(a[i])
+  }
+}
+return arr
+
+  // console.log(a.filter(val => {
+  //   return !b.includes(val)
+  // })) 
+
+  // b = new Set(b)
+  //   return a.filter(v => !b.has(v))
+
+  // return a.filter(function (v) { return b.indexOf(v) === -1 });
+}
+
+
+function convertNumber(num){
+  let mang = [];
+  String(num).split('').map(item => {
+   mang.push(Math.pow(parseInt(item), 2))
+ })
+  return parseInt(mang.join(''))
+}
+
+function findOdd(a) {
+  debugger
+  return  a.reduce((a, b) => a ^ b)
+  // return a.find((item, index) => a.filter(el => el == item).length % 2)
+}
+
+
+function songDecoder(song){
+  let regex = /(WUB)+/gi;
+  console.log(song.replace(regex, " ").trim())
+
+  // return song.split('WUB').filter(Boolean).join(' ');
+}
+
+function solution(str){
+ return str.split('').reverse().join('')
+}
+
+function createPhoneNumber(numbers){
+ let first = numbers.splice(0, 3)
+ let sec = numbers.splice(first, 3)
+ return `(${first.join('')}) ${sec.join('')}-${numbers.join('')}`
+}
+
+var array1 = [true,  true,  true,  false,
+true,  true,  true,  true ,
+true,  false, true,  false,
+true,  false, false, true ,
+true,  true,  true,  true ,
+false, false, true,  true ];
+function countSheeps(arrayOfSheep) {
+  let count = 0;
+  arrayOfSheep.forEach(val => {
+   if(val === true) {
+    count++
+  }
+});
+  return count
+
+ // return arrayOfSheeps.filter(Boolean).length;
+}
+
+function holiday(x, weekDay, month, yearNumber) {
+  weekDay = weekDay.slice(0, 3);
+  const date = new Date(month + ' ' + yearNumber);
+  const m = date.getMonth();
+  for (let d = 1; date.getMonth() === m; date.setDate(++d)) {
+    if(date.toString().slice(0, 3) === weekDay && --x === 0) {
+      return d;
+    }
+  }
+  return -1;
+}
+
+function machine(cogs) {
+  debugger
+  return cogs.map(x => {
+    const d = gcd(x, cogs[0]);
+    return [cogs[0] / d, x / d];
+  });
+}
+
+function gcd(x, y) {
+  return y == 0 ? x : gcd(y, x % y);
+}
+
+function isIsogram(str){
+  let cc = str.toLowerCase().split('')
+  for(let i = 0 ; i <cc.length;i++) {
+    if(cc.indexOf(cc[i]) !== cc.lastIndexOf(cc[i])) {
+      return false
+    }
+  }
+  return true
+
+  // return !/(\w).*\1/i.test(str)
+  // return new Set(str.toUpperCase()).size == str.length;
+}
+
+function distinct(a) {
+  let mang = []
+  for(let i = 0 ; i < a.length; i++) {
+    if(!mang.includes(a[i])) {
+      mang.push(a[i])
+    }
+  }
+  return mang
+
+  // return [...new Set(a)];
+  // return Array.from(new Set(a));
+  // return a.filter((item, index) => a.indexOf(item) === index);
+}
+
+function findShort(s) {
+ let count = s.split(' ');
+ let first = count[0].length
+ for(let i = 0 ; i < count.length; i++) {
+  if(first >= count[i].length) {
+    first = count[i].length
+  }
+}
+return first
+
+ // Math.min(...s.split(" ").map (s => s.length))
+
+ //  return Math.min.apply(null, s.split(' ').map(w => w.length));
+}
+
+var countBits = function(n) {
+  let sum = n.toString(2).split('')
+  let con;
+  for(let convert of sum) {
+    
+  }
+
+  // n.toString(2).split('0').join('').length;
+};
+
+function sumIntervals(intervals){
+  // debugger
+  let mang = [];
+  intervals.map(val => {
+    for(let i = val[0]; i < val[1]; i++) {
+      mang.push(i)
+    }
+  })
+  mang = [... new Set(mang)];
+  return mang.length
+
+  // intervals.forEach( function(interval) {
+  //   for (var i = interval[0] ; i < interval[1] ; i++) {
+  //     if (numbers.indexOf(i) == -1) numbers.push(i);
+  //   }
+  // });
+  // return numbers.length;
+}
+
+function divisors(integer) {
+ debugger
+ var divs = [];
+ 
+ for(var i = 2; i < integer; i++) {
+  if(integer % i === 0) {
+    divs.push(i);
+  }
+}
+
+return divs.length ? divs : integer + ' is prime';
+};
+
+var uniqueInOrder=function(iterable){
+  var result = []
+  var last
+  
+  for (var i = 0; i < iterable.length; i++) {
+    if (iterable[i] !== last) {
+      result.push(last = iterable[i])
+    }
+  }
+  
+  return result
+
+  //  return [...iterable].filter((a, i) => a !== iterable[i-1])
+}
+
+function findSmallestInt(args) {
+  return args.sort(function(a, b){
+    return a -b 
+  })[0]
+}
+
+function incrementString (strng) {
+  return input.replace(/([0-8]?)(9*)$/, function(s, d, ns) {
+    return +d + 1 + ns.replace(/9/g, '0');
+  });
+}
+
+function perimeter(n) {
+ let arr = [1, 1];
+ for(let i = 0; i < n - 1; i++) {
+  arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+}
+return 4 * arr.reduce((sum, num) => sum + num, 0);
+}
+
+String.prototype.sort = function() {
+  return this.split("").sort().join("");
+};
+
+function anagrams(word, words) {
+  return words.filter(function(x) {
+    return x.sort() === word.sort();
+  });
+}
+
+function likes(names) {
+  for(let i = 0; i <names.length; i++) {
+    if(names.length >= 4) {
+      return `${names[0]} and ${names[1]} 2 others like this`
+    } else {
+      return `${names}`
+    }
+  }
+}
+
+function count (string) {  
+ var result = {};
+ 
+ for(let i = 0; i < string.length; i++) {
+  if(result.hasOwnProperty(string[i])){
+    result[string[i]] += 1;
+  } else {
+    result[string[i]] = 1;
+  }
+}
+
+return result;
+}
+
+longestPalindrome=function(s){
+ if (!s) return 0;
+ for (let c = s.length; c > 0; c--) {
+  for (let i = 0; i <= s.length - c; i++) {
+    var check = s.substr(i, c);
+    if (check === check.split("").reverse().join("")) return c;
+  }
+}
+}
+
+function meeting(s) {
+ let string = s.toUpperCase().split(';')
+ .map(x => x.split(':').reverse().join(', '))
+ .sort()
+ .join(')(')
+ return '(' + string + ')'
+}
+
+function solution(string) {
+  let regex = /([a-z])([A-Z])/g;
+  let show = string.replace(regex, "$1 $2");
+  console.log(show)
+}
+
+multiplicationTable = function(size) {
+  var result = [];
+
+  for (var i = 0; i < size; i++) {
+    result[i] = [];
+    for(var j = 0; j < size; j++) {
+      result[i][j] = (i + 1) * (j + 1);
+    }
+  }
+  
+  return result
+}
+
+function abbreviate(string) {
+  return string.replace(/\w{4,}/g, function(word) {
+    return word[0] + (word.length - 2) + word.slice(-1);
+  });
+}
+
+var maxSequence = function(arr){
+  debugger
+  var min = 0, ans = 0, i, sum = 0;
+  for (i = 0; i < arr.length; ++i) {
+    sum += arr[i];
+    min = Math.min(sum, min);
+    ans = Math.max(ans, sum - min);
+  }
+  return ans;
+}
+
+var isPP = function(n){
+  let test = Math.sqrt(n);
+  let arr = [];
+  let add = 0; 
+  for(let i = add ; i <= n ; i++) {
+    for (var m = 2; m <= Math.floor(Math.sqrt(n)); ++m) {
+      var k = Math.round(Math.log(n) / Math.log(m))
+      if (Math.pow(m, k) == n) return [m, k];
+    }
+    return null;
+  }
+}
+
+function arrayDiff2(a, b) {
+  b = new Set(b);
+
+  return a.filter(val => !b.has(val))
+}
+
+function createPhoneNumber2(numbers){
+  console.log(`(${String(numbers.slice(0, 3).split(''))}) ${String(numbers.slice(4, 7))}`) 
+}
+
+function songDecoder2(song){
+  let regex = /(WUB)/gi;
+  return song.replace(regex, " ").trim()
+}
+</script>

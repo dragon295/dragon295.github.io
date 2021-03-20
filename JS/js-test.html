@@ -1,0 +1,280 @@
+<script type="text/javascript">
+// 	var dcm = [
+//     {
+//         "firstName": "Akira",
+//         "lastName": "Laine",
+//         "number": "0543236543",
+//         "likes": ["Pizza", "Coding", "Brownie Points"]
+//     },
+//     {
+//         "firstName": "Harry",
+//         "lastName": "Potter",
+//         "number": "0994372684",
+//         "likes": ["Hogwarts", "Magic", "Hagrid"]
+//     },
+//     {
+//         "firstName": "Sherlock",
+//         "lastName": "Holmes",
+//         "number": "0487345643",
+//         "likes": ["Intriguing Cases", "Violin"]
+//     },
+//     {
+//         "firstName": "Kristian",
+//         "lastName": "Vos",
+//         "number": "unknown",
+//         "likes": ["JavaScript", "Gaming", "Foxes"]
+//     }
+// ];
+
+// function lookUpProfile(name){
+//    for ( var i = 0; i < dcm.length; i++) {
+//       console.log(dcm[i]["firstName"] == name);
+//    }
+// }
+	
+	function factorialize(num) {
+	//debugger;
+  for ( let i = 1; i <= num; i++) {
+   	num* i;
+  } 
+  return num;
+}
+
+
+var listProducts = [
+ {id: 1, categoryId: 1, name: 'Tivi'},
+ {id: 2, categoryId: 1, name: 'Tủ lạnh'},
+ {id: 3, categoryId: 3, name: 'Ghế sofa'},
+ {id: 4, categoryId: 1, name: 'Máy giặt'},
+ {id: 5, categoryId: 2, name: 'Chén bát'},
+ {id: 6, categoryId: 2, name: 'Nồi cơm điện'},
+ {id: 7, categoryId: 3, name: 'Cửa kính'},
+ {id: 8, categoryId: 1, name: 'Điều hoà'},
+ {id: 9, categoryId: 3, name: 'Bàn tròn'},
+ {id: 10, categoryId: 2, name: 'Lò vi sóng'},
+]
+
+function filterProductsByCategoryId(products, categoryId) {
+  let mang = [];
+products.filter(item => {
+  	if (item.categoryId === categoryId) {
+  		mang.push(item)
+  	}
+  })
+	return mang
+}
+
+
+function removeDuplicate(array) {
+	// debugger
+	let mang = []
+array.filter(item => {
+ 	if(mang.indexOf(item) === -1) {
+ 		console.log(mang.push(item))
+ 	}
+ })
+
+}
+
+function flatten(arr) {
+ console.log(arr.reduce((val1, val2) => {
+	return val1.concat(val2)
+}))
+}
+
+
+let items = ['Tom', 'Bill', 'Kim'];
+function checkVal(item) {
+	debugger;
+	console.log(item.reduce(function(val1,val2){
+		return val1 + '<' + val2 + '>'
+	}, ''))
+}
+
+function countOccurrences(arr) {
+	debugger;
+console.log(arr.reduce((prev, curr) => (prev[curr] = ++prev[curr] || 1, prev), {}))
+}
+
+function countConcu(arr) {
+	// debugger;
+	console.log(arr.reduce((val1, val2) =>{
+		// can use val1.hasOwnProperty(val2) or val2 in val1
+		if(val2 in val1){
+			++val1[val2]
+		} else {
+			val1[val2] = 1
+		}
+		return val1
+	}, {}))
+}
+
+function countCc(arr) {
+	debugger
+	console.log(arr.reduce(function (acc, curr) {
+	 if (typeof acc[curr] == 'undefined') {
+	    acc[curr] = 1;
+	  } else {
+	    acc[curr] += 1;
+	  }
+
+	  return acc
+	
+	}, {}));
+}
+function lengthSort(arr) {
+ return arr.sort(function(a, b){
+ 	return a.length - b.length
+ })
+}
+
+var students = [
+  { name: 'A', score: 100 },
+  { name: 'B', score: 10 },
+  { name: 'C', score: 101 },
+  { name: 'D', score: 50 },
+  { name: 'E', score: 75 }
+];
+
+function getTopStudents(students) {
+	return students.sort(function(a,b){
+			return b.score - a.score
+		}).slice(0, 3).map(val => {
+			return val.name
+		})
+}
+
+function powerup(arr) {
+ return arr.map(val => {
+ 	return val % 2 === 0 ? Math.pow(val, 2) : val;
+ })
+}
+
+function average(arr) {
+	let count = 0;
+	for(let num of arr) {
+		count+=num
+	}
+	return Math.round(count / arr.length)
+} 
+
+function positiveNumber(arr) {
+	return arr.map(val => {
+		return val < 0 ? Math.abs(val) : val;
+	})
+}
+
+
+function circumferenceOfCircle(r) {
+  return Math.pow(r, 2) * Math.PI
+}
+
+function trigonim(number) {
+ 	let mang = [];
+ 	mang.push(Math.sin(number).toFixed(3));
+ 	mang.push(Math.cos(number).toFixed(3));
+ 	mang.push(Math.tan(number).toFixed(3));
+ 	return mang
+ }
+
+ var student = {
+    name: 'Cc',
+    sex: 'Gay',
+    age: 11
+}
+
+
+ function showInfo(obj) {
+  let mang = Object.values(obj);
+  for(let j of mang) {
+  	return typeof j;
+  }
+}
+
+function removeProp(prop) {
+    var student = {
+            name : "David Rayy",
+            class : "VI",
+            rollno : 12
+        }
+  // chỉ viết code ở dưới dòng này.
+ 	delete student[prop]
+ 	console.log(student)
+
+}
+
+function countProperty(obj) {
+ return Object.entries(obj).length
+}
+
+function Shape(color, shape, fill) {
+ 	this.color = color;
+ 	this.shape = shape;
+ 	this.fill = fill;
+ 	return this
+}
+
+
+var shape1 = new Shape("red", "rectangle", true);
+var shape2 = new Shape("orange", "triangle", false);
+var shape3 = new Shape("tomato", "circle", true);
+
+let tom = {
+	name: 'Tom',
+	stomach: [],
+	eat: function(mouse) {
+		this.stomach.push(mouse)
+		 return this
+	}
+}
+
+function Mouse(name) {
+	// debugger
+	this.name = name;
+}
+
+// console.log(tom.stomach)
+let m1 = new Mouse ('m1');
+let m2 = new Mouse ('m2');
+let m3 = new Mouse ('m3');
+console.log(tom.eat(m1).eat(m2).eat(m3))
+
+function Student(diemToan, diemLy, diemHoa) {
+ this.diemToan = diemToan;
+ this.diemLy = diemLy;
+ this.diemHoa = diemHoa;
+   return this
+}
+
+Student.prototype.average = function() {
+ 	return Math.ceil((this.diemHoa + this.diemLy + this.diemToan) / 3)
+  }
+
+var student1 = new Student(6, 7, 7);
+var student2 = new Student(8, 9, 6);
+
+function answer() {
+  return `
+  // Ghi câu trả lời ở đây
+  
+  `
+}
+
+function Person(name, age) {
+  this.type = "person";
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.sing = function() {
+  console.log(`Là lá la...`);
+};
+
+const mrThinh = new Person("Pham Thinh", 33);
+const mrDung = new Person("The Dung", 19);
+
+(mrThinh.sing === mrDung.sing)
+
+console.log(mrThinh);
+console.log(mrDung)
+</script>

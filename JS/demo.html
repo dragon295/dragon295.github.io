@@ -1,0 +1,284 @@
+<script type="text/javascript">
+// 	let arr = [
+// 		{ name: "buoi", price: 499, stock: 10 },
+// 		{ name: "cu", price: 799, stock: 20 },
+// 		{ name: "lo", price: 999, stock: 15 }
+// 	]
+
+// 	// console.log(arr.sort(function(a,b){
+// 	// 	// debugger;
+// 	// 	return b.price - a.price 
+// 	// }))
+
+// 	// console.log(arr.sort(function(a,b){
+// 	// 	return b.stock - a.stock 
+// 	// }))
+
+// 	// function rollDie() {
+// 	// 	let min = Math.min(1, 6);
+// 	// 	let max = Math.max(1, 6);
+// 	// 	console.log(Math.ceil(Math.random() * 6))
+// 	// }
+
+// 	// console.log(rollDie.prototype.constructor === rollDie)
+
+
+// 	function Person(name, age) {
+//   this.type = "person";
+//   this.name = name;
+//   this.age = age;
+// }
+// Person.prototype.sing = function() {
+//   console.log(`Là lá la...`);
+// };
+// const mrThinh = new Person("Pham Thinh", 33);
+// const mrDung = new Person("The Dung", 19);
+// mrThinh.sing === mrDung.sing;
+
+
+//  ////////////////////////////////////
+
+
+
+
+// var circle1 = new Circle(0, 0, 1);
+// var circle2 = new Circle(0, 2, 1);
+// console.log(circle1.isOverlapped(circle2));
+
+// var circle3 = new Circle(0, 0, 3);
+// console.log(circle1.isOverlapped(circle3));
+
+// var circle4 = new Circle(5, 5, 1);
+// console.log(circle1.isOverlapped(circle4));
+
+// function Circle (x,y,r) {
+//   this.x = x;
+//   this.y = y;
+//   this.r = r;
+//   // return this
+// }
+
+// Circle.prototype.isOverlapped = function(c) {
+// 	console.log(c);
+//   var d = Math.sqrt(Math.pow(this.x - c.x, 2) + Math.pow(this.y - c.y, 2));
+//  if (d === this.r + c.r) {
+//     return 0;
+//   }
+//   if (d < this.r + c.r) {
+//     return -1;
+//   }
+//   return 1; 
+// }
+
+//  function max(arr) {
+//  	// debugger;
+//     let first = arr[0];
+//   for(let i = 0; i < arr.length; i++) {
+//      if(arr[i] >= first) {
+//         first = arr[i]
+//      }
+//   }
+//   return first
+// }
+
+// function transform(arr) {
+// 	let mang = [];
+//   	arr.map(val => {
+//   	let convert = val.toLowerCase();
+//   	switch(convert) {
+//   		case "a":
+//   		mang.push(1);
+//   		break;
+//   		case "b":
+//   		mang.push(2);
+//   		break;
+//   		default:
+//   		mang.push(0);
+//   		break;
+//   	}
+//   })
+//   return mang;
+// }
+
+
+function isWeekend(x) {
+  let now = new Date(x);
+  return now.getDay() === 6 || now.getDay() === 0 ? true : false
+}
+
+var fromDate = new Date('2019/10/17');
+var toDate = new Date('2019/10/21');
+ 
+function diff(fromDate, toDate) {
+  return  toDate.getDate() - fromDate.getDate()
+}
+
+var date = new Date("06/10/2019")
+
+function subtractDays(date, n) {
+ return date.getTime() - n*24*60*60*1000
+}
+
+
+function diffMs(a, b) {
+ let num1 = new Date(a);
+ let num2 = new Date(b);
+  return num2.getTime() - num1.getTime()
+}
+
+
+function capitalize(str) {
+  return str.trim().toLowerCase().split(' ').map(x => {
+    return x.charAt(0).toUpperCase() + x.slice(1)
+  }).join(" ")
+}
+
+function getExtensionFilename(filename) {
+   let show = filename.split('.');
+   return show[show.length - 1];
+  }
+
+function findMaxDiff(arr) {
+  // debugger
+  if(arr.length < 2) {
+    return 0
+  }
+  let maxDiff = 0
+  for(let i = 0 ; i <arr.length; i++) {
+    maxDiff=(maxDiff < Math.abs(arr[i]- arr[i+1])) ? Math.abs(arr[i]- arr[i+1]) : maxDiff
+  }
+
+  return maxDiff
+  }
+
+  function equal_pt(str){ 
+ let countP = 0;
+ let countT = 0;
+ let arr = str.split('');
+ for(let i = 0 ; i < arr.length ; i++) {
+  if(arr[i] === 'p') {
+    countP++;
+  } else if(arr[i] === 't') {
+    countT++;
+  }
+ }
+ return countP === countT ? true : false
+}
+
+function first(array, n) {
+ return n === undefined ? [ array[0] ] : n < 0 ? [] : array.slice(0, n)
+}
+
+function omitCharAt(str, n) {
+  return str.replace(str.charAt(n), "")
+}
+
+function nearestTo100(a, b){
+ return Math.abs(100 - a) < Math.abs(100 - b) ? a : b
+}
+
+function checkInt(number1, number2) {
+  if(number1 < 0 && 0 < number2) {
+    return true
+  } else if(number1 > 0  && 0 > number2) {
+    return true
+  } else {
+    return false
+  }
+}
+
+function difference(n) {
+ return n > 13 ? (n-13)*2 : Math.abs(n-13)
+}
+
+function toNextChar(str) {
+  let arr = str.split('');
+  for(let i = 0 ; i < arr.length; i++) {
+   arr[i]=String.fromCharCode(str.charCodeAt(i)+1)
+  }
+  return arr.join('')
+}
+
+function newString(str, n){
+  return str.slice(0, n) + str.slice(str.length- n)
+}
+
+function chunkArrayInGroups(arr, size){
+  let mang = []
+  for(let i = 0; i < arr.length; i+= size) {
+    mang.push(arr.slice(i, i+size))
+  }
+  return mang
+}
+
+function maxOfSumChain(arr,k){
+  let cut = arr.slice(arr[0], k+1);
+  // console.log(cut)
+  let sum = 0;
+  for(let num of cut) {
+    sum+=num
+  }
+  return sum
+}
+
+function findMostFrequent(arr) {
+
+  // var obj = arr.reduce(function(cal, v){
+  //     if (v in cal){
+  //       cal[v]++;
+  //   } else {
+  //       cal[v] = 1;
+  //   }
+  //   return cal;
+  // }, {})
+  
+  // var max = Math.max(...Object.values(obj));
+  
+  // return Object.keys(obj).filter(i => obj[i] === max).map(i => Number(i));
+
+  // this solution only accept  1 value
+ // debugger
+
+
+ // console.log(arr.sort(function(a,b){
+ //     return arr.filter(val => val === a).length - 
+ //     arr.filter(val => val === b).length 
+ //  }).pop())
+
+ return [...new Set(arr)]
+  .map((value) => [value, arr.filter((v) => v === value).length])
+  .sort((a,b) => a[1]-b[1])
+  .reverse()
+  .filter((value, i, a) => a.indexOf(value) === i)
+  .filter((v, i, a) => v[1] === a[0][1])
+  .map((v) => v[0]).reverse()
+}
+
+function findmaxDiff2(arr){
+  // debugger
+  let max = Math.max(...arr);
+  let count = max - arr[0];
+    // console.log(max)
+
+    for(let i = 1 ; i < arr.length; i++) {
+        if(max - arr[i] > count) {
+          count = max - arr[i]
+        }
+    }
+
+    return count
+
+}
+
+function rearrangeChar(str1, str2) {
+    let sort1 = str1.split('').sort();
+    let sort2 = str2.split('').sort();
+   for(let i = 0 ; i< str1.length; i++) {
+    if(sort1[i] !== sort2[i]) {
+      return false
+    } 
+   }
+   return true
+}
+
+</script>

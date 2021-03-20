@@ -1,0 +1,71 @@
+<script type="text/javascript">
+
+// Eg-1: 
+	
+	const eg1 = (val) => {
+		val = val || 10
+		console.log(val) 
+	}
+
+
+	// %c allow to css for the val and the des:
+
+	const eg11 = (val, des) => {
+		val = val || 100;
+		console.log(`%c${des} ${val}`, "font-weight: bold; color: darkgreen; font-size: 30px")
+	}
+
+// Eg-2:
+
+class Person {
+	constructor(name, add, hobb) {
+		this.name = name;
+		this.add = add;
+		this.hobb = hobb;
+	}
+
+
+	print() {
+		console.log(this)
+	}
+}
+
+// person?.add?.city check if true will continue run
+function printStreet(person) {
+	console.log(person?.add?.city)
+}
+
+const sad = new Person (
+	"Sad",
+	{street: "12345 mian st", city: "Somewhere"},
+	["Game", "Solokill"]
+)
+
+console.log(sad.hobb?.[0].toUpperCase())
+
+sad.print()
+
+printStreet(sad)
+
+
+
+// Eg-3:
+
+const name = "Sad";
+const lap = "Predator"
+
+const theSad = {
+	name,
+	lap
+}
+
+console.log(theSad)
+
+
+// Eg-4: 
+// với thẻ <script> có 2 method: Async và Defer;
+// - Nếu không để thẻ <script> ở sau <body> mà trong thẻ <head> thì :
+// + Async : chạy html trước sau đó load js đợi js load xong lại chạy html 
+// + Defer : load và chạy song song html với js
+
+</script>
