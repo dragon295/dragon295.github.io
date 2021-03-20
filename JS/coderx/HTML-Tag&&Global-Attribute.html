@@ -5,10 +5,12 @@
 	<meta charset="utf-8" />
 	<base href="https://www.twitter.com/" target="_blank">
 	<style type="text/css">
-		body{
-			padding: 0
-			margin: auto;
-			box-sizing: border-box;
+
+		#div1 {
+			width: 350px;
+			height: 70px;
+			padding: 10px;
+			border: 1px solid #aaaaaa;
 		}
 	</style>
 </head>
@@ -886,10 +888,10 @@
 	+ srclang;
 	-->
 	<video width="320" height="240" controls>
-		<source src="forrest_gump.mp4" type="video/mp4">
-		<source src="forrest_gump.ogg" type="video/ogg">
-		<track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
-		<track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+		<source src="https://www.w3schools.com/tags/forrest_gump.mp4" type="video/mp4">
+		<source src="https://www.w3schools.com/tags/forrest_gump.ogg" type="video/ogg">
+		<track src="https://www.w3schools.com/tags/fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+		<track src="https://www.w3schools.com/tags/fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
 	</video>
 
 
@@ -914,8 +916,8 @@
 
 	<!-- <video> chứa <source> và định dạng video như MP4, WebM và OGG. -->
 	<video width="320" height="240" controls>
-		<source src="movie.mp4" type="video/mp4">
-		<source src="movie.ogg" type="video/ogg">
+		<source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+		<source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg">
 		Your browser does not support the video tag.
 	</video>
 
@@ -926,16 +928,80 @@
 	<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
 
 
-	<!-- GLOBAL ATTRIBUTE --> 
+	<!-- GLOBAL ATTRIBUTE 
+	+ accesskey: tạo một kích hoạt nhanh
+	- với Chrome + Window + Linux: [Alt] + accesskey;
+	+ class: tạo class cho element;
+	+ contenteditable: Kt xem phần tử có thể chỉnh sửa hay ko
+	+ data-*: được sử dụng để lưu trữ dữ liệu tùy chỉnh
+	+ dir: chỉnh hướng của văn bản;
+	+ draggable: Kt xem 1 element có thể kéo ko;
+	+ hidden: ẩn element;
+	+ id: tạo id;
+	+ lang: tùy chỉnh ngôn ngữ cho văn bản;
+	+ spellcheck: kt chính tả văn bản;
+	+ style: chỉnh style cho element;
+	+ tabindex: chỉnh vị trí tab của các element;
+	+ title;
+	--> 
 
+	<!-- accesskey -->
+	<a href="https://www.w3schools.com/html/" accesskey="h">HTML</a>
+	<br>
+	<a href="https://www.w3schools.com/css/" accesskey="c">CSS</a>
+
+	<!-- contenteditable -->
+	<p contenteditable="true">This is an editable paragraph.</p>
+
+	<!-- data-* -->
+	<ul>
+		<li data-animal-type="bird">Owl</li>
+		<li data-animal-type="fish">Salmon</li>
+		<li data-animal-type="spider">Tarantula</li>
+	</ul>
+
+	<!-- dir -->
+	<p dir="rtl">Write this text right-to-left!</p>
+
+	<!-- draggable -->
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<br>
+	<p id="drag1" draggable="true" ondragstart="drag(event)">This is a draggable paragraph. Drag this element into the rectangle.</p>
+
+	<!-- hidden -->
+	<p hidden>This paragraph should be hidden.</p>
+
+	<!-- lang -->
+	<p lang="fr">Ceci est un paragraphe.</p>
+
+	<!-- spellcheck -->
+	<p contenteditable="true" spellcheck="true">This is a paragraph.</p>
+
+	<!-- tabindex -->
+	<a href="https://www.w3schools.com/" tabindex="2">W3Schools</a>
+	<a href="http://www.google.com/" tabindex="1">Google</a>
+	<a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
 	
-
 </body>
 <script type="text/javascript">
 	function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
+		var temp = document.getElementsByTagName("template")[0];
+		var clon = temp.content.cloneNode(true);
+		document.body.appendChild(clon);
+	}
+
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+
+	function drag(ev) {
+		ev.dataTransfer.setData("Text", ev.target.id);
+	}
+
+	function drop(ev) {
+		var data = ev.dataTransfer.getData("Text");
+		ev.target.appendChild(document.getElementById(data));
+		ev.preventDefault();
+	}
 </script>
 </html>
