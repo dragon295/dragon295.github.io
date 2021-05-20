@@ -1,7 +1,7 @@
 var c = document.createElement("canvas");
 var ctx = c.getContext("2d");
 c.width = 1200;
-c.height = 530;
+c.height = 550;
 document.body.appendChild(c);
 
 var perm = [];
@@ -12,12 +12,12 @@ while (perm.length < 255) {
 
 var lerp = (a, b, t) => a + ((b - a) * (1 - Math.cos(t * Math.PI))) / 2;
 var noise = (x) => {
-  x = (x * 0.01) % 254;
+  x = (x * 0.015) % 254;
   return lerp(perm[Math.floor(x)], perm[Math.ceil(x)], x - Math.floor(x));
 };
 
 var Player = function () {
-  this.x = c.width / 2;
+  this.x = c.width / 5;
   this.y = 0;
   this.ySpeed = 0;
   this.rot = 0;
@@ -97,7 +97,7 @@ function loop() {
     restart(
       setTimeout(function () {
         alert("Hơi ngu :)) cố gắng hơn. Bấm Enter để chơi lại ");
-      }, 50)
+      }, 12)
     );
   requestAnimationFrame(loop);
 }
@@ -116,5 +116,5 @@ loop();
 
 var instructions = document.createElement("div");
 instructions.innerHTML +=
-  "Mũi tên <br> [up] = Chạy [down] = phanh ---- [Left] [Rigth] = Đảo hướng <br> Đây là Demo (https://www.facebook.com/profile.php?id=100011342911063) thằng trong link tuổi loz :))";
+  "Mũi tên <br> [up] = Chạy [down] = phanh ---- [Left] [Rigth] = Đảo hướng <br> Đây là Demo ";
 document.body.appendChild(instructions);
