@@ -1,0 +1,535 @@
+/* 
+	+ A:
+
+	- align-content: The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines ( theo chiều dọc );
+
+	- align-items: Chỉ định căn chỉnh cho các mục bên trong một container theo chiều dọc ;
+	
+	- align-self: The align-self property specifies the alignment for the selected item inside the flexible container.(ghi đè lên aling-items cảu container);
+
+	- all: reset tất cả các giá trị của đối tượng về initial;
+
+	- animation: tạo animation;
+
+	- animation-delay: delay thời gian bắt đầu của animation;
+
+	- animation-direction: điều chỉnh hướng của animation (forwards or backwards);
+
+	- animation-duration: thời gian chạy cảu animation;
+
+	- animation-fill-mode: tương tự như animation-direction nhưng animation chỉ xuất hiện một lần;
+
+	- animation-iteration-count: chỉ định số lần chạy của animation;
+
+	- animation-name: tên của animation;
+
+	- animation-play-state: chỉ định animation dừng hay chạy tiếp;
+
+	- animation-timing-function: điều chỉnh speed của animation;
+	
+	+ B
+
+	- backface-visibility: hiển thị tầm nhìn mặt sau của một element hay không;
+
+	- background: 
+
+	- background-color;
+
+	- background-image: tạo hình ảnh background;
+
+	- background-attachment: điều chỉnh background-image cố định hay scroll theo length của trang (like scroll ; unset ...);
+
+	- background-blend-mode: xác định chế độ hoà trộn của mỗi lớp nền (màu sắc và / hoặc hình ảnh) (like lighten ; darken ...);
+
+	- background-clip: định nghĩa border của background (like content-box; border-box);
+
+	- background-origin: định nghĩa vị trí "GỐC" của background;
+	
+	- background-position: thuộc tính đặt vị trí bắt đầu của hình nền;
+
+	- background-repeat: thuộc tính xem background có đc lặp lại hay không (like repeat ; no-repeat ; space ; initial ; ...);
+	
+	- background-size: chirnh size cuar bg (like auto; length ; % ; cover ... );
+	- border;
+
+	- border-bottom;
+
+	- border-bottom-color
+
+	- border-bottom-left-radius;
+
+	- border-bottom-right-radius;
+
+	- border-bottom-style: tạo style cho border-bottom (like none; hidden ; dotted; solid; ...)
+
+	- border-bottom-width: điều chỉnh width của border-bottom (like medium ; thin ; thick ; length ; ...);
+
+	- border-collapse: thu gọn các đương viền cho <table> (like separate ; collapse);
+
+	- border-color: (like color ; transperant);
+
+	- border-image: tạo image cho border (như background-image);
+
+	- border-image-outset: đặt border cho  border-image;
+
+	- border-image-repeat: ( tương tự như background-repeat );
+
+	- border-image-slice: cắt bớt image-border (like number; %);
+
+	- border-image-source: ghi nguồn của image-border;
+
+	- border-image-width;
+
+	- border-left-color;
+
+	- border-left-style;
+
+	- border-left-width;
+
+	- border-radius: xác định bán kính góc;
+
+	- border-right;
+
+	- border-right-color;
+
+	- border-right-style;
+
+	- border-right-width;
+
+	- border-spacing: tạo khoảng cách borders;
+
+	- border-style;
+
+	- border-top;
+
+	- border-top-color;
+
+	- border-top-left-radius;
+
+	- border-top-right-radius;
+
+	- border-top-style;
+
+	- border-width;
+
+	- bottom: chỉnh bottom cho position:absolute;
+
+	- box-decoration-break: thuộc tính chỉ định cách áp dụng nền, phần đệm, đường viền, đường viền, hình hộp, lề và đường dẫn clip của một phần tử khi hộp cho phần tử bị phân mảnh.;
+
+	- box-shadow: tạo shadow cho element (like h-offset ; blur ; spread ; color ...);
+
+	- box-sizing: định nghĩa cách chiều rộng và chiều cao của một phần tử được tính: họ nên bao gồm padding và borders, hay không (border-box);
+
+	- break-after: bạn có thể yêu cầu trình duyệt ngắt trang, cột hoặc vùng sau khi phần tử break-after được áp dụng thuộc tính hoặc tránh phần tử bị tách và kéo dài trên hai trang.;
+
+	- break-before: ngược lại break-after;
+
+	- break-inside: bạn có thể yêu cầu trình duyệt tránh ngắt bên trong hình ảnh, đoạn mã, bảng và danh sách;
+
+	+ C
+
+	- caption-side: xác định vị trí của <caption> trong <table>;
+
+	- caret-color: điều chỉnh color con trỏ trong <input>;
+
+	- clear: không cho phép hoặc cho phép element theo hướng float của phần tử ở trên ;
+
+	- clip: cắt img (like auto shape( rect (top, right, bottom, left)) );
+
+	- clip-path: tương tự như clip (có thể that thế clip);
+
+	- color;
+
+	- column-count: phân chia cột trong 1 element (thường là <div>);
+
+	- column-fill: phân chia nội dung để điền vào cột, cân hay không;
+
+	- column-gap: chỉ định khoảng cách giữa các cột;
+
+	- column-rule: sets the width, style, and color of the rule between columns.;
+
+	- column-rule-color;
+
+	- column-rule-style;
+
+	- column-rule-width;
+	
+	- column-span: chỉ định số lượng cột mà một phần tử sẽ trải qua ;
+
+	- column-width:
+
+	- columns: là viết tắt của column-width và column-count;
+	
+	- content: được sử dụng với phần tử ::before và ::after, để chèn nội dung đã tạo.;
+	
+	- counter-increment: thuộc tính tăng hoặc giảm giá trị của một hoặc nhiều bộ đếm CSS.
+	- thuộc tính thường được sử dụng cùng với counter-reset và content;
+
+	- counter-reset: ngược lại với counter-increment;
+
+	- cursor: thuộc tính chỉ định con trỏ chuột được hiển thị khi trỏ chuột qua một element.;
+	
+	+ D
+
+	- direction: chỉnh hướng của element: ltr or rtl;
+
+	- display: hiển thị element theo dạng (inline ; inline-block; none ; flex ; grid ...);
+	
+	+ E
+
+	- empty-cell: thuộc tính đặt có hay không hiển thị đường viền trên các ô trống trong bảng.;
+	
+	+ F
+
+	- filter: thuộc tính xác định hiệu ứng hình ảnh (như blur và saturation) cho một phần tử (thường là <img>);
+
+	- flex: Thuộc tính flex là thuộc tính viết tắt cho: flex-grow flex-shrink flex-base Thuộc tính flex đặt độ dài linh hoạt trên các mục linh hoạt.;
+
+	- flex-basis: Thuộc tính flex-base chỉ định độ dài ban đầu của một mục linh hoạt;
+
+	- flex-direction: hướng của element bên trong flex;
+	
+	- flex-flow: kết hơp của flex-direction và flex-wrap;
+
+	- flex-grow: Thuộc tính flex-grow chỉ định mục sẽ tăng bao nhiêu so với phần còn lại của các mục linh hoạt bên trong cùng một container;
+
+	- flex-shrink: Thuộc tính flex-shrink chỉ định cách mục sẽ co lại so với phần còn lại của các mục linh hoạt bên trong cùng một container;
+
+	- flex-wrap: chỉ định xem các mục linh hoạt có nên bọc hay không;
+
+	- float;
+
+	- font: viết tắt của - font-style
+						 - font-variant
+						 - font-weight
+						 - font-size/line-height
+						 - font-family
+
+	- @font-face: cách gán trực tiếp font với url mà không cần thông qua link;
+
+	- font-family: xác định thể loại font cho element ;
+
+	- font-feature-settings: thuộc tính cho phép kiểm soát các tính năng đánh máy nâng cao trong phông chữ OpenType.;
+
+	- font-kerning: Thuộc tính font-kerning kiểm soát việc sử dụng thông tin kerning được lưu trữ trong một phông chữ.  Mẹo: Kerning xác định khoảng cách giữa các chữ cái;
+
+	- font-size;
+
+	- font-size-adjust: Thuộc tính font-size-Adjust cho phép bạn kiểm soát kích thước phông chữ tốt hơn khi phông chữ được chọn đầu tiên không khả dụng.
+	
+	- Khi không có phông chữ, trình duyệt sẽ sử dụng phông chữ được chỉ định thứ hai.  Điều này có thể dẫn đến một sự thay đổi lớn đối với kích thước phông chữ.  Để tránh điều này, hãy sử dụng thuộc tính font-size-Adjust.  
+	
+	- Tất cả các phông chữ đều có "giá trị khía cạnh" là sự khác biệt về kích thước giữa chữ cái viết thường "x" và chữ cái viết hoa "X".  
+
+	- Khi trình duyệt biết "giá trị khung hình" cho phông chữ được chọn đầu tiên, trình duyệt có thể tìm ra kích thước phông chữ sẽ sử dụng khi hiển thị văn bản với phông chữ lựa chọn thứ hai;
+
+	- font-stretch: Thuộc tính font-Stretch cho phép bạn làm cho văn bản hẹp hơn (cô đọng) hoặc rộng hơn (mở rộng).  Lưu ý: Một số phông chữ cung cấp các mặt bổ sung;  mặt đặc và mặt mở rộng;
+
+	- font-style: các kiểu phông chữ cho văn bản;
+
+	- font-variant: Thuộc tính font-variant chỉ định liệu văn bản có nên được hiển thị bằng phông chữ in hoa nhỏ hay không.;
+
+	- font-variant-caps: Thuộc tính font-variant-caps kiểm soát việc sử dụng các glyph thay thế cho các chữ cái viết hoa.;
+
+	- font-weight: thuộc tính đặt cách các ký tự dày hoặc mỏng trong văn bản sẽ được hiển thị.;
+
+	+ G
+
+	- gap: Thuộc tính gap xác định kích thước của khoảng cách giữa các hàng và cột. Nó là cách viết tắt của các thuộc tính sau: row-gap column-gap;
+
+	- grid: viết tắt của + grid-template-rows
+						 + grid-template-columns
+						 + grid-template-areas
+						 + grid-auto-rows
+						 + grid-auto-columns
+						 + grid-auto-flow
+	
+	- grid-area: viết tắt của + grid-row-start
+							  + grid-column-start
+							  + grid-row-end
+							  + grid-column-end;
+	
+	- grid-auto-columns: thuộc tính đặt kích thước cho các cột trong grid container;
+
+	- grid-auto-flow: thuộc tính đặt kích thước cho các cột trong grid container;
+
+	- grid-auto-rows: thuộc tính đặt kích thước cho các hàng trong grid container
+
+	- grid-column: thuộc tính chỉ định kích thước và vị trí của mục lưới trong bố cục lưới và viết tắt của + grid-column-start
+							  		  + grid-column-end;
+
+	- grid-column-start: xác định cột sẽ start ở dòng nào ;
+
+	- grid-column-end: xác định cột sẽ end ở dòng nào;
+
+	- grid-column-gap: thuộc tính xác định kích thước của khoảng cách giữa các cột trong grid container;
+
+	- grid-gap: Thuộc tính grid-gap xác định kích thước của khoảng cách giữa các hàng và cột trong grid và là viết tắt: + grid-row-gap
+													+ grid-column-gap
+
+	- grid-row: thuộc tính chỉ định kích thước và vị trí của mục lưới trong container grid và viết tắt của + grid-row-start
+							  			 + grid-row-end;
+
+	- grid-row-start: xác định hàng sẽ start ở dòng nào ;
+
+	- grid-row-end: xác định hàng sẽ end ở dòng nào;
+
+	- grid-row-gap: thuộc tính xác định kích thước của khoảng cách giữa các hàng trong grid container;
+
+	- grid-template: viết tắt của:	+ grid-template-rows
+									+ grid-template-columns
+									+ grid-template-areas;
+
+	- grid-template-areas: Thuộc tính  grid-template-areas chỉ định các khu vực trong bố cục lưới.  
+
+	- Bạn có thể đặt tên cho các mục lưới bằng cách sử dụng thuộc tính vùng lưới, sau đó tham chiếu đến tên trong thuộc tính vùng mẫu-lưới.  
+
+	- Mỗi khu vực được xác định bằng dấu nháy đơn.  Sử dụng dấu chấm để chỉ một mục lưới không có tên.;
+
+	- grid-template-columns: thuộc tính chỉ định số lượng (và độ rộng) của các cột trong bố cục lưới.  Các giá trị là một danh sách được phân tách bằng dấu cách, trong đó mỗi giá trị chỉ định kích thước của cột tương ứng.;
+
+	- grid-template-rows: thuộc tính chỉ định số lượng (và chiều cao) của các hàng trong bố cục lưới.  Các giá trị là một danh sách được phân tách bằng dấu cách, trong đó mỗi giá trị chỉ định chiều cao của hàng tương ứng.;
+	
+
+	+H
+
+	- hanging-punctuation: Thuộc tính hanging-punctuation treo chỉ định liệu một dấu chấm câu có thể được đặt bên ngoài hộp dòng ở đầu hay ở cuối dòng văn bản đầy đủ.;
+
+	- height: chỉnh chiều cao của element (hoặc dùng max-height);
+
+	- hyphens: Thuộc tính hyphens xác định liệu dấu gạch nối có được phép tạo ra nhiều cơ hội bọc mềm hơn trong một dòng văn bản hay không. 
+	
+	+I
+
+	- @import: import 1 file css khác vào;
+
+	- isolation: thuộc tính xác định liệu một phần tử có phải tạo một nội dung xếp chồng mới hay không.;
+
+	- justify-content;
+	
+	+K
+
+	- @keyframes: chạy animation của element (có kèm theo tên cần animation)
+
+	- Chỉ định thời điểm thay đổi kiểu sẽ xảy ra theo phần trăm hoặc với các từ khóa "from" và "to", giống như 0% và 100%.  0% là lúc bắt đầu hoạt ảnh, 100% là khi hoạt ảnh hoàn tất.
+	
+	-L
+
+	- left : chỉnh left trong position: absolute;
+
+	- letter-spacing: khoảng cách giữa các ký tự tăng hoặc giảm khoảng cách giữa các ký tự trong văn bản.;
+
+	- line-height: thuộc tính chỉ định chiều cao của một dòng;
+
+	- list-style: viết tắt  + list-style-type
+							+ list-style-position
+							+ list-style-image;
+
+	- list-style-image: Thuộc tính list-style-image thay thế điểm đánh dấu mục danh sách bằng một hình ảnh.;
+
+	- list-style-position: Thuộc tính list-style-position chỉ định vị trí của các điểm đánh dấu mục danh sách (dấu đầu dòng).;
+
+	- list-style-type: chỉ định các loại trong list;
+	
+	+M
+
+	- margin: xác định margin (theo hướng top; right ; bottom; left);
+
+	- margin-bottom;
+
+	- margin-left:
+
+	- margin-right:
+
+	- margin-top:
+
+	- max-height: Thuộc tính max-height xác định chiều cao tối đa của một phần tử.  
+
+	- Nếu nội dung lớn hơn chiều cao tối đa, nó sẽ bị tràn.  Cách vùng chứa sẽ xử lý nội dung tràn được xác định bởi thuộc tính overflow.  
+
+	- Nếu nội dung nhỏ hơn chiều cao tối đa, thuộc tính max-height không có hiệu lực.;
+
+	max-width: Thuộc tính max-width xác định chiều rộng tối đa của một phần tử.  
+
+	- Nếu nội dung lớn hơn chiều rộng tối đa, nó sẽ tự động thay đổi chiều cao của phần tử.  
+
+	- Nếu nội dung nhỏ hơn chiều rộng tối đa, thuộc tính max-width không có hiệu lực.;
+	
+	- @media: dùng để responsive;
+
+	- min-height: Thuộc tính min-height xác định chiều cao tối thiểu của một phần tử.  
+
+	- Nếu nội dung nhỏ hơn chiều cao tối thiểu, chiều cao tối thiểu sẽ được áp dụng.  
+
+	- Nếu nội dung lớn hơn chiều cao tối thiểu, thuộc tính chiều cao tối thiểu không có hiệu lực.;
+
+	- min-width: Thuộc tính min-width xác định chiều rộng tối thiểu của một phần tử.;
+
+	- mix-blend-mode: Thuộc tính mix-Blend-mode chỉ định cách nội dung của một phần tử sẽ kết hợp với nền gốc trực tiếp của nó.;
+	
+	+O
+
+	- object-fit: Thuộc tính object-fit được sử dụng để chỉ định cách thay đổi kích thước của <img> hoặc <video> để vừa với vùng chứa của nó.  
+
+	- Thuộc tính này cho biết nội dung cần lấp đầy vùng chứa theo nhiều cách khác nhau;  chẳng hạn như "giữ nguyên tỷ lệ khung hình đó" hoặc "mở rộng và chiếm nhiều dung lượng nhất có thể".;
+
+	- object-position: Thuộc tính object-position được sử dụng cùng với object-fit để chỉ định cách định vị một <img> hoặc <video> với tọa độ x / y bên trong "hộp nội dung riêng" của nó.;
+
+	- opacity: Thuộc tính opacity đặt mức độ mờ cho một phần tử.  
+
+	- Mức độ mờ mô tả mức độ trong suốt, trong đó 1 là hoàn toàn không trong suốt, 0,5 là 50% nhìn qua và 0 là hoàn toàn trong suốt.;
+
+	- order: Thuộc tính order chỉ định thứ tự của element bên trong container flex hay grid;
+
+	- outline: Đường viền là một đường được vẽ xung quanh các phần tử, bên ngoài các đường viền, để làm cho phần tử đó "nổi bật".  
+
+	- Thuộc tính outline là một thuộc tính 
+	viết tắt cho + outline-width
+				 + outline-style (required)
+				 + outline-color
+
+	- outline-offset: Thuộc tính outline-offset thêm khoảng cách giữa đường viền và cạnh hoặc đường viền của một phần tử.  
+	- Khoảng trống giữa một phần tử và đường viền của nó là trong suốt;
+
+	- outline-style: Đường viền là một đường được vẽ xung quanh các phần tử, bên ngoài các đường viền, để làm cho phần tử đó "nổi bật".  Thuộc tính outline-style chỉ định kiểu của đường viền.;
+
+	- outline-width;
+
+	- overflow: Thuộc tính overflow chỉ định điều gì sẽ xảy ra nếu nội dung tràn vào hộp của phần tử.  Thuộc tính này chỉ định cắt nội dung hoặc thêm thanh cuộn khi nội dung của phần tử quá lớn để vừa với một khu vực được chỉ định.;
+
+	- overflow-x: Thuộc tính overflow-x chỉ định cắt nội dung, thêm thanh cuộn hoặc hiển thị nội dung tràn của phần tử cấp khối khi phần tử này tràn ở các cạnh bên trái và bên phải.;
+
+	- overflow-y: Thuộc tính overflow-x chỉ định cắt nội dung, thêm thanh cuộn hoặc hiển thị nội dung tràn của phần tử cấp khối khi phần tử này tràn ở các cạnh bên trên và bên dưới.;
+
+	+P
+
+	- padding: Phần đệm của một phần tử là khoảng trống giữa nội dung và đường viền của phần tử đó.;
+	- Có 4 hướng padding-top ; padding-right ; padding-bottom ; padding-left; 
+
+	- page-break-after: Thuộc tính page-break-after thêm dấu ngắt trang sau một phần tử được chỉ định.  
+
+	- Mẹo: Các thuộc tính: page-break-before, page-break-after và page-break-inside giúp xác định cách tài liệu sẽ hoạt động khi được in.;
+
+	- page-break-before: Thuộc tính page-break-before thêm dấu ngắt trang trước một phần tử được chỉ định;
+
+	- page-inside-before: Thuộc tính page-break-before thêm dấu ngắt trang trong một phần tử được chỉ định;
+
+	- perspective: Thuộc tính phối cảnh được sử dụng để cung cấp cho phần tử được định vị 3D một số góc nhìn.;
+
+	- perspective-origin: Thuộc tính gốc phối cảnh xác định vị trí mà người dùng đang nhìn vào phần tử được định vị 3D.  
+
+	- Khi xác định thuộc tính gốc phối cảnh cho một phần tử, thì chính các phần tử CHILD sẽ nhận được hiệu ứng, KHÔNG phải chính phần tử đó.  
+
+	- Lưu ý: Thuộc tính này phải được sử dụng cùng với thuộc tính perspective;
+
+	- pointer-events: Thuộc tính pointer-events xác định xem một phần tử có phản ứng với các sự kiện con trỏ hay không.;
+
+	- position: Thuộc tính vị trí chỉ định loại phương pháp định vị được sử dụng cho một phần tử (static, relative, absolute, fixed hoặc static).;
+
+	+Q
+
+	- quotes: Thuộc tính dấu ngoặc kép đặt loại dấu ngoặc kép cho các câu trích dẫn;
+	
+	+R
+
+	- resize: Thuộc tính thay đổi kích thước xác định nếu (và cách) một phần tử có thể thay đổi kích thước bởi người dùng.;
+
+	- Note: The resize property does not apply to inline elements or to block elements where overflow="visible". So, make sure that overflow is set to "scroll", "auto", or "hidden".
+
+	- right: chỉnh right của position;
+
+	- row-gap: Thuộc tính row-gap chỉ định khoảng cách giữa các  grid row . Thuộc tính row-gap trước đây được gọi là grid-row-gap.;
+
+	+S
+
+	- scroll-behavior: tạo hiệu ứng cuộn cho mượt;
+
+	+T
+
+	- tab-size: Thuộc tính kích thước tab chỉ định chiều rộng của một ký tự tab.;
+
+	- table-layout: Thuộc tính table-layout xác định thuật toán được sử dụng để sắp xếp các ô, hàng và cột trong bảng.  
+
+	- Mẹo: Lợi ích chính của bố cục bảng: cố định;  là bảng hiển thị nhanh hơn nhiều. ;
+
+	- Trên các bảng lớn, người dùng sẽ không nhìn thấy bất kỳ phần nào của bảng cho đến khi trình duyệt hiển thị toàn bộ bảng.  Vì vậy, nếu bạn sử dụng table-layout: fixed, người dùng sẽ thấy phần trên cùng của bảng trong khi trình duyệt tải và hiển thị phần còn lại của bảng.  Điều này tạo ấn tượng rằng trang tải nhanh hơn rất nhiều!
+
+	- text-align: Thuộc tính text-align chỉ định căn lề ngang của văn bản trong một phần tử.;
+
+	- text-align-last: Thuộc tính text-align-last chỉ định cách căn chỉnh dòng cuối cùng của văn bản.;
+
+	- text-decoration: Thuộc tính text-decoration chỉ định trang trí được thêm vào văn bản và là thuộc tính viết tắt cho: 
+	+ text-decoration-line (required)
+	+ text-decoration-color
+	+ text-decoration-style
+
+	- text-decoration-line: Thuộc tính text-decoration-line thiết lập loại trang trí văn bản để sử dụng (như gạch dưới, gạch ngang, xuống dòng).;
+
+	- text-decoration-color: Thuộc tính text-decoration-color chỉ định màu của trang trí văn bản (gạch dưới, gạch ngang, gạch ngang).;
+
+	- text-decoration-style: Thuộc tính kiểu trang trí văn bản thiết lập kiểu trang trí văn bản (như đặc, lượn sóng, chấm, đứt nét, kép).;
+
+	- text-indent: Thuộc tính text-indent chỉ định thụt lề của dòng đầu tiên trong khối văn bản.;
+
+	- text-justify: Thuộc tính text-justify chỉ định phương pháp căn chỉnh văn bản khi căn chỉnh văn bản được đặt thành "justify".;
+
+	- text-overflow: Thuộc tính text-overflow chỉ định cách báo hiệu nội dung bị tràn không được hiển thị cho người dùng.  Nó có thể được cắt bớt, hiển thị dấu chấm lửng (...) hoặc hiển thị một chuỗi tùy chỉnh.;
+
+	- text-shadow: tạo shadow cho text;
+
+	- text-transform: thuộc tính kiểm soát cách viết hoa của văn bản;
+
+	- top: chỉnh top trong position;
+
+	- transform: Thuộc tính transform áp dụng chuyển đổi 2D hoặc 3D cho một phần tử. Thuộc tính này cho phép bạn: rotate, scale, move, skew, etc., elements (xoay, chia tỷ lệ, di chuyển, xiên, v.v., các phần tử);
+
+	- transform-origin: Thuộc tính gốc chuyển đổi cho phép bạn thay đổi vị trí của các phần tử được biến đổi. Các phép biến đổi 2D có thể thay đổi trục x và y của một phần tử. Các phép biến đổi 3D cũng có thể thay đổi trục z của một phần tử.
+
+	- Phải dùng chung với transform
+
+	- transform-style: thuộc tính transform-style chỉ định cách các phần tử lồng nhau được hiển thị trong không gian 3D.
+
+	- Phải dùng chung với transform
+
+	- transition: viết tắt của  + transition-property
+								+ transition-duration
+								+ transition-timing-function
+								+ transition-delay
+
+	- transition-delay: Thuộc tính transition-delay chỉ định khi nào hiệu ứng chuyển tiếp sẽ bắt đầu.;
+
+	- transition-duration: khoảng thời gian mà hiệu ứng được thực hiện ;
+
+	- transition-property: tên của hiệu ứng cho transition ;
+
+	- transition-timing-function: thuộc tính chỉ định đường cong tốc độ của hiệu ứng chuyển tiếp.;
+
+	- unicode-bidi: thuộc tính được sử dụng cùng với thuộc tính direction để đặt hoặc trả lại xem văn bản có nên được ghi đè để hỗ trợ nhiều ngôn ngữ trong cùng một tài liệu hay không.;
+
+	- user-select: Thuộc tính user-select chỉ định liệu văn bản của một phần tử có thể được chọn hay không.  Trong các trình duyệt web, nếu bạn nhấp đúp vào một số văn bản, nó sẽ được chọn / đánh dấu.  Thuộc tính này có thể được sử dụng để ngăn chặn điều này.;
+
+	- vertical-align: thuộc tính thiết lập căn chỉnh theo chiều dọc của một phần tử.;
+
+	- visibility: Thuộc tính visibility chỉ định xem một phần tử có hiển thị hay không;
+
+	- Mẹo: Các phần tử ẩn chiếm 1 khoảng trên trang.  Sử dụng thuộc tính display để ẩn và xóa một phần tử khỏi bố cục tài liệu!
+
+	- white-space: thuộc tính chỉ định cách xử lý khoảng trắng bên trong một phần tử.;
+
+	- width;
+
+	- word-break: thuộc tính chỉ định cách xử lý khoảng trắng bên trong một phần tử.;
+
+	- word-spacing: thuộc tính tăng hoặc giảm khoảng trắng giữa các từ.;
+
+	- word-wrap: thuộc tính cho phép các từ dài có thể được ngắt và quấn vào dòng tiếp theo.;
+
+	- writting-mode: thuộc tính chỉ định xem các dòng văn bản được bố trí theo chiều ngang hay chiều dọc.;
+
+	- z-index: Thuộc tính z-index chỉ định thứ tự ngăn xếp của một phần tử.  Phần tử có thứ tự ngăn xếp lớn hơn luôn đứng trước phần tử có thứ tự ngăn xếp thấp hơn.  Lưu ý: z-index chỉ hoạt động trên các phần tử được định vị   position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).;
+*/
+
+h1 {
+	word-break: break-all;
+
+}
