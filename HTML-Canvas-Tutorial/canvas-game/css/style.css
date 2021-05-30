@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+div canvas {
+    display: block;
+}
+
+canvas {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 10vw;
+    max-height: 20vh;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    z-index: 100;
+}
+
+.infor-ingame {
+    position: fixed;
+    inset: 0;
+    color: white;
+    font-size: 1.25rem;
+    margin-left: .5rem;
+    user-select: none;
+    padding: .5rem;
+}
+
+.dropdown {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-content {
+    background-color: white;
+    max-width: 28rem;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.wrapper-content h1 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.wrapper-content h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.wrapper-content p {
+    font-size: 1rem;
+    color: rgba(55, 65, 81, 1);
+}
+
+.wrapper-button button {
+    background-color: rgba(59, 130, 246, 1);
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.wrapper-button button:hover {
+    background-color: rgba(30, 64, 175, 1);
+}
+
+.wrapper-button button:focus {
+    outline: none;
+}

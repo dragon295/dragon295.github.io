@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Canvas Game</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+<body>
+  <div class="infor-ingame">
+    <span class="block">Bóng lớn: 200đ</span>
+    <span class="block">Bóng nhỏ: 100đ</span>
+    <span>Điểm: </span>
+    <span id="score">0</span>
+  </div>
+
+  <div class="dropdown" id="modal">
+    <div class="wrapper-content">
+      <h1 id="notification"></h1>
+      <h2 id="scoreModal">0</h2>
+      <p class="text-sm text-gray-700">Điểm</p>
+      <div class="wrapper-button">
+        <button id="restart">start</button>
+      </div>
+    </div>
+  </div>
+  <div><canvas></canvas></div>
+
+  <img src="../hoang.png" alt="Hoang" id="img-hoang">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script type="module" src="../js/index.js"></script>
+</body>
+
+</html>
