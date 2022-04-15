@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		body {
+			margin: 50px;
+		}
+		.tooltip {
+			position: relative;
+			display: inline-block;
+			border-bottom: 1px dotted black;
+		}
+
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			bottom: 150%;
+			left: 50%;
+			margin-left: -60px;
+		}
+
+		.tooltip .tooltiptext::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: black transparent transparent transparent;
+		}
+
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+		}
+
+		input[type=checkbox] + label {
+			display: block;
+			margin: 0.2em;
+			cursor: pointer;
+			padding: 0.2em;
+		}
+
+		input[type=checkbox] {
+			display: none;
+		}
+
+		input[type=checkbox] + label:before {
+			content: "\2714";
+			border: 0.1em solid #000;
+			border-radius: 0.2em;
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			padding-left: 0.2em;
+			padding-bottom: 0.3em;
+			margin-right: 0.2em;
+			vertical-align: bottom;
+			color: transparent;
+			transition: .2s;
+		}
+
+		input[type=checkbox] + label:active:before {
+			transform: scale(0);
+		}
+
+		input[type=checkbox]:checked + label:before {
+			background-color: MediumSeaGreen;
+			border-color: MediumSeaGreen;
+			color: #fff;
+		}
+
+		input[type=checkbox]:disabled + label:before {
+			transform: scale(1);
+			border-color: #aaa;
+		}
+
+		input[type=checkbox]:checked:disabled + label:before {
+			transform: scale(1);
+			background-color: #bfb;
+			border-color: #bfb;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="tooltip">Hover over me
+		<span class="tooltiptext">Tooltip text</span>
+	</div>
+
+
+	
+	<form>
+		<input type="checkbox"  name="fruit-1" value="Apple">
+		<label for="fruit1">Apple</label>
+		<input type="checkbox" id="fruit2" name="fruit-2" value="Banana" disabled>
+		<label for="fruit2">Banana</label>
+		<input type="checkbox" id="fruit3" name="fruit-3" value="Cherry" checked disabled>
+		<label for="fruit3">Cherry</label>
+		<input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry">
+		<label for="fruit4">Strawberry</label>
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>jQuery Lightboxed Plugin Example</title>
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="js/lightboxed/lightboxed.css" rel="stylesheet" />
+	<script src="js/lightboxed/lightboxed.js"></script>
+	
+	<style>
+		html,* { font-family: 'Inter'; box-sizing: border-box; }
+		body { background-color: #fafafa; line-height:1.6;}
+		.lead { font-size: 1.5rem; font-weight: 300; }
+		.container { margin: 70px auto; max-width: 960px; }
+		.btn { padding: 1.25rem; border: 0; border-radius: 3px; background-color: #4F46E5; color: #fff; cursor: pointer; }
+		.container img { width: 300px; }
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<h1>jQuery Lightboxed Plugin Example</h1>
+		<div id="carbon-block" style="margin:30px auto"></div>
+		<div style="margin:30px auto"><script type="text/javascript"><!--
+			google_ad_client = "ca-pub-2783044520727903";
+			/* jQuery_demo */
+			google_ad_slot = "2780937993";
+			google_ad_width = 728;
+			google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<p class="lead">A jQuery plugin for displaying any content (images, videos, text, galleries) in a fullscreen lightbox.</p>
+<img class="lightboxed" rel="group1" src="https://www.jqueryscript.net/dummy/1.jpg" data-link="https://www.jqueryscript.net/dummy/1.jpg" alt="Image Alt" data-caption="Image Caption" />
+<img class="lightboxed" rel="group1" src="https://www.jqueryscript.net/dummy/2.jpg" data-link="https://www.jqueryscript.net/dummy/2.jpg" alt="Image Alt" data-caption="Image Caption" />
+<img class="lightboxed" rel="group1" src="https://www.jqueryscript.net/dummy/3.jpg" data-link="https://www.jqueryscript.net/dummy/3.jpg" alt="Image Alt" data-caption="Image Caption" />
+<img class="lightboxed" rel="group1" src="https://www.jqueryscript.net/dummy/4.jpg" data-link="https://www.jqueryscript.net/dummy/4.jpg" alt="Image Alt" data-caption="Image Caption" />
+<img class="lightboxed" rel="group1" src="https://www.jqueryscript.net/dummy/5.jpg" data-link="http://www.youtube.com/embed/Rix_3b9ThLI?list=PL8zglt-LDl-iwBHEl3Pw1IhWGp9cfgMrc" data-width="560" data-height="315" />
+<br /><a href="https://www.jqueryscript.net/dummy/1.jpg" class="lightboxed">Text Link</a>
+<br /><a href="#inline" class="lightboxed">Inline content</a>
+
+
+<div id="inline" style="display: none;"><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;">Some inline content</div></div>
+</div>
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-36251023-1']);
+	_gaq.push(['_setDomainName', 'jqueryscript.net']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<script>
+	try {
+		fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+			return true;
+		}).catch(function(e) {
+			var carbonScript = document.createElement("script");
+			carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+			carbonScript.id = "_carbonads_js";
+			document.getElementById("carbon-block").appendChild(carbonScript);
+		});
+	} catch (error) {
+		console.log(error);
+	}
+</script>
+</body>
+</html>

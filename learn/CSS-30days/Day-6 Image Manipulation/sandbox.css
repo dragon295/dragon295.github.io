@@ -1,0 +1,114 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.sandbox img {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sandbox img:hover {
+    cursor: crosshair;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.grayscale:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.blur:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.invert {
+    -webkit-filter: invert(0.9);
+    filter: invert(0.9);
+}
+
+.invert:hover {
+    -webkit-filter: invert(0);
+    filter: invert(0);
+}
+
+.sepia {
+    -webkit-filter: sepia(.8);
+    filter: sepia(.8);
+}
+
+.sepia:hover {
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+}
+
+.brightness {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+.brightness:hover {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+.contrast {
+    -webkit-filter: contrast(250%);
+    filter: contrast(250%);
+}
+
+.contrast:hover {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(5px 5px 10px gray);
+    filter: drop-shadow(5px 5px 10px gray);
+}
+
+.drop-shadow:hover {
+    -webkit-filter: drop-shadow(0 0 0);
+    filter: drop-shadow(0 0 0);
+}
+
+.hue-rotate {
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+
+.hue-rotate:hover {
+    -webkit-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+}
+
+.opacity {
+    -webkit-filter: opacity(.6);
+    filter: opacity(.6);
+}
+
+.opacity:hover {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+}
+
+.saturate {
+    -webkit-filter: saturate(30%);
+    filter: saturate(30%);
+}
+
+.saturate:hover {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+}

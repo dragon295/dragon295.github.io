@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+body {
+  margin: 0;
+  font-family: monospace;
+  font-size: 1.25em;
+  position: relative;
+}
+
+div {
+  margin: 5px 0 0 20px;
+  user-select: none;
+}
+
+div::before {
+  position: absolute;
+  top: 30%;
+  content: "Created by The Sad";
+  left: 30%;
+  font-family: 'Audiowide', cursive;
+  font-size: 24px;
+}
