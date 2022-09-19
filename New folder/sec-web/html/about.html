@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style-about.css">
+
+	<!-- JS Libraries  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js" integrity="sha512-EqNNJuepkw5P9vxCml8eBk7C4Ld+4kAnvzOD/jG21rkxWPILGoQa5EvD62UieiJF0u3xoQrcVnce4i83VnYj/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	
+	<!-- Scripts  -->
+	<script src="../js/modal.js" defer></script>
+	<!-- <script src="../js/main.js" defer></script> -->
+	<script src="../js/adjust-footer.js" defer></script>
+</head>
+<body>
+	<!-- Nav Bar Start -->
+	<nav class="navbar navbar-expand-lg navbar-light navbar-header">
+		<a class="navbar-brand" href="./index.html">Fake <span>Store</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="./about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Feature</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Pages
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Blog List</a>
+						<a class="dropdown-item" href="#">Blog Detail</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<!-- Search Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal" data-nav="yes">
+						<i class="fas fa-search"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- User Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal" data-nav="yes">
+						<i class="fa fa-user"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- Cart Hover -->
+					<a href="#" class="btn btn-primary cart-toggle" data-nav="yes">
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+
+					<div class="cart-preview-content">
+
+						<div class="proceed">
+							<button type="button" class="btn btn-success btn-proceed">
+								<a href="#">Proceed to Checkout</a>
+							</button>
+						</div>
+
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav Bar End -->
+
+	<!-- Modal Start -->
+	<div class="modal-infor">
+		<div class="container">
+
+			<!-- Search Modal -->
+			<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Search for products</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form action="#">
+							<div class="modal-body">
+								<input type="text" placeholder="Search something" required="required" class="form-control">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-success">Search</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- User Modal -->
+			<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Sign In <span> / </span>Register</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body d-flex flex-column user">
+							<div class="box-btn-user">
+								<button type="button" class="btn w-50 btn-sign-in active">Sign in</button>
+
+								<button type="button" class="btn w-50  btn-register">Register</button>
+							</div>
+
+							<div class="sign-in active">
+								<h4>Sign in with...</h4>
+
+								<div class="main-sign-in">
+
+									<form action="#" class="d-flex flex-column">
+										<div class="form-input">
+											<label for="email-sign-in">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-sign-in">
+										</div>
+
+										<div class="form-input">
+											<label for="password-sign-in">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-sign-in" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-remember" type="checkbox" value="Remember me" name="checkbox-remember" checked autocomplete="off">
+											<label class="form-check-label" for="checkbox-remember">
+												Remember me
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Sign in</button>
+									</form>
+								</div>
+
+								<div class="ano-sign-in flex-column">
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="register">
+								<h4>Register with...</h4>
+
+								<div class="ano-register">
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+								</div>
+								<div class="main-register">
+									<form action="#" class="d-flex flex-column" autocomplete="on">
+										<div class="form-input">
+											<label for="username">Email User name</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter User Name" name="username">
+										</div>
+
+										<div class="form-input">
+											<label for="email-register">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-register">
+										</div>
+
+										<div class="form-input">
+											<label for="password-register">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-register" autocomplete="off">
+										</div>
+
+										<div class="form-input">
+											<label for="retype-register">Retype Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Retype Password" name="retype-register" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-term" type="checkbox" value="" name="checkbox-term" checked>
+											<label class="form-check-label" for="checkbox-term">
+												<p>I accept the&nbsp;
+													<a href="./terms.html" target="_blank">Terms & Conditions</a>,
+													<a href="./cookie-policy.html" target="_blank">Cookie Policy</a> and 
+													<a href="./privacy-policy.html" target="_blank">privacy policy</a>.
+												</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-offer" type="checkbox" value="" name="checkbox-offer">
+											<label class="form-check-label" for="checkbox-offer">
+												<p>Send me vouchers and news on great promotions</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-update" type="checkbox" value="" name="checkbox-update">
+											<label class="form-check-label" for="checkbox-update">
+												<p>Send me the latest updates, competitions...</p>
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Register</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Modal End -->
+
+	<!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>about us</h2>
+				</div>
+				<div class="col-12">
+					<a href="./index.html">Home</a>
+					<span class="slash"> / </span>
+					<a href="./about.html">About Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+	<!-- About Us Start -->
+	<div class="about-us box">
+		<div class="container">
+			<div class="header-title">
+				<h3>about <span>us</span></h3>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6 justify-content-start">
+					<div class="video-container">
+						<a data-fslightbox="gallery" data-type="image" href="https://thefinanser.com/wp-content/uploads/2016/06/People.jpg">
+							<img src="https://wallpaperaccess.com/full/1288325.jpg" alt="img-carousel">
+							<div class="phone-ring">
+								<div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+									<div class="coccoc-alo-ph-circle"></div>
+									<div class="coccoc-alo-ph-circle-fill"></div>
+									<div class="coccoc-alo-ph-img-circle">
+										<i class="fas fa-play"></i>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a data-fslightbox="gallery" data-type="image" href="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/2O0VXeG/close-up-of-happy-business-people-laughing-and-clapping-in-office_e2z9jqowx_thumbnail-1080_01.png"></a>
+						<a data-fslightbox="gallery" href="https://www.youtube.com/embed/EGFVw3qmuAg"></a>
+						<a data-fslightbox="gallery" href="https://www.youtube.com/embed/zovf3TqYVoI"></a>
+						<!-- <iframe width="360" height="640" src="https://www.youtube.com/embed/NN-PFn97cR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 about-text">
+					<h1>Who are we?</h1>
+					<p class="text-grey">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
+						Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+						condimentum, viverra quis sem.
+					</p>
+					<p class="text-grey">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
+						Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida
+						condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean
+						consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- About Us End -->
+
+	<!-- Why Choose Us Start -->
+	<div class="feature box">
+		<div class="container">
+			<div class="header-title">
+				<h3>why <span>choose us</span></h3>
+			</div>
+			<div class="row align-items-center h-100">
+				<div class="col-lg-5 feature-col-1">
+					<div class="section-header text-center mb-3">
+						<h2>Our Features</h2>
+					</div>
+					<div class="feature-content">
+						<div class="feature-img">
+							<div class="row">
+								<div class="col-6">
+									<img src="
+									https://oristar.vn/wp-content/uploads/2018/03/Oristar-Customer-Quality-Service.jpg" 
+									alt="guarantee">
+								</div>
+								<div class="col-6">
+									<img src=../img/shut-up.jpg alt="guarantee">
+								</div>
+								<div class="col-6">
+									<img src="https://cdn-61152a52c1ac181114e1d35c.closte.com/wp-content/uploads/2020/12/dpd-tsp-partnership-400x250.jpg" alt="guarantee">
+								</div>
+								<div class="col-6">
+									<img src="https://www.buyersadvantage.org/wp-content/uploads/2020/07/home-it-support-400x250.jpg" alt="guarantee">
+								</div>
+							</div>
+						</div>
+						<p class="text-grey">
+							Lorem ipsum dolor sit amet consec adipis elit. Phasel nec preti mi. Curabit facilis ornare
+							velit non vulputa. Aliquam metus tortor, auctor id gravida condime, viverra quis sem.
+							Curabit non nisl nec nisi sceleri maximus
+						</p>
+						<a href="#" class="btn btn-success w-100 font-weight-bold">view our products</a>
+					</div>
+				</div>
+				<div class="col-lg-7 feature-col-2">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="feature-item">
+								<i class="fas fa-award"></i>
+								<h4>Best quality products</h4>
+								<p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="feature-item">
+								<i class="fas fa-hand-holding-usd"></i>
+								<h4>Quickly money backs</h4>
+								<p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="feature-item">
+								<i class="fas fa-shipping-fast"></i>
+								<h4>Fastest delivery</h4>
+								<p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="feature-item">
+								<i class="fas fa-headset"></i>
+								<h4>Support 24/7</h4>
+								<p>Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Why Choose Us End -->
+
+	<!-- Footer Start -->
+	<footer class="footer box">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-3 footer-about">
+					<h3>Fake <span>Store</span></h3>
+					<p>
+						We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+					</p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-contact">
+					<h3>Contact</h3>
+					<p><i class="fas fa-map-marker-alt"></i>kim ngưu, Hai Bà Trưng, Hà Nội</p>
+					<p><i class="fas fa-phone"></i>Phone: +84 987 123 456 </p>
+					<p><i class="fas fa-envelope"></i>Email: <a href="#">blon-bl03@gmail.com</a></p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-links">
+					<h3> Quick Links</h3>
+					<ul>
+						<li><a href="./cookie-policy.html">Cookie Policy</a></li>
+						<li><a href="./refund-policy.html">Refund Policy</a></li>
+						<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="./terms.html">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-6 col-lg-3 footer-social">
+					<h3>subscribe</h3>
+					<p>Get monthly newsletter (Free)</p>
+					<form action="">
+						<input type="email" required="true" placeholder="Enter a email address">
+						<button type="submit" class="btn custom-btn">Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="row box-line">
+				<div class="col-lg-12 grey-line-footer"></div>
+			</div>
+			<div class="row align-items-center footer-lower">
+				<div class="col-12 col-md-6 copyright">
+					<p>© Copyright 2021 TDA - All Rights Reserved</p>
+				</div>
+				<div class="col-12 col-md-6 social-links">
+					<a href="#" target="blank"><i class="fab fa-facebook"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-twitter"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+</body>
+</html>

@@ -1,140 +1,105 @@
-let canvas = document.querySelector("canvas");
+import * as utils from "../../util/utils.js";
+
+const canvas = document.querySelector("canvas");
+const c = canvas.getContext("2d");
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
-let c = canvas.getContext("2d");
-
-// c.fillStyle = "rgba(255, 0, 0, 0.9)";
-// c.fillRect(100, 100, 100, 100);
-// c.fillStyle = "rgba(0, 255, 5, 0.9)";
-// c.fillRect(500, 100, 300, 100);
-// c.fillStyle = "rgba(0, 255, 100, 0.9)";
-// c.fillRect(300, 400, 100, 100);
-// console.log(canvas);
-
-// // line
-// c.beginPath();
-// c.moveTo(50, 300);
-// c.lineTo(300, 100);
-// c.lineTo(500, 300);
-// c.strokeStyle = "blue";
-// c.stroke();
-
-// // Arc // Circle
-
-// for (let i = 0; i < 100; i++) {
-//   let x = Math.random() * window.innerWidth;
-//   let y = Math.random() * window.innerHeight;
-//   c.beginPath();
-//   c.arc(x, y, 50, 0, Math.PI * 2);
-//   c.strokeStyle = "red";
-//   c.stroke();
-// }
-
-// console.log(innerWidth);
-// console.log(innerHeight)
-
-let mouse = {
+const mouse = {
   x: "",
   y: "",
 };
 
-let maxRadius = 40;
-let minRadius = 2;
-let colors = [
-  "#009432",
-  "#6F1E51",
-  "#808e9b",
-  "#ffc048",
-  "#55E6C1",
-  "#eb4d4b",
-  "#dff9fb",
-  "#FC427B",
-  "#fff200",
-];
+let maxRadius = 35;
+const colors = ["#ef473a", "#34e89e", "#004e92", "#093637"];
 
-window.addEventListener("mousemove", function (event) {
-  mouse.x = event.x;
-  mouse.y = event.y;
+// Event Listeners
+addEventListener("mousemove", (event) => {
+  mouse.x = event.clientX;
+  mouse.y = event.clientY;
 });
 
-window.addEventListener("resize", function () {
+addEventListener("resize", () => {
   canvas.width = innerWidth;
   canvas.height = innerHeight;
 
   init();
 });
 
-function Circle(x, y, dx, dy, radius) {
-  this.x = x;
-  this.y = y;
-  this.dx = dx;
-  this.dy = dy;
-  this.radius = radius;
-  this.minRadius = radius;
+class Particle {
+  constructor(x, y, dx, dy, radius, color) {
+    this.x = x;
+    this.y = y;
+    this.dx = dx;
+    this.dy = dy;
+    this.radius = radius;
+    this.minRadius = radius;
+    this.color = color;
+  }
 
-  this.colors = colors[Math.floor(Math.random() * colors.length)];
-
-  this.draw = function () {
+  draw() {
+    c.save();
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    c.strokeStyle = this.colors;
-    c.stroke();
-    c.fillStyle = this.colors;
+    c.fillStyle = this.color;
     c.fill();
-  };
+    c.closePath();
+    c.restore();
+  }
 
-  this.update = function () {
-    if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+  update() {
+    this.draw();
+
+    if (this.x + this.radius > innerWidth || this.x - this.radius <= 0) {
       this.dx = -this.dx;
     }
 
-    if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+    if (this.y + this.radius > innerHeight || this.y - this.radius <= 0) {
       this.dy = -this.dy;
     }
+
     this.x += this.dx;
     this.y += this.dy;
 
-    // Interactivity
     if (
-      mouse.x - this.x < 50 &&
-      mouse.x - this.x > -50 &&
-      mouse.y - this.y < 50 &&
-      mouse.y - this.y > -50
+      mouse.x - this.x < 70 &&
+      mouse.x - this.x > -70 &&
+      mouse.y - this.y < 70 &&
+      mouse.y - this.y > -70 &&
+      this.radius < maxRadius
     ) {
-      if (this.radius < maxRadius) {
-        this.radius += 1;
-      }
+      this.radius += 1.5;
     } else if (this.radius > this.minRadius) {
-      this.radius -= 1;
+      this.radius -= 1.5;
     }
-
-    this.draw();
-  };
+  }
 }
 
-let circleArr = [];
-
+// Implementation
+let particles;
 function init() {
-  circleArr = [];
-  for (let i = 0; i < 300; i++) {
-    let radius = Math.random() * 6 + 1;
+  particles = [];
+
+  for (let i = 0; i < 400; i++) {
+    let radius = Math.random() * 4 + 2;
     let x = Math.random() * (innerWidth - radius * 2) + radius;
     let y = Math.random() * (innerHeight - radius * 2) + radius;
-    let dx = (Math.random() - 0.5) * 5;
-    let dy = (Math.random() - 0.5) * 5;
-    circleArr.push(new Circle(x, y, dx, dy, radius));
+    let dx = (Math.random() - 0.5) * 2;
+    let dy = (Math.random() - 0.5) * 2;
+    let color = utils.randomColor(colors);
+    particles.push(new Particle(x, y, dx, dy, radius, color));
   }
 }
 
+// Animation Loop
 function animate() {
   requestAnimationFrame(animate);
-  c.clearRect(0, 0, innerWidth, innerHeight);
+  c.clearRect(0, 0, canvas.width, canvas.height);
 
-  for (let i = 0; i < circleArr.length; i++) {
-    circleArr[i].update();
-  }
+  particles.forEach((particle) => {
+    particle.update();
+  });
 }
 
 init();

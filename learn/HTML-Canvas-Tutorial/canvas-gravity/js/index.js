@@ -21,12 +21,12 @@ const colors = [
   "#c56cf0",
 ];
 
-let gravity = 0.75;
-let friction = 0.99;
 // Event Listeners
-addEventListener("mousemove", (event) => {
+addEventListener("click", (event) => {
   mouse.x = event.clientX;
   mouse.y = event.clientY;
+
+  init();
 });
 
 addEventListener("resize", () => {
@@ -36,9 +36,8 @@ addEventListener("resize", () => {
   init();
 });
 
-addEventListener("click", () => {
-  init();
-});
+let gravity = 1;
+let friction = 0.89;
 // Objects
 class Ball {
   constructor(x, y, dx, dy, radius, color) {
@@ -54,42 +53,45 @@ class Ball {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;
-    c.fill();
     c.stroke();
+    c.fill();
     c.closePath();
   }
 
   update() {
-    if (this.y + this.radius + this.dy > canvas.height) {
+    this.draw();
+
+    if (
+      this.x + this.radius + this.dx > innerWidth ||
+      this.x - this.radius <= 0
+    ) {
+      this.dx = -this.dx;
+    }
+
+    if (this.y + this.radius + this.dy > innerHeight) {
       this.dy = -this.dy * friction;
     } else {
       this.dy += gravity;
     }
 
-    if (
-      this.x + this.radius + this.dx > canvas.width ||
-      this.x - this.radius < 0
-    ) {
-      this.dx = -this.dx;
-    }
     this.x += this.dx;
     this.y += this.dy;
-    this.draw();
   }
 }
 
 // Implementation
-let ballArr;
+let particles;
 function init() {
-  ballArr = [];
-  for (let i = 0; i < 400; i++) {
-    let radius = utils.randomIntFromRange(12, 28);
+  particles = [];
+
+  for (let i = 0; i < 300; i++) {
+    let radius = utils.randomIntFromRange(12, 30);
     let x = utils.randomIntFromRange(radius, canvas.width - radius);
     let y = utils.randomIntFromRange(radius, canvas.height - radius);
     let dx = utils.randomIntFromRange(-2, 2);
     let dy = utils.randomIntFromRange(-2, 2);
     let color = utils.randomColor(colors);
-    ballArr.push(new Ball(x, y, dx, dy, radius, color));
+    particles.push(new Ball(x, y, dx, dy, radius, color));
   }
 }
 
@@ -97,9 +99,10 @@ function init() {
 function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, canvas.width, canvas.height);
-  for (let i = 0; i < ballArr.length; i++) {
-    ballArr[i].update();
-  }
+
+  particles.forEach((particle) => {
+    particle.update();
+  });
 }
 
 init();

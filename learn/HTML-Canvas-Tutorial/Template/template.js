@@ -11,7 +11,7 @@ const mouse = {
   y: innerHeight / 2
 }
 
-const colors = ['#2185C5', '#7ECEFD', '#FFF6E5', '#FF7F66'];
+const colors = ['#ef473a', '#34e89e', '#004e92', '#093637']
 
 // Event Listeners
 addEventListener('mousemove', (event) => {
@@ -36,6 +36,7 @@ class Object {
   }
 
   draw() {
+
     c.beginPath()
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
     c.fillStyle = this.color;

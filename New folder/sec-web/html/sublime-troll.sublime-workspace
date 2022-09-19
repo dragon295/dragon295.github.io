@@ -1,0 +1,1154 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"background",
+				"background\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"backgro",
+				"background-color\tproperty"
+			],
+			[
+				"co",
+				"container"
+			],
+			[
+				"tex",
+				"text-transform\tproperty"
+			],
+			[
+				"tr",
+				"translateX()\ttransform"
+			],
+			[
+				"tranfor",
+				"transform\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"backgr",
+				"background-attachment\tproperty"
+			],
+			[
+				"c",
+				"cover\tbackground-size"
+			],
+			[
+				"padding",
+				"padding\tproperty"
+			],
+			[
+				"s",
+				"flex-start\tjustify-content"
+			],
+			[
+				"fle",
+				"flex-direction\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"margn",
+				"margin-top\tproperty"
+			],
+			[
+				"navabr-",
+				"navbar-light \tBootstrap 4 Class"
+			],
+			[
+				"cooki",
+				"cookie"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"priv",
+				"privacy"
+			],
+			[
+				"margi",
+				"margin-bottom\tproperty"
+			],
+			[
+				"mx",
+				"mx-0 \tBootstrap 4 Class"
+			],
+			[
+				"jus",
+				"justify-content-start \tBootstrap 4 Class"
+			],
+			[
+				"flx",
+				"flex-start\tjustify-content"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"te",
+				"text-overflow\tproperty"
+			],
+			[
+				"word",
+				"word-wrap\tproperty"
+			],
+			[
+				"ro",
+				"row \tBootstrap 4 Class"
+			],
+			[
+				"container",
+				"container \tBootstrap 4 Class"
+			],
+			[
+				"ffff",
+				"ffffff"
+			],
+			[
+				"wor",
+				"word-wrap\tproperty"
+			],
+			[
+				"mari",
+				"margin-bottom\tproperty"
+			],
+			[
+				"paddi",
+				"padding\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"bg-dis",
+				"bg-discovery-sma"
+			],
+			[
+				"a",
+				"auto\tmargin-left"
+			],
+			[
+				"col-sm",
+				"col-sm-6 \tBootstrap 4 Class"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"col-lg",
+				"col-lg-3 \tBootstrap 4 Class"
+			],
+			[
+				"col-md",
+				"col-md-3 \tBootstrap 4 Class"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"fot",
+				"font-family\tproperty"
+			],
+			[
+				"widt",
+				"Width"
+			],
+			[
+				"bg",
+				"bg-sign-in"
+			],
+			[
+				"bol",
+				"bolder\tfont-weight"
+			],
+			[
+				"bacg",
+				"background-size\tproperty"
+			],
+			[
+				"css",
+				"css\t.css() - single"
+			],
+			[
+				"new",
+				"nk-news-box-item"
+			],
+			[
+				"rema",
+				"removeClass\t.removeClass()"
+			],
+			[
+				"ad",
+				"addClass\t.addClass()"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"get",
+				"getId"
+			],
+			[
+				"fade",
+				"fadeIn\t.fadeIn()"
+			],
+			[
+				"gt",
+				"getAttribute"
+			],
+			[
+				"each",
+				"each\t.each()"
+			],
+			[
+				"att",
+				"attr\t.attr() - single"
+			],
+			[
+				"eac",
+				"each\t.each()"
+			],
+			[
+				"at",
+				"attr\t.attr() - multiple"
+			],
+			[
+				"her",
+				"href"
+			],
+			[
+				"lnik",
+				"linkToContent"
+			],
+			[
+				"link",
+				"linkToContent"
+			],
+			[
+				"img",
+				"imgContent"
+			],
+			[
+				"tim",
+				"time"
+			],
+			[
+				"dat",
+				"dataSmall"
+			],
+			[
+				"item",
+				"itemText"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"v-pills-content",
+				"v-pills-content-1"
+			],
+			[
+				"rgb",
+				"rgba()\tbackground"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"trans",
+				"transform\tproperty"
+			],
+			[
+				"backgrou",
+				"background-color\tproperty"
+			],
+			[
+				"pt",
+				"pt-2 \tBootstrap 4 Class"
+			],
+			[
+				"floa",
+				"float-right \tBootstrap 4 Class"
+			],
+			[
+				"fff",
+				"ffffff"
+			],
+			[
+				"pills-in",
+				"pills-indie-tab"
+			],
+			[
+				"ali",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"d-",
+				"d-flex \tBootstrap 4 Class"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"obje",
+				"object-fit\tproperty"
+			],
+			[
+				"h",
+				"h-100 \tBootstrap 4 Class"
+			],
+			[
+				"rg",
+				"rgba()\tbackground-color"
+			],
+			[
+				"h5",
+				"h-50 \tBootstrap 4 Class"
+			],
+			[
+				"backgou",
+				"background-color\tproperty"
+			],
+			[
+				"tetx",
+				"text-transform\tproperty"
+			],
+			[
+				"bott",
+				"margin-bottom"
+			],
+			[
+				"backgroun",
+				"background-color\tproperty"
+			],
+			[
+				"mb",
+				"mb-3 \tBootstrap 4 Class"
+			],
+			[
+				"col-lg-",
+				"col-lg-4 \tBootstrap 4 Class"
+			],
+			[
+				"contai",
+				"container \tBootstrap 4 Class"
+			],
+			[
+				"contain",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"trsn",
+				"transition\tproperty"
+			],
+			[
+				"btn",
+				"btn-success \tBootstrap 4 Class"
+			],
+			[
+				"bo",
+				"border\tproperty"
+			],
+			[
+				"aling-ite",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"car",
+				"carousel \tBootstrap 4 Class"
+			],
+			[
+				"align-item",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"n",
+				"none\tcursor"
+			],
+			[
+				"tra",
+				"translateY()\ttransform"
+			],
+			[
+				"mt",
+				"mt-3 \tBootstrap 4 Class"
+			],
+			[
+				"backgron",
+				"background-color\tproperty"
+			],
+			[
+				"align-ite",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"ou",
+				"outline-color\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"ca",
+				"carousel \tBootstrap 4 Class"
+			],
+			[
+				"conta",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"ml",
+				"ml-auto \tBootstrap 4 Class"
+			],
+			[
+				"pull",
+				"pull"
+			],
+			[
+				"de",
+				"debugger"
+			],
+			[
+				"pul",
+				"pullArr"
+			],
+			[
+				"ar",
+				"args"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"value",
+				"values"
+			],
+			[
+				"del",
+				"delimiter"
+			],
+			[
+				"val",
+				"val2"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"se",
+				"seconds"
+			],
+			[
+				"ob",
+				"obj"
+			],
+			[
+				"key",
+				"keys"
+			],
+			[
+				"pare",
+				"parentNode"
+			],
+			[
+				"query",
+				"querySelectorAll"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "voucher.html",
+			"settings":
+			{
+				"buffer_size": 9621,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Admin/Desktop/New folder/sec-web/js/voucher.js",
+			"settings":
+			{
+				"buffer_size": 217,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "terms.html",
+			"settings":
+			{
+				"buffer_size": 40165,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Admin/Desktop/New folder/sec-web/css/style-voucher.css",
+			"settings":
+			{
+				"buffer_size": 9950,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Admin/Desktop/New folder/sec-web/css/style-index.css",
+			"settings":
+			{
+				"buffer_size": 18358,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: dark"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 124.0,
+		"history":
+		[
+			"'123'"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Admin/Desktop/New folder/sec-web",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js"
+	],
+	"file_history":
+	[
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/voucher.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/infinite-scroll-docs/css/infinite-scroll-docs.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/css/mansory-scroll.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/free-image.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-index.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/js/mansory-scroll.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-refund.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/infinite-scroll-docs/demo/masonry/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-privacy.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/page2.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/page3.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/page4.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/page5.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/page6.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/page2.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/troll3.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/troll4.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/troll6.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/troll5.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/troll2.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/js/pag2.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/free-image.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/main.js",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/js/troll.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/masonry/css/style-troll.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/pag2.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/infinite-scroll-docs/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/troll.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/troll.html",
+		"/C/Users/Admin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeServer.sublime-settings",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/infinite-scroll-docs/js/infinite-scroll-docs.min.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/privacy-policy.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/troll2.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/doc.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-troll.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/page2.htlm",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-about.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/about.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/SamsungGrid/index2.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/imagerow.js-master/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/SamsungGrid/index.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/fullscreen-lightbox-gallery/index.html",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/css/goodgames.css",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/index.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/css/style.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/fullscreen-lightbox-gallery/js/lightboxed/lightboxed.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/cookie-policy.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/terms.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-terms.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/refund-policy.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-cookie.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style-contact.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/contact.html",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/cookie-policy.htlm",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/style.css",
+		"/C/Users/Admin/Desktop/New folder/TourNest-master/index.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/js/main.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/css/plugin.css",
+		"/C/Users/Admin/Desktop/New folder/eforlad/index.html",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/css/custom.css",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/js/goodgames.js",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/nano-scroller.js",
+		"/C/Users/Admin/Desktop/New folder/sec-web/js/nanoScroll.js",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/css/goodgames.min.css",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/js/goodgames-init.js",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/index.html",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/php/ajax-contact-form.php",
+		"/C/Users/Admin/Desktop/New folder/html-store-gaming-template/assets/js/demo.js",
+		"/C/Users/Admin/Desktop/New folder/uloax/index.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/css/style.css",
+		"/C/Users/Admin/Desktop/New folder/sec-web/html/tes.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/js/main.js",
+		"/C/Users/Admin/Desktop/learn/small-project/review-movies-app/index.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/single.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/menu.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/feature.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/contact.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/chef.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/booking.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/blog.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/about.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/single.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/blog.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/contact.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/booking.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/menu.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/team.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/feature.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/about.html",
+		"/C/Users/Admin/Desktop/learn/small-project/first-web/html/pages.html",
+		"/C/Users/Admin/Desktop/New folder/food-website-template/lib/easing/easing.min.js",
+		"/C/Users/Admin/Desktop/learn/Demo-Project/Travel Page/index-2.css",
+		"/C/Users/Admin/Desktop/learn/Demo-Project/Travel Page/index.html",
+		"/C/Users/Admin/Desktop/food-website-template/js/main.js",
+		"/C/Users/Admin/Desktop/TourNest-master/assets/js/custom.js",
+		"/C/Users/Admin/Desktop/uloax/js/custom.js",
+		"/C/Users/Admin/Desktop/eforlad/js/custom.js",
+		"/C/Users/Admin/Desktop/eforlad/css/animate.min.css",
+		"/C/Users/Admin/Desktop/eforlad/js/plugin.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/es6.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/es6-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-14.html",
+		"/C/Users/Admin/Desktop/learn/small-project/changeBackground/app.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-13.html",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/non-regular-expression.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-12.html",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/non-regular-expression-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/object-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/regular-expression-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-11.html",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/object.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/function-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/array-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/string-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/dom.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/dom-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-10.html",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-9.html",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/regular-expression.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-8.html",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/string.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/math-2.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/js/date-time.js",
+		"/C/Users/Admin/Desktop/learn/w3resource/html/index-7.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 226.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"id",
+			"selectionVal",
+			"containerid",
+			" onclick=\"CopyToClipboard(value-discount)\"",
+			"custom-btn",
+			"with",
+			"giam",
+			"html",
+			"customer",
+			"padding: 80px",
+			"masonry",
+			"refund",
+			" .refund-hype",
+			"path",
+			"infinitescroll",
+			"path",
+			"masonry",
+			"path",
+			"image-grid__item",
+			"masonry",
+			"HD",
+			"get",
+			"free-image",
+			".free-image",
+			".free-imag",
+			"privacy",
+			"privacy-container2",
+			"privacy-return",
+			"masonry",
+			"Footer",
+			"troll",
+			"<!",
+			"troll",
+			"get voucher",
+			"getvoucher",
+			"Background",
+			"bg-dicovery",
+			"bg-dicovery-content",
+			"bg-sign-in",
+			"bg",
+			"h1",
+			"bg-discovery",
+			"bg-sign",
+			"bg-discovery",
+			"robotobg-discovery",
+			"roboto",
+			"bg",
+			"path",
+			"masonry",
+			"are-images-unloaded",
+			"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>Document</title>\n\n\t<!-- Google Font -->\n\t<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n\t<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n\t<link href=\"https://fonts.googleapis.com/css2?family=Roboto&display=swap\" rel=\"stylesheet\">\n\t<link href=\"https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700\" rel=\"stylesheet\">\n\t<link href=\"https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@700&display=swap\" rel=\"stylesheet\">\n\t<link href=\"https://fonts.googleapis.com/css2?family=Russo+One&display=swap\" rel=\"stylesheet\">\n\t<link href=\"https://fonts.googleapis.com/css2?family=Nunito&display=swap\" rel=\"stylesheet\">\n\n\t<!-- CSS Libraries -->\n\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\" integrity=\"sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />\n\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\n\n\t<!-- Style CSS -->\n\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\" integrity=\"sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />\n\n\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css\" integrity=\"sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==\" crossorigin=\"anonymous\">\n\n\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css\" integrity=\"sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==\" crossorigin=\"anonymous\">\n\n\t<link rel=\"stylesheet\" href=\"../css/style-troll.css\">\n\t<link rel=\"stylesheet\" href=\"../css/plugin.css\">\n\n\t<!-- JS Libraries  -->\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js\" integrity=\"sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" defer></script>\n\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\" defer></script>\n\t<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\" defer></script>\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js\" integrity=\"sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" defer></script>\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.js\" integrity=\"sha512-jRu7VgfHgEVAPSNTNCaAgBrb5baW87LhMhspQmeXhrAekHX/TWH3eiUAnOBPaIvd1uLo7ggrFOjV1CY0qfXP9w==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" defer></script>\n\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js\" integrity=\"sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==\" crossorigin=\"anonymous\" defer></script>\n\n\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js\" integrity=\"sha512-EqNNJuepkw5P9vxCml8eBk7C4Ld+4kAnvzOD/jG21rkxWPILGoQa5EvD62UieiJF0u3xoQrcVnce4i83VnYj/Q==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" defer></script>\n\n\t<script src=\"https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js\" defer></script>\n\t<script src=\"https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js\" defer></script>\n\t<script src=\"https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js\" defer></script>\n\t<!-- Scripts  -->\n\t<script src=\"../js/troll.js\" defer></script>\n</head>\n<body>\n\t<div class=\"container\">\n\t\t<div class=\"image-grid\" data-js=\"image-grid\" >\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/laIuV0D.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/777dcVU.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/ZPPFND3.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/EpYbuG7.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/kXUHDn5.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/Qmz61wo.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/aPia86B.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/iQRKg2a.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/XREWwIc.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/MV9SvaP.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/qjQ9XWl.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/ZJ088Tk.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/SuZLV2U.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/71H2B0k.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/vxOA4hg.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/8kLXqdP.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/9eHhuCK.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/kwxMKGr.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/fp6SDtQ.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/INAj06W.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/oLQ1tBD.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/2izuAhd.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/qoWEPJe.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/Iqbgpv7.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/PQh9aqW.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/uhORS25.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/QeN4jBt.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/ahtrWkN.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/fd1Mmhy.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/AOgABvd.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/ypd73RX.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/8AYv5Ik.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/2jpy7yO.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/qW7eNlI.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/n3M06QP.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/BNhGcqd.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/TNmDTdL.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/PRc06Uy.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/hHYirXc.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/2Qi40rJ.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/hztiigA.jpg\">\n\t\t\t</div><div class=\"image-grid__item\">\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/3AbaiOH.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/plQzrOk.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/uxYU1h3.jpg\">\n\t\t\t</div><div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/g4F6d2R.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/s2Tqsfq.jpg\">\n\t\t\t</div>\n\t\t\t<div class=\"image-grid__item\" >\n\t\t\t\t<img class=\"image-grid__image\" src=\"https://i.imgur.com/9vNj7Y6.jpg\">\n\t\t\t</div>\n\t\t</div>\n\n\t\t<!-- status elements -->\n\t\t<div class=\"scroller-status\">\n\t\t\t<div class=\"infinite-scroll-request loader-ellips\">\n\t\t\t\t...\n\t\t\t</div>\n\t\t\t<p class=\"infinite-scroll-last\">End of content</p>\n\t\t\t<p class=\"infinite-scroll-error\">No more pages to load</p>\n\t\t</div>\n\n\t\t<!-- pagination has path -->\n\t\t<p class=\"pagination\">\n\t\t\t<a class=\"pagination__next\" href=\"troll2.html\">Next page</a>\n\t\t</p>\n\t</div>\n\n\n</body>\n</html>",
+			"path",
+			"\"masonry-small",
+			"demo/masonry",
+			"page",
+			"page2",
+			"page2.html",
+			"path",
+			".image-grid__gutter-sizer",
+			"style=\"position: absolute; left: 67.9964%; top: 2270.38px;\"",
+			"grid-item--width2",
+			"chil",
+			"bg",
+			"double-offer",
+			"special-offer",
+			"special-offe",
+			"bg-sign",
+			"bgsign",
+			"bg",
+			"bvg",
+			".btn-success",
+			"BG",
+			"Russobg",
+			"Russo",
+			"r",
+			"bg-sign",
+			"bg",
+			"some-infor",
+			"title-sale",
+			".type-wrap .type-content",
+			".nk-feature",
+			".nk-feature-2",
+			"nk-feature-cont",
+			"nk-feature-icon",
+			"nk-feature-1",
+			"k-feature-1",
+			"type",
+			"navbar",
+			"nk-feature-1",
+			".about-us .video-container",
+			".coccoc-alo-ph-img-circle",
+			"1.2",
+			"1s",
+			".5",
+			"transition",
+			"ring",
+			"coccoc-alo-ph-img-circle",
+			"#00aff2",
+			"00aff2",
+			"iframe",
+			"rate",
+			".carousel .carousel-text h1",
+			".carousel-item",
+			"carousel",
+			"aboutcarousel",
+			"about",
+			"contact",
+			".footer-links ul",
+			"contact",
+			"about",
+			"header-content",
+			"about",
+			".tab-content .tab-header",
+			".tab-content .tab-header h3",
+			".blog-news-box .blog-news-box-item .blog-news-box-item-title",
+			".owl-carousel-slide .some-infor",
+			".bg-sign-in .special-offer",
+			"15px",
+			".header-title",
+			".btn.custom-btn",
+			".navbar-header",
+			".navbar-light",
+			".navbar-light .navbar-nav .nav-link",
+			".navbar .navbar-brand",
+			"header-content",
+			"header-title",
+			"header-content",
+			".text-grey"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "voucher.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6775,
+								6775
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2091.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Admin/Desktop/New folder/sec-web/js/voucher.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "terms.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 40165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2568,
+								2585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 397.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Admin/Desktop/New folder/sec-web/css/style-voucher.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6265,
+								6265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4998.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Admin/Desktop/New folder/sec-web/css/style-index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								126
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 7615.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 78.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 244.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime-troll.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thêm học viên</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fontawsome/css/all.css">
+</head>
+<body>
+	<div class="container">
+        <h1 class="text-center mt-4">Thêm mới học viên</h1>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Họ tên <span class="text-danger">*</span></label>
+
+            <div class="col-sm-10">
+                <input type="text" id="name" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="birthYear" class="col-sm-2 col-form-label">Năm sinh</label>
+
+            <div class="col-sm-10">
+                <input type="text" id="birthYear" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email <span class="text-danger">*</span></label>
+
+            <div class="col-sm-10">
+                <input type="text" id="email" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="phone" class="col-sm-2 col-form-label">Phone <span class="text-danger">*</span></label>
+
+            <div class="col-sm-10">
+                <input type="text" id="phone" class="form-control">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="text-center">
+            <button class="btn btn-secondary" onclick="window.location.href='index.html'">
+                <i class="fa fa-chevron-left"></i> Quay lại
+            </button>
+
+            <button class="btn btn-warning" onclick="createUser()">
+                <i class="fa fa-save"></i> Lưu
+            </button>
+        </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/add.js"></script>
+  <script>
+        function createUser() {
+            if (isValidData()) {
+                const user = {
+                    name: $('#name').val(),
+                    birthYear: $('#birthYear').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val()
+                }
+
+                createUserAPI(user, '/');
+            }
+        }
+    </script>
+</body>
+</html>

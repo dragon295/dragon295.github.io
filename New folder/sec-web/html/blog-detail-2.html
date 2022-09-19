@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Detail</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style-blog-detail.css">
+
+	<!-- JS Libraries  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.js" integrity="sha512-jRu7VgfHgEVAPSNTNCaAgBrb5baW87LhMhspQmeXhrAekHX/TWH3eiUAnOBPaIvd1uLo7ggrFOjV1CY0qfXP9w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js" integrity="sha512-EqNNJuepkw5P9vxCml8eBk7C4Ld+4kAnvzOD/jG21rkxWPILGoQa5EvD62UieiJF0u3xoQrcVnce4i83VnYj/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+	<!-- Scripts  -->
+	<script src="../js/modal.js" defer></script>
+	<script src="../js/main.js" defer></script>
+	<script src="../js/adjust-footer.js" defer></script>
+</head>
+<body>
+
+	<!-- Nav Bar Start -->
+	<nav class="navbar navbar-expand-lg navbar-light navbar-header">
+		<a class="navbar-brand" href="./index.html">Fake <span>Store</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Feature</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Pages
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Blog List</a>
+						<a class="dropdown-item" href="#">Blog Detail</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<!-- Search Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal" data-nav="yes">
+						<i class="fas fa-search"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- User Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal" data-nav="yes">
+						<i class="fa fa-user"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- Cart Hover -->
+					<a href="#" class="btn btn-primary cart-toggle" data-nav="yes">
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+
+					<div class="cart-preview-content">
+
+						<div class="proceed">
+							<button type="button" class="btn btn-success btn-proceed">
+								<a href="#">Proceed to Checkout</a>
+							</button>
+						</div>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav Bar End -->
+
+	<!-- Modal Start -->
+	<div class="modal-infor">
+		<div class="container">
+
+			<!-- Search Modal -->
+			<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Search for products</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form action="#">
+							<div class="modal-body">
+								<input type="text" placeholder="Search something" required="required" class="form-control">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-success">Search</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- User Modal -->
+			<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Sign In <span> / </span>Register</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body d-flex flex-column user">
+							<div class="box-btn-user">
+								<button type="button" class="btn w-50 btn-sign-in active">Sign in</button>
+
+								<button type="button" class="btn w-50  btn-register">Register</button>
+							</div>
+
+							<div class="sign-in active">
+								<h4>Sign in with...</h4>
+
+								<div class="main-sign-in">
+
+									<form action="#" class="d-flex flex-column">
+										<div class="form-input">
+											<label for="email-sign-in">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-sign-in">
+										</div>
+
+										<div class="form-input">
+											<label for="password-sign-in">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-sign-in" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-remember" type="checkbox" value="Remember me" name="checkbox-remember" checked autocomplete="off">
+											<label class="form-check-label" for="checkbox-remember">
+												Remember me
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Sign in</button>
+									</form>
+								</div>
+
+								<div class="ano-sign-in flex-column">
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="register">
+								<h4>Register with...</h4>
+
+								<div class="ano-register">
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+								</div>
+								<div class="main-register">
+									<form action="#" class="d-flex flex-column" autocomplete="on">
+										<div class="form-input">
+											<label for="username">Email User name</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter User Name" name="username">
+										</div>
+
+										<div class="form-input">
+											<label for="email-register">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-register">
+										</div>
+
+										<div class="form-input">
+											<label for="password-register">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-register" autocomplete="off">
+										</div>
+
+										<div class="form-input">
+											<label for="retype-register">Retype Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Retype Password" name="retype-register" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-term" type="checkbox" value="" name="checkbox-term" checked>
+											<label class="form-check-label" for="checkbox-term">
+												<p>I accept the&nbsp;
+													<a href="./terms.html" target="_blank">Terms & Conditions</a>,
+													<a href="./cookie-policy.html" target="_blank">Cookie Policy</a> and 
+													<a href="./privacy-policy.html" target="_blank">privacy policy</a>.
+												</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-offer" type="checkbox" value="" name="checkbox-offer">
+											<label class="form-check-label" for="checkbox-offer">
+												<p>Send me vouchers and news on great promotions</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-update" type="checkbox" value="" name="checkbox-update">
+											<label class="form-check-label" for="checkbox-update">
+												<p>Send me the latest updates, competitions...</p>
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Register</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Modal End -->
+
+	<!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Blog</h2>
+				</div>
+				<div class="col-12">
+					<a href="./index.html">Home</a>
+					<span class="slash"> / </span>
+					<a href="./blog.html">Blog</a>
+					<span class="slash"> / </span>
+					<a href="./blog-detail-1.html">Blog Detail</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+	<!-- Blog Content Start -->
+	<div class="blog-content box">
+		<div class="container">
+			<div class="header-title">
+				<h3>blog  <span>detail</span></h3>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-8">
+					<div class="main-content">
+						<article>
+							<h3>What to expect from God of War’s first outing on PC</h3>
+							<div class="main-text">
+								<div class="main-text-infor">
+									<div class="main-text-date">
+										<span class="fa fa-calendar"></span> Jul 27 2021
+									</div>
+									<div class="main-text-date">
+										<span class="fa fa-id-card"></span> TFZ-kING
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="text-content">
+								<img src="https://genk.mediacdn.vn/2017/2-1484565149466.jpg" alt="Blog-detail-img">
+								<div class="article-post-content clearfix">
+									<p>There’s no getting around it – <a href="#">God of War</a> coming to PC is a properly massive event. Indeed, no longer will PC gamers have to gaze with envious eyes at their PlayStation siblings because as of January 2022, Kratos will be bringing his particularly compelling blend of hi-octane brutality and miserable dad energy to PC gamers at last. What should we expect from God of War’s first outing on PC then? Well, I’m glad you asked.
+									</p>
+
+									<h3>Massively Enhanced Visuals</h3>
+									<img src="https://photo2.tinhte.vn/data/attachment-files/2021/10/5692722_Cover_GoW.jpg" alt=
+									"Blog-detail-img">
+									<p>Starting with the numerous improvements that God of War PC boasts over its PS4 counterpart, God of War’s leap to PC has brought with it a veritable raft of visual upgrades that simply weren’t possible on Sony’s last generation console. Boasting native 4K resolution visuals, in addition to greatly improved reflections, higher resolution shadows and unlocked framerates, this is absolutely the very best God of War has ever looked (and it was no slouch to begin with).</p>
+
+
+									<h3>God of War PC Brings an All-New Ultra-Wide Presentation</h3>
+									<img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/ss_6eccc970b5de2943546d93d319be1b5c0618f21b.1920x1080.jpg?t=1642526157">
+									<p>From the awe-inspiring sense of sweep and scale, not to mention its embrace of the same ‘single take’ cinematography trick recently leveraged by Sam Mendes’ superb WW1 jaunt, God of War is an authentic cinematic experience that cribs as much from the silver screen as it does from anywhere else. As such, the addition of an ultra-wide display option in the 21:9 ratio means that all of those cinematic qualities will be magnified duly, allowing players to fully immerse themselves in an eye-opening expansion of God of War’s visual presentation. </p>
+
+
+									<h3>An Epic Foray Into Norse Mythology Like No Other</h3>
+									<img src="https://hadoantv.com/wp-content/uploads/2022/01/download-god-of-war-hadoan-tv-3.jpg" alt="Blog-detail-img">
+									<p>Another reason why God of War has lingered so long in the consciousness of gamers around the world is its full-throated and unflinching take on Norse mythology. Beautifully depicting an expansive range of realms from a pre-Viking era, God of War’s take on Norse mythology is very much rooted in the gods and monsters of those stories, as Kratos tangles with all manner of ogres, trolls, Valkyries and much, much more besides. Quite simply, if you’re looking to utterly fill your boots with all manner of vengeful Norse gods and monsters, then God of War will absolutely be your huckleberry. </p>
+
+
+									<h3>A Surprisingly Touching And Emotional Tale</h3>
+									<img src="https://www.hanoicomputer.vn/media/news/2803_god-of-war-screen-08-ps4-us-12jun17.jpg" alt="Blog-detail-img">
+									<p>Though Kratos earns every bit of his titular moniker as the savage God of War, his PC debut presents players with something approaching a softer side for its protagonist; making him a much more complex character rather than the largely one-dimensional, angry bearded man he was in previous games. Emotionally anchored by his son Atreus, who wants nothing more than to earn the respect of his big, gruff dad, we begin to see layers peel off of Kratos, gradually revealing the damaged and ironically rather human soul that lurks beneath his seemingly ironclad exterior. Don’t believe us? <a href="#">Check out what we had to say about it way back in 2018</a>.</p>
+
+									<h3>One Of The Best Designed Action RPGs Ever Made</h3>
+									<div class="video-container mb-2">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/HqQMh_tij0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<p>There’s a reason why when it was released on PlayStation 4 back in 2018 that God of War won over 30 Game of the Year awards from numerous publications. Encompassing a pitch-perfect blend of sophisticated combat, compelling exploration, deep progression and enough secrets to keep you searching long after the credits have completed their roll, God of War’s 2018 incarnation takes the best tenets of a timeless action RPG such as The Legend of Zelda: Ocarina of Time and fashions a Game of the Generation level spectacle from them.</p>
+									<p>If you’re getting ready to go Norse with <a href="#">God of War on PC, head over to our store and grab it today</a> – you’ll soon be shouting BOY with the best of them.</p>
+								</div>
+							</div>
+
+							<!-- Share -->
+							<div class="share">
+								<span class="h5">Share Article:</span>
+								<ul class="list-socials-left">
+									<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-twitter"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
+									<li><a href="#" target="blank"><i class="fab fa-instagram"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+
+
+						</article>
+
+						<!-- Related Posts -->
+						<div class="header-title">
+							<h3>related  <span>post</span></h3>
+						</div>
+						<div class="related-post">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<a href="./blog-detail-1.html">
+										<img src="https://cdn.wccftech.com/wp-content/uploads/2019/12/Weird-West-Key-Art.png" alt="related-img" class="related-img">
+									</a>
+									<div class="main-text">
+										<div class="main-text-infor">
+											<div class="main-text-date">
+												<span class="fa fa-calendar"></span> Jul 27 2021
+											</div>
+											<div class="main-text-date">
+												<span class="fa fa-id-card"></span> TS
+											</div>
+										</div>
+									</div>
+									<a  href="./blog-detail-1.html" class="related-title">
+										<h4>Everything You Need To Know About Weird West</h4>
+									</a>
+								</div>
+
+								<div class="col-12 col-md-6">
+									<a  href="./blog-detail-1.html" >
+										<img src="https://s3.cloud.cmctelecom.vn/tinhte1/2017/08/4118102_promo322336133.jpg" class="related-img">
+									</a>
+									<div class="main-text">
+										<div class="main-text-infor">
+											<div class="main-text-date">
+												<span class="fa fa-calendar"></span> Jul 16 2021
+											</div>
+											<div class="main-text-date">
+												<span class="fa fa-id-card"></span> John Maccain
+											</div>
+										</div>
+									</div>
+									<a  href="./blog-detail-1.html" class="related-title">
+										<h4>Everything you need to know about Final Fantasy XV</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Comments -->
+						<div class="header-title">
+							<h3> <span>comments</span></h3>
+						</div>
+						<div class="comment">
+							<div class="user-comment">
+								<img src="../img/einstein.jpg" alt="Fan Einstein" class="rounded-circle" width="40"> by <a href="#">Fan Einstein</a> in 12 September, 2021
+								<a href="#" class="btn btn-reply float-right">Reply</a>
+							</div>
+							<div class="user-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis, ligula id condimentum sagittis, tortor nunc volutpat est, ut luctus neque dui ut massa. Aliquam erat volutpat. Sed vel turpis augue. Mauris erat ex, malesuada sit amet auctor condimentum, mattis non libero. Nulla imperdiet, ante nec porttitor mattis, lacus arcu varius diam, sit amet eleifend mauris ligula quis urna.</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="comment">
+							<div class="user-comment">
+								<img src="../img/nikola-tesla.jpg" alt="nikola-tesla" class="rounded-circle" width="40"> by <a href="#">Niko chan</a> in 10 September, 2021
+								<a href="#" class="btn btn-reply float-right">Reply</a>
+							</div>
+							<div class="user-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis, ligula id condimentum sagittis, tortor nunc volutpat est, ut luctus neque dui ut massa. Aliquam erat volutpat. Nulla imperdiet, ante nec porttitor mattis, lacus arcu varius diam, sit amet eleifend mauris ligula quis urna.</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<!-- Leave a Comment -->
+						<div class="header-title">
+							<h3>leave <span>a comment</span></h3>
+						</div>
+						<div class="leave-comment row">
+							<div class="col-md-6">
+								<input type="email" class="form-control required" name="email" placeholder="Email *">
+							</div>
+
+							<div class="hidden-height-425"></div>
+							
+							<div class="col-md-6">
+								<input type="text" class="form-control required" name="name" placeholder="Name *">
+							</div>
+							<div class="hidden-height"></div>
+							<div class="col-12">
+								<textarea class="form-control required" name="message" rows="5" placeholder="Message *" aria-required="true"></textarea>
+
+								<div class="float-right">
+									<button class="btn custom-btn" type="submit" id="sendMessageButton">post comment</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="sidebar">
+
+						<!-- Input Search -->
+						<div class="right-col">
+							<div class="right-col-content">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search something...">
+									<button class="btn custom-btn">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Latest Post -->
+						<div class="right-col">
+							<h4 class="right-col-title">
+								<span><span class="text-main-1">latest</span> post</span>
+							</h4>
+							<div class="right-col-content">
+								<div class="right-post">
+									<a href="#">
+										<div class="img-right-post">
+											<img src="https://www.dualshockers.com/static/uploads/2020/05/cloud5-150x150.jpg" alt="Smell magic in the air. Or maybe barbecue"
+											class="img-fluid">
+										</div>
+									</a>
+									<div class="wrapper-right-post-title">
+										<h3>
+											<a href="#">Smell magic in the air. Or maybe barbecue</a>
+										</h3>
+										<div class="right-post-date">
+											<span class="fa fa-calendar"></span> 
+											Sep 18, 2021
+											<span class=""></span>
+										</div>
+									</div>
+								</div>
+								<div class="right-post">
+									<a href="#">
+										<div class="img-right-post">
+											<img src="https://savegame.pro/wp-content/uploads/2020/04/resident-evil-3-cover.jpg" alt="Grab your sword and fight the Horde" class="img-fluid">
+										</div>
+									</a>
+									<div class="wrapper-right-post-title">
+										<h3>
+											<a href="#">Grab your sword and fight the Horde</a>
+										</h3>
+										<div class="right-post-date">
+											<span class="fa fa-calendar"></span> 
+											Sep 5, 2021
+										</div>
+									</div>
+								</div>
+								<div class="right-post">
+									<a href="#">
+										<div class="img-right-post">
+											<img src="https://news.toyark.com/wp-content/uploads/sites/4/2020/01/Prime-1-DMCV-Vergil-028-150x150.jpg" alt="We found a witch! May we burn her?" class="img-fluid">
+										</div>
+									</a>
+									<div class="wrapper-right-post-title">
+										<h3>
+											<a href="#">We found a witch! May we burn her?</a>
+										</h3>
+										<div class="right-post-date">
+											<span class="fa fa-calendar"></span> 
+											Aug 27, 2021
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Latest Video -->
+						<div class="right-col">
+							<h4 class="right-col-title">
+								<span><span class="text-main-1">latest</span> video</span>
+							</h4>
+							<div class="right-col-content right-video">
+								<div class="video-container">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/NN-PFn97cR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!-- Social Links -->
+						<div class="right-col">
+							<h4 class="right-col-title">
+								<span><span class="text-main-1">connect</span> with us</span>
+							</h4>
+							<div class="right-col-content">
+								<ul class="list-socials-right">
+									<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-twitter"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
+									<li><a href="#" target="blank"><i class="fab fa-instagram"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Blog Content End -->
+
+	<!-- Footer Start -->
+	<footer class="footer box">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-3 footer-about">
+					<h3>Fake <span>Store</span></h3>
+					<p>
+						We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+					</p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-contact">
+					<h3>Contact</h3>
+					<p><i class="fas fa-map-marker-alt"></i>kim ngưu, Hai Bà Trưng, Hà Nội</p>
+					<p><i class="fas fa-phone"></i>Phone: +84 987 123 456 </p>
+					<p><i class="fas fa-envelope"></i>Email: <a href="#">blon-bl03@gmail.com</a></p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-links">
+					<h3> Quick Links</h3>
+					<ul>
+						<li><a href="./cookie-policy.html">Cookie Policy</a></li>
+						<li><a href="./refund-policy.html">Refund Policy</a></li>
+						<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="./terms.html">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-6 col-lg-3 footer-social">
+					<h3>subscribe</h3>
+					<p>Get monthly newsletter (Free)</p>
+					<form action="">
+						<input type="email" required="true" placeholder="Enter a email address">
+						<button type="submit" class="btn custom-btn">Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="row box-line">
+				<div class="col-lg-12 grey-line-footer"></div>
+			</div>
+			<div class="row align-items-center footer-lower">
+				<div class="col-12 col-md-6 copyright">
+					<p>© Copyright 2021 TDA - All Rights Reserved</p>
+				</div>
+				<div class="col-12 col-md-6 social-links">
+					<a href="#" target="blank"><i class="fab fa-facebook"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-twitter"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+
+</body>
+</html>

@@ -5,8 +5,8 @@
    ====================================== */
 
 .register-wrapper {
-    background-image: -webkit-linear-gradient(135deg, #0eeff0, #088f90 90%);
-    background-image: linear-gradient(135deg, #0eeff0, #088f90 90%);
+    background-image: -webkit-linear-gradient(135deg, #0eeff0);
+    background-image: linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
     position: relative;
     z-index: 3;
     padding: 100px;
@@ -23,23 +23,19 @@
     padding: 0 20px;
     line-height: 50px;
     height: 50px;
-    background: white;
+    background-color: white;
     border: solid 1px #e6e6e6;
     border-bottom-width: 3px;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    outline: none;
 }
 
 .register-wrapper form input:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.register-wrapper form input[type="email"]:focus,
-.register-wrapper form input[type="email"]:active,
-.register-wrapper form input[type="password"]:focus,
-.register-wrapper form input[type="password"]:active {
+.register-wrapper form input[type="email"]:focus, .register-wrapper form input[type="email"]:active, .register-wrapper form input[type="password"]:focus, .register-wrapper form input[type="password"]:active {
     border-color: #ccc;
 }
 
@@ -50,32 +46,13 @@
     padding: 0 20px;
     background-color: #f2395a;
     background-size: 20px 20px;
-    background-image: -webkit-linear-gradient(
-        45deg, 
-        rgba(255, 255, 255, 0.15) 25%, 
-        rgba(0,0,0,0) 25%, 
-        rgba(0,0,0,0) 50%, 
-        rgba(255, 255, 255, 0.15) 50%, 
-        rgba(255, 255, 255, 0.15) 75%, 
-        rgba(0,0,0,0) 75% 
-        rgba(0,0,0,0));
-        background-image: linear-gradient(
-            45deg, 
-            rgba(255, 255, 255, 0.15) 25%, 
-            rgba(0,0,0,0) 25%, 
-            rgba(0,0,0,0) 50%, 
-            rgba(255, 255, 255, 0.15) 50%, 
-            rgba(255, 255, 255, 0.15) 75%, 
-            rgba(0,0,0,0) 75%, 
-            rgba(0,0,0,0));
-        border: solid 1px #f02146;
-        border-bottom-width: 3px;
-        color: white;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 70%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+    border: solid 1px #f02146;
+    border-bottom-width: 3px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .register-wrapper form input[type="submit"]:hover {
@@ -83,11 +60,12 @@
 }
 
 .register-title {
-    font-size: 1.85rem;
+    font-size: 1.6rem;
     padding-bottom: 20px;
     margin: 0 0 20px;
     border-bottom: dashed 1px #e6e6e6;
 }
+
 .register-block {
     position: relative;
     display: block;
@@ -96,9 +74,9 @@
     margin: 0 auto;
     padding: 30px;
     background: white;
-    box-shadow: 0 0 50px rgba(0,0,0,0.2);
-    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
+
 .register-block::before, .register-block::after {
     position: absolute;
     z-index: -1;
@@ -110,11 +88,11 @@
     width: 100%;
     height: 100%;
     content: '';
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
     background: white;
-    -webkit-transform: scale(0.9) translate(0,0);
-    transform: scale(0.9) translate(0,0);
+    border: solid 1px #e6e6e6;
+    border-radius: 5px;
+    -webkit-transform: scale(0.9) translate(0, 0);
+    transform: scale(0.9) translate(0, 0);
     transition: all 0.3s ease;
 }
 
@@ -123,7 +101,6 @@
     transform: scale(0.96) translate(0,16px);
     z-index: -1;
 }
-
 
 .register-block:hover::after {
     -webkit-transform: scale(0.92) translate(0,32px);

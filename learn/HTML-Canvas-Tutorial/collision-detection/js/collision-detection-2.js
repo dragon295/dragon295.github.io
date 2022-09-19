@@ -38,7 +38,7 @@ class Particle {
     this.radius = radius;
     this.color = color;
     this.mass = 1;
-    this.opacity = 0;
+    this.opacity = 0.05;
   }
 
   draw() {
@@ -49,41 +49,45 @@ class Particle {
     c.fillStyle = this.color;
     c.fill();
     c.restore();
-    c.strokeStyle = this.color;
+    c.strokeStyle= this.color
     c.stroke();
     c.closePath();
   }
 
-  update(particles){
+  update(particles) {
     this.draw();
 
-    for(let i = 0; i < particles.length ; i++) {
-      if(this === particles[i]) continue;
+    for (let i = 0; i < particles.length; i++) {
+      if (this === particles[i]) continue;
 
-      if (utils.distance(this.x, this.y, particles[i].x, particles[i].y) - this.radius * 2 < 0 ) {
-        utils.resolveCollision(this, particles[i]);
+      if (
+        utils.distance(this.x, this.y, particles[i].x, particles[i].y) -
+          this.radius * 2 < 0
+      ) {
+        utils.resolveCollision(this, particles[i])
       }
     }
 
-    if(this.x - this.radius <= 0 || this.x + this.radius >= innerWidth) {
-      this.velocity.x = - this.velocity.x;
-    }
-    
-    if(this.y - this.radius <= 0 || this.y + this.radius >= innerHeight) {
-      this.velocity.y = - this.velocity.y;
+    if (this.x + this.radius >= innerWidth || this.x - this.radius <= 0) {
+      this.velocity.x = - this.velocity.x
     }
 
-    // mouse collinsion detection 
+    if (this.y + this.radius >= innerHeight || this.y - this.radius <= 0) {
+      this.velocity.y = - this.velocity.y
+    }
 
-    if(utils.distance(mouse.x, mouse.y, this.x, this.y) < 120 && this.opacity < 0.2) {
-      this.opacity += 0.10;
-    } else if (this.opacity > 0) {
-      this.opacity -= 0.10;
-      this.opacity = Math.max(0, this.opacity)
+    if (utils.distance(mouse.x, mouse.y, this.x, this.y) < 150 && this.opacity < 0.45 ) {
+      this.opacity += 0.02;
+    } else if (this.opacity >0) {
+      this.opacity -= 0.02;
+
+      this.opacity = Math.max(0 ,this.opacity)
     }
     this.x += this.velocity.x;
     this.y += this.velocity.y;
+
   }
+
 }
 
 // Implementation
@@ -91,11 +95,11 @@ let particles;
 function init() {
   particles = [];
 
-  for (let i = 0; i < 150; i++) {
+  for (let i = 0; i < 200; i++) {
     const radius = 15;
-    let x = utils.randomIntFromRange(radius, canvas.width - radius);
-    let y = utils.randomIntFromRange(radius, canvas.height - radius);
-    const color =  utils.randomColor(colors);
+    let x = utils.randomIntFromRange(radius, innerWidth - radius);
+    let y = utils.randomIntFromRange(radius, innerHeight - radius);
+    const color = utils.randomColor(colors);
 
     if (i !== 0) {
       for (let j = 0; j < particles.length; j++) {
@@ -103,13 +107,14 @@ function init() {
           utils.distance(x, y, particles[j].x, particles[j].y) - radius * 2 <
           0
         ) {
-          x = utils.randomIntFromRange(radius, canvas.width - radius);
-          y = utils.randomIntFromRange(radius, canvas.height - radius);
+          x = Math.random() * innerWidth;
+          y = Math.random() * innerHeight;
 
           j = -1;
         }
       }
     }
+
     particles.push(new Particle(x, y, radius, color));
   }
 }
@@ -119,7 +124,6 @@ function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, canvas.width, canvas.height);
 
-  // c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y);
   particles.forEach((particle) => {
     particle.update(particles);
   });

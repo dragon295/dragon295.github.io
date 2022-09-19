@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./img/Fantasy.jpg");
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.custom-btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-6 {
+    background: #373B44;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    top: 10%;
+    left: 1%;
+}
+
+.btn-6:before, .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 5px;
+    background-color: #000;
+}
+
+.btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+}
+
+.btn-6:hover {
+    color: #000;
+    background: #7F7FD5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+}
+
+.btn-6 span:before, .btn-6 span:after {
+    position: absolute;
+    content: "";
+    background-color: #000;
+}
+
+.btn-6 span:before {
+    left: -1%;
+    top: -10%;
+    width: 0%;
+    height: 5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+    right: 1%;
+    bottom: 10%;
+    width: 0%;
+    height: 5px;
+    transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+    width: 100%;
+}
+
+.btn-6 span:hover:after {
+    width: 100%;
+}
+
+#canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 4px 10px black;
+}
+
+.score {
+    font-family: inherit;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-4 {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    line-height: 40px;
+    padding: 0;
+    font-size: 20px;
+    background: #de6161;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2657eb, #de6161);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-4:hover {
+    border: none;
+}
+
+.btn-4:before, .btn-4:after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    border: 3px solid;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn-4:before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #000;
+    border-left-color: #000;
+}
+
+.btn-4:after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #000;
+    border-right-color: #000;
+}
+
+.btn-4:hover:before, .btn-4:hover:after {
+    border-color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.box-end-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

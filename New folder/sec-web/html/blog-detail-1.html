@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog Detail</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style-blog-detail.css">
+
+	<!-- JS Libraries  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.js" integrity="sha512-jRu7VgfHgEVAPSNTNCaAgBrb5baW87LhMhspQmeXhrAekHX/TWH3eiUAnOBPaIvd1uLo7ggrFOjV1CY0qfXP9w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js" integrity="sha512-EqNNJuepkw5P9vxCml8eBk7C4Ld+4kAnvzOD/jG21rkxWPILGoQa5EvD62UieiJF0u3xoQrcVnce4i83VnYj/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+	<!-- Scripts  -->
+	<script src="../js/modal.js" defer></script>
+	<script src="../js/main.js" defer></script>
+	<script src="../js/adjust-footer.js" defer></script>
+</head>
+<body>
+	<!-- Nav Bar Start -->
+	<nav class="navbar navbar-expand-lg navbar-light navbar-header">
+		<a class="navbar-brand" href="./index.html">Fake <span>Store</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Feature</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Pages
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Blog List</a>
+						<a class="dropdown-item" href="#">Blog Detail</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<!-- Search Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal" data-nav="yes">
+						<i class="fas fa-search"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- User Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal" data-nav="yes">
+						<i class="fa fa-user"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- Cart Hover -->
+					<a href="#" class="btn btn-primary cart-toggle" data-nav="yes">
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+
+					<div class="cart-preview-content">
+						
+						<div class="proceed">
+							<button type="button" class="btn btn-success btn-proceed">
+								<a href="#">Proceed to Checkout</a>
+							</button>
+						</div>
+
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav Bar End -->
+
+	<!-- Modal Start -->
+	<div class="modal-infor">
+		<div class="container">
+
+			<!-- Search Modal -->
+			<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Search for products</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form action="#">
+							<div class="modal-body">
+								<input type="text" placeholder="Search something" required="required" class="form-control">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-success">Search</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- User Modal -->
+			<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Sign In <span> / </span>Register</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body d-flex flex-column user">
+							<div class="box-btn-user">
+								<button type="button" class="btn w-50 btn-sign-in active">Sign in</button>
+
+								<button type="button" class="btn w-50  btn-register">Register</button>
+							</div>
+
+							<div class="sign-in active">
+								<h4>Sign in with...</h4>
+
+								<div class="main-sign-in">
+
+									<form action="#" class="d-flex flex-column">
+										<div class="form-input">
+											<label for="email-sign-in">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-sign-in">
+										</div>
+
+										<div class="form-input">
+											<label for="password-sign-in">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-sign-in" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-remember" type="checkbox" value="Remember me" name="checkbox-remember" checked autocomplete="off">
+											<label class="form-check-label" for="checkbox-remember">
+												Remember me
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Sign in</button>
+									</form>
+								</div>
+
+								<div class="ano-sign-in flex-column">
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="register">
+								<h4>Register with...</h4>
+
+								<div class="ano-register">
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+								</div>
+								<div class="main-register">
+									<form action="#" class="d-flex flex-column" autocomplete="on">
+										<div class="form-input">
+											<label for="username">Email User name</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter User Name" name="username">
+										</div>
+
+										<div class="form-input">
+											<label for="email-register">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-register">
+										</div>
+
+										<div class="form-input">
+											<label for="password-register">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-register" autocomplete="off">
+										</div>
+
+										<div class="form-input">
+											<label for="retype-register">Retype Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Retype Password" name="retype-register" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-term" type="checkbox" value="" name="checkbox-term" checked>
+											<label class="form-check-label" for="checkbox-term">
+												<p>I accept the&nbsp;
+													<a href="./terms.html" target="_blank">Terms & Conditions</a>,
+													<a href="./cookie-policy.html" target="_blank">Cookie Policy</a> and 
+													<a href="./privacy-policy.html" target="_blank">privacy policy</a>.
+												</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-offer" type="checkbox" value="" name="checkbox-offer">
+											<label class="form-check-label" for="checkbox-offer">
+												<p>Send me vouchers and news on great promotions</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-update" type="checkbox" value="" name="checkbox-update">
+											<label class="form-check-label" for="checkbox-update">
+												<p>Send me the latest updates, competitions...</p>
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Register</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Modal End -->
+
+	<!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Blog</h2>
+				</div>
+				<div class="col-12">
+					<a href="./index.html">Home</a>
+					<span class="slash"> / </span>
+					<a href="./blog.html">Blog</a>
+					<span class="slash"> / </span>
+					<a href="./blog-detail-1.html">Blog Detail</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+	<!-- Blog Content Start -->
+	<div class="blog-content box">
+		<div class="container">
+			<div class="header-title">
+				<h3>blog  <span>detail</span></h3>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-8">
+					<div class="main-content">
+						<article>
+							<h3>Everything you need to know about Weird West</h3>
+							<div class="main-text">
+								<div class="main-text-infor">
+									<div class="main-text-date">
+										<span class="fa fa-calendar"></span> 1 weeks ago
+									</div>
+									<div class="main-text-date">
+										<span class="fa fa-id-card"></span> TS
+									</div>
+								</div>
+							</div>
+							<hr>
+							<div class="text-content">
+								<img src="https://cdn.wccftech.com/wp-content/uploads/2019/12/Weird-West-Key-Art.png" alt="Blog-detail-img">
+								<div class="article-post-content clearfix">
+									<p>It’s already built up a bit of a cult following, and we’re all eagerly waiting to get our hands on it! From the co-creators of <a href="#">Dishonored</a> and <a href="#"> Prey</a> comes Weird West; an immersive sim RPG set in an alternate Wild West era that has been totally reimagined with a dark fantasy twist. Expect to uncover dark tales as you explore The Stillwaters whilst managing your reputation and grabbing excellent loot along the way. Let’s take a look at everything you need to know about the Weird West video game.</p>
+									<h3>Weird West Release Date</h3>
+									<img src="https://s2.dmcdn.net/v/T7C6F1WzOntTNyP-k/x1080" alt=
+									"Blog-detail-img">
+									<p>Weird West was originally due for a January 2022 release. However, that has now been pushed back to 31st March 2022. Developer WolfEye Studios has identified a few issues in the beta testing which need to be ironed out before release, which is refreshing in a world where many games get rushed out, warts and all. Sorry, you’ll have to wait just a little longer to get your hands on this one.</p>
+
+
+									<h3>Platforms</h3>
+									<img src="https://cdn.wallpapersafari.com/12/63/hYHLmO.png" alt=
+									"Blog-detail-img">
+									<p>Weird West will be released across a number of different platforms, including on Windows PC via Steam and GOG, Xbox Series S &amp; X, Xbox One, as well as coming to Game Pass on Xbox. It will also be released on Playstation 5 and Playstation 4.</p>
+
+
+									<h3>What is Weird West?</h3>
+									<img src="https://screenshots.gamerinfo.net/weird-west/195188.jpg" alt="Blog-detail-img">
+									<p>Weird West is set in a unique and stunning version of the Wild West where magic, mystery and more is very much present. You’ll face off against demons, sirens, gang members and many more other worldly creatures as you take control of five unique characters – a bounty hunter, pigman, archer, preacher and werewolf – and guide them through their stories. Along the way, you will be able to level them up unlocking new powerful abilities and skills.&nbsp;</p>
+									<p>Weird West is an action-RPG where your action will help shape the narrative of the game. The Twin-stick shooter style of the game will have you engaging in many gun fights. There is a freedom to combat allowing you to approach fights in multiple ways, and you can make use of cover and hop fences to gain new advantages. Additionally, you can use other parts of the environment, such as setting fires on wooden structures of grass.&nbsp;</p>
+									<p>This delightfully dark and spooky tale is all wrapped up in a beautiful art style inspired by French comic books.</p>
+
+
+									<h3>The World of Weird West</h3>
+									<div class="video-container mb-2">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/PZGrGWEgXhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<p>As you complete storyline missions and side quests, the world will change around you. People will remember you and your actions. If you wanted to, you could roll into the nearest town and open fire; however, the townsfolk will remember that and may not be the most accommodating in the future. If you take a more passive and friendlier approach, you may find yourself on the receiving end of store discounts and generally friendlier folk.</p>
+									<p>More of the map will open up as you complete missions providing more opportunities to seek out your own adventures alongside the main story. But beware of ambushes as you travel the roads; many dangers are lurking in The Stillwaters. The game has freedom to it that will allow you to be at the controls for your journey, deciding where to go, who to help and who to fight. Just remember that those choices have consequences.<br></p>
+									<p>Weird West is looking like an extremely good game. We’re hoping that it will deliver dark stories, explosive action and unique characters that you’ll be able to invest your hard-earned time into and not end up disappointed.&nbsp;</p>
+								</div>
+							</div>
+
+							<!-- Share -->
+							<div class="share">
+								<span class="h5">Share Article:</span>
+								<ul class="list-socials-left">
+									<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-twitter"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
+									<li><a href="#" target="blank"><i class="fab fa-instagram"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+
+
+						</article>
+
+						<!-- Related Posts -->
+						<div class="header-title">
+							<h3>related  <span>post</span></h3>
+						</div>
+						<div class="related-post">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<a href="./blog-detail-2.html">
+										<img src="https://www.phucanh.vn/media/news/1312_80575012132.jpg" alt="related-img" class="related-img">
+									</a>
+									<div class="main-text">
+										<div class="main-text-infor">
+											<div class="main-text-date">
+												<span class="fa fa-calendar"></span> Jul 27 2021
+											</div>
+											<div class="main-text-date">
+												<span class="fa fa-id-card"></span> Black Death
+											</div>
+										</div>
+									</div>
+									<a  href="./blog-detail-2.html" class="related-title">
+										<h4>What to expect from God of War’s first outing on PC</h4>
+									</a>
+								</div>
+
+								<div class="col-12 col-md-6">
+									<a  href="./blog-detail-2.html" >
+										<img src="https://images4.alphacoders.com/993/thumb-1920-993081.jpg" alt="related-img" class="related-img">
+									</a>
+									<div class="main-text">
+										<div class="main-text-infor">
+											<div class="main-text-date">
+												<span class="fa fa-calendar"></span> Jul 20 2021
+											</div>
+											<div class="main-text-date">
+												<span class="fa fa-id-card"></span> Fake
+											</div>
+										</div>
+									</div>
+									<a  href="./blog-detail-2.html" class="related-title">
+										<h4>Everything you need to know about Tom Clancy’s Rainbow Six Extraction</h4>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Comments -->
+						<div class="header-title">
+							<h3> <span>comments</span></h3>
+						</div>
+						<div class="comment">
+							<div class="user-comment">
+								<img src="../img/davin-ci.png" alt="Witch Murder" class="rounded-circle" width="40"> by <a href="#">Witch Murder</a> in 19 September, 2021
+								<a href="#" class="btn btn-reply float-right">Reply</a>
+							</div>
+							<div class="user-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis, ligula id condimentum sagittis, tortor nunc volutpat est, ut luctus neque dui ut massa. Aliquam erat volutpat. Sed vel turpis augue. Mauris erat ex, malesuada sit amet auctor condimentum, mattis non libero. Nulla imperdiet, ante nec porttitor mattis, lacus arcu varius diam, sit amet eleifend mauris ligula quis urna. Nullam erat dui, tempor ac augue et, porttitor semper nisi. Ut at sagittis urna, id finibus sem. </p>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="comment">
+							<div class="user-comment">
+								<img src="../img/hawking.jpg" alt="Witch Murder" class="rounded-circle" width="40"> by <a href="#">Canna</a> in 20 September, 2021
+								<a href="#" class="btn btn-reply float-right">Reply</a>
+							</div>
+							<div class="user-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis, ligula id condimentum sagittis, tortor nunc volutpat est, ut luctus neque dui ut massa. Aliquam erat volutpat.</p>
+							</div>
+						</div>
+
+						<hr>
+
+						<!-- Leave a Comment -->
+						<div class="header-title">
+							<h3>leave <span>a comment</span></h3>
+						</div>
+						<div class="leave-comment row">
+							<div class="col-md-6">
+								<input type="email" class="form-control required" name="email" placeholder="Email *">
+							</div>
+
+							<div class="hidden-height-425"></div>
+							
+							<div class="col-md-6">
+								<input type="text" class="form-control required" name="name" placeholder="Name *">
+							</div>
+							<div class="hidden-height"></div>
+							<div class="col-12">
+								<textarea class="form-control required" name="message" rows="5" placeholder="Message *" aria-required="true"></textarea>
+
+								<div class="float-right">
+									<button class="btn custom-btn" type="submit" id="sendMessageButton">post comment</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="sidebar">
+
+						<!-- Input Search -->
+						<div class="right-col">
+							<div class="right-col-content">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search something...">
+									<button class="btn custom-btn">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Latest Post -->
+						<div class="right-col">
+							<h4 class="right-col-title">
+								<span><span class="text-main-1">latest</span> post</span>
+							</h4>
+							<div class="right-col-content">
+								<div class="right-post">
+									<a href="#">
+										<div class="img-right-post">
+											<img src="https://www.dualshockers.com/static/uploads/2020/05/cloud5-150x150.jpg" alt="Smell magic in the air. Or maybe barbecue"
+											class="img-fluid">
+										</div>
+									</a>
+									<div class="wrapper-right-post-title">
+										<h3>
+											<a href="#">Smell magic in the air. Or maybe barbecue</a>
+										</h3>
+										<div class="right-post-date">
+											<span class="fa fa-calendar"></span> 
+											Sep 18, 2021
+											<span class=""></span>
+										</div>
+									</div>
+								</div>
+								<div class="right-post">
+									<a href="#">
+										<div class="img-right-post">
+											<img src="https://savegame.pro/wp-content/uploads/2020/04/resident-evil-3-cover.jpg" alt="Grab your sword and fight the Horde" class="img-fluid">
+										</div>
+									</a>
+									<div class="wrapper-right-post-title">
+										<h3>
+											<a href="#">Grab your sword and fight the Horde</a>
+										</h3>
+										<div class="right-post-date">
+											<span class="fa fa-calendar"></span> 
+											Sep 5, 2021
+										</div>
+									</div>
+								</div>
+								<div class="right-post">
+									<a href="#">
+										<div class="img-right-post">
+											<img src="https://news.toyark.com/wp-content/uploads/sites/4/2020/01/Prime-1-DMCV-Vergil-028-150x150.jpg" alt="We found a witch! May we burn her?" class="img-fluid">
+										</div>
+									</a>
+									<div class="wrapper-right-post-title">
+										<h3>
+											<a href="#">We found a witch! May we burn her?</a>
+										</h3>
+										<div class="right-post-date">
+											<span class="fa fa-calendar"></span> 
+											Aug 27, 2021
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Latest Video -->
+						<div class="right-col">
+							<h4 class="right-col-title">
+								<span><span class="text-main-1">latest</span> video</span>
+							</h4>
+							<div class="right-col-content right-video">
+								<div class="video-container">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/NN-PFn97cR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!-- Social Links -->
+						<div class="right-col">
+							<h4 class="right-col-title">
+								<span><span class="text-main-1">connect</span> with us</span>
+							</h4>
+							<div class="right-col-content">
+								<ul class="list-socials-right">
+									<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-twitter"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
+									<li><a href="#" target="blank"><i class="fab fa-instagram"></i></a> </li>
+									<li><a href="#" target="blank"><i class="fab fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Blog Content End -->
+
+	<!-- Footer Start -->
+	<footer class="footer box">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-3 footer-about">
+					<h3>Fake <span>Store</span></h3>
+					<p>
+						We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+					</p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-contact">
+					<h3>Contact</h3>
+					<p><i class="fas fa-map-marker-alt"></i>kim ngưu, Hai Bà Trưng, Hà Nội</p>
+					<p><i class="fas fa-phone"></i>Phone: +84 987 123 456 </p>
+					<p><i class="fas fa-envelope"></i>Email: <a href="#">blon-bl03@gmail.com</a></p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-links">
+					<h3> Quick Links</h3>
+					<ul>
+						<li><a href="./cookie-policy.html">Cookie Policy</a></li>
+						<li><a href="./refund-policy.html">Refund Policy</a></li>
+						<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="./terms.html">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-6 col-lg-3 footer-social">
+					<h3>subscribe</h3>
+					<p>Get monthly newsletter (Free)</p>
+					<form action="">
+						<input type="email" required="true" placeholder="Enter a email address">
+						<button type="submit" class="btn custom-btn">Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="row box-line">
+				<div class="col-lg-12 grey-line-footer"></div>
+			</div>
+			<div class="row align-items-center footer-lower">
+				<div class="col-12 col-md-6 copyright">
+					<p>© Copyright 2021 TDA - All Rights Reserved</p>
+				</div>
+				<div class="col-12 col-md-6 social-links">
+					<a href="#" target="blank"><i class="fab fa-facebook"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-twitter"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+</body>
+</html>

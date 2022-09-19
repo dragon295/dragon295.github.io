@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cookie Policy</title>
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+	<!-- CSS Libraries -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style-cookie.css">
+
+	<!-- JS Libraries  -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+
+	<!-- Scripts  -->
+	<script src="../js/modal.js" defer></script>
+	<script src="../js/adjust-footer.js" defer></script>
+</head>
+<body>
+	<!-- Nav Bar Start -->
+	<nav class="navbar navbar-expand-lg navbar-light navbar-header">
+		<a class="navbar-brand" href="./index.html">Fake <span>Store</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./about.html">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Feature</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Pages
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Blog List</a>
+						<a class="dropdown-item" href="#">Blog Detail</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./contact.html">Contact</a>
+				</li>
+				<li class="nav-item">
+					<!-- Search Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal" data-nav="yes">
+						<i class="fas fa-search"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- User Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#userModal" data-nav="yes">
+						<i class="fa fa-user"></i>
+					</button>
+				</li>
+				<li class="nav-item">
+					<!-- Cart Hover -->
+					<a href="#" class="btn btn-primary cart-toggle" data-nav="yes">
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+
+					<div class="cart-preview-content">
+						
+						<div class="proceed">
+							<button type="button" class="btn btn-success btn-proceed">
+								<a href="#">Proceed to Checkout</a>
+							</button>
+						</div>
+
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</nav>
+	<!-- Nav Bar End -->
+
+	<!-- Modal Start -->
+	<div class="modal-infor">
+		<div class="container">
+
+			<!-- Search Modal -->
+			<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Search for products</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form action="#">
+							<div class="modal-body">
+								<input type="text" placeholder="Search something" required="required" class="form-control">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="submit" class="btn btn-success">Search</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- User Modal -->
+			<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Sign In <span> / </span>Register</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body d-flex flex-column user">
+							<div class="box-btn-user">
+								<button type="button" class="btn w-50 btn-sign-in active">Sign in</button>
+
+								<button type="button" class="btn w-50  btn-register">Register</button>
+							</div>
+
+							<div class="sign-in active">
+								<h4>Sign in with...</h4>
+
+								<div class="main-sign-in">
+
+									<form action="#" class="d-flex flex-column">
+										<div class="form-input">
+											<label for="email-sign-in">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-sign-in">
+										</div>
+
+										<div class="form-input">
+											<label for="password-sign-in">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-sign-in" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-remember" type="checkbox" value="Remember me" name="checkbox-remember" checked autocomplete="off">
+											<label class="form-check-label" for="checkbox-remember">
+												Remember me
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Sign in</button>
+									</form>
+								</div>
+
+								<div class="ano-sign-in flex-column">
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="register">
+								<h4>Register with...</h4>
+
+								<div class="ano-register">
+									<ul class="d-flex justify-content-between">
+										<li>
+											<a href="#" target="blank"><i class="fab fa-facebook"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-twitter"></i>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a>
+										</li>
+
+										<li>
+											<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+										</li>
+										<li>
+											<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+										</li>
+									</ul>
+
+									<div class="d-flex seperator">
+										<div class="line-seperate"></div>
+										<label>Or</label>
+										<div class="line-seperate"></div>
+									</div>
+								</div>
+								<div class="main-register">
+									<form action="#" class="d-flex flex-column" autocomplete="on">
+										<div class="form-input">
+											<label for="username">Email User name</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter User Name" name="username">
+										</div>
+
+										<div class="form-input">
+											<label for="email-register">Email address</label>
+											<input type="text" class="form-control" required="true"
+											placeholder="Enter Email Address" name="email-register">
+										</div>
+
+										<div class="form-input">
+											<label for="password-register">Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Enter Password" name="password-register" autocomplete="off">
+										</div>
+
+										<div class="form-input">
+											<label for="retype-register">Retype Password</label>
+											<input type="password" class="form-control" required="true"
+											placeholder="Retype Password" name="retype-register" autocomplete="off">
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-term" type="checkbox" value="" name="checkbox-term" checked>
+											<label class="form-check-label" for="checkbox-term">
+												<p>I accept the&nbsp;
+													<a href="./terms.html" target="_blank">Terms & Conditions</a>,
+													<a href="./cookie-policy.html" target="_blank">Cookie Policy</a> and 
+													<a href="./privacy-policy.html" target="_blank">privacy policy</a>.
+												</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-offer" type="checkbox" value="" name="checkbox-offer">
+											<label class="form-check-label" for="checkbox-offer">
+												<p>Send me vouchers and news on great promotions</p>
+											</label>
+										</div>
+
+										<div class="form-check">
+											<input class="form-check-input" id="checkbox-update" type="checkbox" value="" name="checkbox-update">
+											<label class="form-check-label" for="checkbox-update">
+												<p>Send me the latest updates, competitions...</p>
+											</label>
+										</div>
+
+										<button type="submit" class="btn btn-success">Register</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Modal End -->
+
+	<!-- Page Header Start -->
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Cookie Policy</h2>
+				</div>
+				<div class="col-12">
+					<a href="./index.html">Home</a>
+					<span class="slash"> / </span>
+					<a href="./terms.html">cookie policy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+	<!-- Page Header Start -->
+	<div class="cookie">
+		<div class="cookie-container1">
+			<div class="container">
+				<h3 class="cookie-header">Do we use Cookies?</h3>
+				<span>Yes we do! <br><br>We use cookies and other technologies to ensure everyone who uses Fake Store has the best possible experience. Cookies also help us keep your account safe and allows the Fake Store website to remember things like your preferences or what’s in your shopping basket. By continuing to visit or use our services and interacting with the content of our website, you are agreeing to the use of cookies and similar technologies for the purposes we describe in this policy. <br><br>At any point, you can change your preferences</span>
+			</div>
+		</div>
+		<div class="cookie-container2">
+			<div class="container">
+				<h3 class="cookie-header">What is a Cookie?</h3>
+				<span>A cookie is a small file placed onto your device that enables Fake Store features and functionality. For example, cookies enable us to identify whether you are signed into your account, determine what currency and prices to display, and secure your access to our site. Cookies also help us to serve relevant ads to you on trusted third party websites and provide a more personalised experience.</span>
+			</div>
+		</div>
+		<div class="cookie-container1">
+			<div class="container">
+				<h3 class="cookie-header">When does Fake Store place cookies?</h3>
+				<span>We use cookies on our site and mobile application. Any browser visiting Fake Store site and every device using our app will receive cookies from us. We also place cookies in your browser when you visit non-Fake Store sites that host our adverts and content (for example our affiliate partners or Facebook).
+				</span>
+			</div>
+		</div>
+		<div class="cookie-container2">
+			<div class="container">
+				<h3 class="cookie-header">What types of cookies does Fake Store use?</h3>
+				<span>We use two types: persistent cookies and session cookies. A persistent cookie helps us recognize you as an existing user, so it's easier to return to Fake Store or interact with our services without signing in again. After you sign in, a persistent cookie stays in your browser and will be read by Fake Store when you return to our site. Session cookies only last for as long as the session (usually the current visit to a website or a browser session) and are used to keep track of any interaction you make with our site during your visit (such as adding an item to your basket).</span>
+			</div>
+		</div>
+		<div class="cookie-container1">
+			<div class="container">
+				<h3 class="cookie-header">How we use cookies?</h3>
+				<span>We use cookies in order to improve your user experience by enabling our services to ‘remember’ you, either for the duration of your visit (using a ‘session cookie’) or for repeat visits (using a ‘persistent cookie’). Our cookies do lots of different jobs, like letting you navigate between pages efficiently, storing your preferences, delivering more targeted advertising, and generally improving your experience on our website.<br><br>We use the following categories of cookies:</span><br>
+				<table class="table table-bordered" style="margin-top: 5px;">
+					<thead>
+						<tr>
+							<th scope="col"><strong>Categories of Cookies</strong></th>
+							<th scope="col"><strong>Description</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Strictly Necessary</td>
+							<td>We use Strictly Necessary cookies in order to enable you to move around the website and use its features, such as accessing your account, purchasing video games and displaying correct prices and availability. Without these cookies, the site will not function correctly.</td>
+						</tr>
+						<tr>
+							<td>Performance</td>
+							<td>We use Performance cookies to collect and aggregate information about how you use and engage with our website, including what pages you are visiting and how you are accessing our site. Also known as ‘Analytics’ cookies, these cookies are a mixture of First and Third party cookies.</td>
+						</tr>
+						<tr>
+							<td>Functionality</td>
+							<td>We use Functionality cookies to provide site functionality that is visible or advantageous to you or your experience on our the site. This includes elements of on-site personalisation, and enhanced functionality like customer service support, feedback systems, surveys and competitions. These cookies are a mixture of First and Third party cookies.</td>
+						</tr>
+						<tr>
+							<td>Targeting &amp; Advertising</td>
+							<td>We use Targeting and Advertising cookies for the purpose of managing and analysing the performance of adverts, displaying adverts to you once you have left our site, and building user profiles to determine the display of advertising elsewhere. These are predominantly Third party cookies.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="cookie-container2">
+			<div class="container">
+				<h3 class="cookie-header">What is Do Not Track (DNT)?</h3>
+				<span>DNT is a concept that has been promoted by regulatory agencies such as the U.S. Federal Trade Commission (FTC), for the Internet industry to develop and implement a mechanism for allowing Internet users to control the tracking of their online activities across websites by using browser settings. The World Wide Web Consortium (W3C) has been working with industry groups, Internet browsers, technology companies, and regulators to develop a DNT technology standard. While some progress has been made, it has been slow. No standard has been adopted to this date. As such, Fake Store does not generally respond to "do not track" signals, but you can at any time change your cookie preferences</span>
+			</div>
+		</div>
+		<div class="cookie-container1">
+			<div class="container">
+				<h3 class="cookie-header">How are cookies used for advertising purposes?</h3>
+				<span><span>Cookies and other ad technology such as beacons, pixels, and tags help us serve relevant ads to you more effectively. They also help us provide aggregated auditing, research, and reporting, understand and improve our service, and know when content has been seen by you. Note: Because your web browser may request advertisements and beacons directly from third party ad network servers, these networks can view, edit, or set third party cookies, just as if you had requested a web page from their site. Ads served by Fake Store may also set third party cookies.<br><br>If you are logged in on a website or app or another Service that references this Cookie Policy or browsing a third party partner site of Fake Store and one of our cookies on your device identifies you, your usage (such as your browsing behavior) and log data (such as your IP address), will be associated by us with your account. We also use aggregate data from third parties and data from your profile and Fake Store activity.<br><br>Unless you clear these cookies from your browser, we may use this information to:<br></span></span>
+				<ul>
+					<li><span>provide more relevant, interest-based advertising</span></li>
+					<li><span>provide aggregate reports of ads activity to partners and websites hosting the ads</span></li>
+					<li><span>help us understand how our visitors engage with our site or app</span></li>
+					<li><span>detect and defend against fraud and other risks to protect users and partners</span></li>
+					<li><span>improve our products</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cookie-container2">
+			<div class="container">
+				<h3 class="cookie-header">What third-party cookies does Fake Store use?</h3>
+				<span>We work with third parties who may also set cookies on our Website, and via the App, for example, Google, Facebook, Twitter, Criteo, HotJar which we use to display video content, enable social networking functionality and sharing, to deliver ads, and to monitor how visitors use our Service. These third party suppliers are responsible for the cookies they set on your device. For further information please visit the website of the relevant third party.</span>
+			</div>
+		</div>
+		<div class="cookie-container1">
+			<div class="container">
+				<h3 class="cookie-header">Cookie Policy Recipe</h3>
+				<span><span>Ingredients<br>125g butter, softened<br>100g light brown soft sugar<br>125g caster sugar<br>1 egg, lightly beaten<br>1 tsp vanilla extract<br>225g self-raising flour<br>½ tsp salt<br>200g chocolate chips<br><br>Method:</span></span>
+				<ol>
+					<li><span>Preheat the oven to 180°C, gas mark 4</span></li>
+					<li><span>Cream butter and sugars, once creamed, combine in the egg and vanilla.</span></li>
+					<li><span>Sift in the flour and salt, then the chocolate chips.</span></li>
+					<li><span>Roll into walnut size balls, for a more homemade look, or roll into a long, thick sausage shape and slice to make neater looking cookies.</span></li>
+					<li><span>Place on ungreased baking paper. If you want to have the real Millies experience then bake for just 7 minutes, till the cookies are just setting - the cookies will be really doughy and delicious. Otherwise cook for 10 minutes until just golden round the edges.</span></li>
+					<li><span>Take out of the oven and leave to harden for a minute before transferring to a wire cooling rack. These are great warm, and they also store well, if they don't all get eaten straight away!</span></li>
+				</ol>
+			</div>
+		</div>
+		<div class="cookie-return">
+			<hr>
+			<div class="container">
+				<h3 class="cookie-header">Thanks for reading. <a href="./index.html">Back to Home</a></h3>
+			</div>
+		</div>
+	</div>
+	<!-- Page Header End -->
+
+	<!-- Footer Start -->
+	<footer class="footer box">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-3 footer-about">
+					<h3>Fake <span>Store</span></h3>
+					<p>
+						We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+					</p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-contact">
+					<h3>Contact</h3>
+					<p><i class="fas fa-map-marker-alt"></i>kim ngưu, Hai Bà Trưng, Hà Nội</p>
+					<p><i class="fas fa-phone"></i>Phone: +84 987 123 456 </p>
+					<p><i class="fas fa-envelope"></i>Email: <a href="#">blon-bl03@gmail.com</a></p>
+				</div>
+
+				<div class="col-sm-6 col-lg-3 footer-links">
+					<h3> Quick Links</h3>
+					<ul>
+						<li><a href="./cookie-policy.html">Cookie Policy</a></li>
+						<li><a href="./refund-policy.html">Refund Policy</a></li>
+						<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="./terms.html">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-6 col-lg-3 footer-social">
+					<h3>subscribe</h3>
+					<p>Get monthly newsletter (Free)</p>
+					<form action="">
+						<input type="email" required="true" placeholder="Enter a email address">
+						<button type="submit" class="btn custom-btn">Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="row box-line">
+				<div class="col-lg-12 grey-line-footer"></div>
+			</div>
+			<div class="row align-items-center footer-lower">
+				<div class="col-12 col-md-6 copyright">
+					<p>© Copyright 2021 TDA - All Rights Reserved</p>
+				</div>
+				<div class="col-12 col-md-6 social-links">
+					<a href="#" target="blank"><i class="fab fa-facebook"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-twitter"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-google-plus-g"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-instagram"></i></a> 
+					<a href="#" target="blank"><i class="fab fa-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+</body>
+</html>

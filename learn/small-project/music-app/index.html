@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <p class="logo_main"><i class="fas fa-music" aria-hidden="true"></i> Music App</p>
+
+        <div class="left">
+            <img alt="music" class="track-image">
+            <div class="volume">
+                <p class="volume_show">50</p>
+                <i class="fas fa-volume-up volume_icon" aria-hidden="true"></i>
+                <input type="range" min="0" max="100" value="50" class="volume_range">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="song_no">
+
+                <div class="list_song">
+                    <p class="present">1</p>
+                    <p>/</p>
+                    <p class="total">5</p>
+                </div>
+
+                <p class="title">title.mp3</p>
+                <p class="artist">Artist name</p>
+                <div class="middle">
+                    <button class="pre"><i class="fas fa-step-backward"></i></button>
+                    <button class="play"><i class="fas fa-play"></i></button>
+                    <button class="next"><i class="fas fa-step-forward"></i></button>
+                </div>
+
+                <div class="duration">
+                    <input type="range" min="0" max="100" value="0" class="duration_slider">
+                </div>
+                <button class="auto">Random play <i class="fa fa-random" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
